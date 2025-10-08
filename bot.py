@@ -2,7 +2,17 @@ import discord
 import methods.dwbapi as dwb
 from methods.shrineoforder import order
 from dotenv import load_dotenv
+from sentence_transformers import SentenceTransformer
+import torch
 import os
+import pandas as pd
+print('All libraries loaded!')
+
+model = SentenceTransformer("google/embeddinggemma-300m")
+df = pd.read_json('data/talentlist.json')
+talent_names = df['talent_names'].tolist()
+doc_embeddings = model.encode_document(talent_names)
+print(talent_names)
 
 load_dotenv()
 BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
@@ -23,8 +33,22 @@ async def on_message(message):
 
     if message.content.startswith('+talent'):
         # Get the talent name from command
-        talent_name = message.content.split()[1]
-        talent = dwb.talent(talent_name)
+        talent_name = message.content[len('+talent'):].strip()
+        if talent_name in talent_names:
+            talent = dwb.talent(talent_name)
+        else:
+            query_embedding = model.encode_query(talent_name)
+            similarities = model.similarity(query_embedding, doc_embeddings)
+            most_similar_index = torch.argmax(similarities).item()
+            most_similar_talent_name = talent_names[most_similar_index]
+            print(most_similar_talent_name)
+            await message.channel.send(f'You probably meant: **{most_similar_talent_name}**')
+        
+        if not talent:
+            await message.channel.send(
+                f"Talent '{talent_name}' not found or API returned no data."
+            )
+            return
 
         embed = discord.Embed(
             title=f"Talent: {talent['name']}",
