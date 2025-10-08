@@ -22,7 +22,8 @@ MAXIMUM_REDUCTION = 25
 def order(stats, player_stats):
     # Calculate the points spent so far in the build, excluding racial stats
 
-    stats = merge_stats(stats['weapon'], stats['attunement'],stats['base'])    
+    if 'base' in stats:
+        stats = merge_stats(stats['weapon'], stats['attunement'],stats['base'])    
 
     for stat_name, value in stats.items():
         if stat_name in racial_stats[player_stats["Race"]]:

@@ -3,7 +3,7 @@ import pandas as pd
 
 hptalents = pd.read_json('data/hptalents.json', typ='series').to_dict()
 
-class build:
+class dwbBuild:
     def __str__(self):
         return f"{self.name}\n{self.desc}"
     
@@ -63,3 +63,7 @@ class build:
     @classmethod
     def resisCoefficient(cls ,pen ,res ,penres) -> float:
         return (1- ((res/100) * (1 - (pen * (1 - penres/100) / 100))))
+    
+def talent(id):
+    response = requests.get(f'https://api.deepwoken.co/get?type=talent&name={id}')
+    return response.json()
