@@ -1,0 +1,942 @@
+[
+  {
+    "id": 1,
+    "name": "Absolute Focus"
+  },
+  {
+    "id": 2,
+    "name": "Acrobat"
+  },
+  {
+    "id": 3,
+    "name": "Adaptive Arsenal"
+  },
+  {
+    "id": 4,
+    "name": "Adept Caster"
+  },
+  {
+    "id": 5,
+    "name": "Aerial Dancer"
+  },
+  {
+    "id": 6,
+    "name": "Aeromancer"
+  },
+  {
+    "id": 7,
+    "name": "Alchemist"
+  },
+  {
+    "id": 8,
+    "name": "All-Knowing"
+  },
+  {
+    "id": 9,
+    "name": "Alley Cat"
+  },
+  {
+    "id": 10,
+    "name": "Amoran Seeker"
+  },
+  {
+    "id": 11,
+    "name": "Angler"
+  },
+  {
+    "id": 12,
+    "name": "Annihilator"
+  },
+  {
+    "id": 13,
+    "name": "Apex Predator"
+  },
+  {
+    "id": 14,
+    "name": "Archsorcerer"
+  },
+  {
+    "id": 15,
+    "name": "Arcwarder"
+  },
+  {
+    "id": 16,
+    "name": "Artisan"
+  },
+  {
+    "id": 17,
+    "name": "Assassin"
+  },
+  {
+    "id": 18,
+    "name": "Athlete"
+  },
+  {
+    "id": 19,
+    "name": "Authority Commander"
+  },
+  {
+    "id": 20,
+    "name": "Authority Interrogator"
+  },
+  {
+    "id": 21,
+    "name": "Bastion"
+  },
+  {
+    "id": 22,
+    "name": "Berserker"
+  },
+  {
+    "id": 23,
+    "name": "Bladeharper"
+  },
+  {
+    "id": 24,
+    "name": "Blightsurger"
+  },
+  {
+    "id": 25,
+    "name": "Blindseer"
+  },
+  {
+    "id": 26,
+    "name": "Bloodhound"
+  },
+  {
+    "id": 27,
+    "name": "Bloodrend Master"
+  },
+  {
+    "id": 28,
+    "name": "Bloodrender"
+  },
+  {
+    "id": 29,
+    "name": "Bloodsong"
+  },
+  {
+    "id": 30,
+    "name": "Brawler"
+  },
+  {
+    "id": 31,
+    "name": "Bruiser"
+  },
+  {
+    "id": 32,
+    "name": "Bulwark"
+  },
+  {
+    "id": 33,
+    "name": "Butterfly"
+  },
+  {
+    "id": 34,
+    "name": "Chainwarden"
+  },
+  {
+    "id": 35,
+    "name": "Champion"
+  },
+  {
+    "id": 36,
+    "name": "Charm Caster"
+  },
+  {
+    "id": 37,
+    "name": "Christmas Miracle"
+  },
+  {
+    "id": 38,
+    "name": "Cold Phantom"
+  },
+  {
+    "id": 39,
+    "name": "Colossus"
+  },
+  {
+    "id": 40,
+    "name": "Comrade"
+  },
+  {
+    "id": 41,
+    "name": "Contractor"
+  },
+  {
+    "id": 42,
+    "name": "Cosmic Wind"
+  },
+  {
+    "id": 43,
+    "name": "Credits"
+  },
+  {
+    "id": 44,
+    "name": "Critical Specialist"
+  },
+  {
+    "id": 45,
+    "name": "Cryomancer"
+  },
+  {
+    "id": 46,
+    "name": "Cryoni"
+  },
+  {
+    "id": 47,
+    "name": "Cryonic"
+  },
+  {
+    "id": 48,
+    "name": "Crystalline Gold"
+  },
+  {
+    "id": 49,
+    "name": "Cutthroat"
+  },
+  {
+    "id": 50,
+    "name": "Darksiphon"
+  },
+  {
+    "id": 51,
+    "name": "Dawnwalker"
+  },
+  {
+    "id": 52,
+    "name": "Death Speaker"
+  },
+  {
+    "id": 53,
+    "name": "Deepwoken"
+  },
+  {
+    "id": 54,
+    "name": "Doomsday Engine"
+  },
+  {
+    "id": 55,
+    "name": "Drowned Secret"
+  },
+  {
+    "id": 56,
+    "name": "Duelist"
+  },
+  {
+    "id": 57,
+    "name": "Duelist Flame"
+  },
+  {
+    "id": 58,
+    "name": "Elemental Rebound"
+  },
+  {
+    "id": 59,
+    "name": "Elementalist"
+  },
+  {
+    "id": 60,
+    "name": "Empath"
+  },
+  {
+    "id": 61,
+    "name": "Equipment"
+  },
+  {
+    "id": 62,
+    "name": "Escape Artist"
+  },
+  {
+    "id": 63,
+    "name": "Ether Adept"
+  },
+  {
+    "id": 64,
+    "name": "Ether Conduit"
+  },
+  {
+    "id": 65,
+    "name": "Ether Endeavors"
+  },
+  {
+    "id": 66,
+    "name": "Fadetrimmer"
+  },
+  {
+    "id": 67,
+    "name": "Falling Star Guard"
+  },
+  {
+    "id": 68,
+    "name": "Fang and Coil"
+  },
+  {
+    "id": 69,
+    "name": "Ferryman's Coat"
+  },
+  {
+    "id": 70,
+    "name": "Fish"
+  },
+  {
+    "id": 71,
+    "name": "Flame Dancer"
+  },
+  {
+    "id": 72,
+    "name": "Flame Warden"
+  },
+  {
+    "id": 73,
+    "name": "Flamecharm Master"
+  },
+  {
+    "id": 74,
+    "name": "Flamecharmer"
+  },
+  {
+    "id": 75,
+    "name": "Flashfreeze"
+  },
+  {
+    "id": 76,
+    "name": "Flow"
+  },
+  {
+    "id": 77,
+    "name": "Forest Hunter"
+  },
+  {
+    "id": 78,
+    "name": "Freak of Nature"
+  },
+  {
+    "id": 79,
+    "name": "Frost Forger"
+  },
+  {
+    "id": 80,
+    "name": "Frostdraw Master"
+  },
+  {
+    "id": 81,
+    "name": "Frostdrawer"
+  },
+  {
+    "id": 82,
+    "name": "Frostthorn"
+  },
+  {
+    "id": 83,
+    "name": "Frozen Lightning"
+  },
+  {
+    "id": 84,
+    "name": "Frozen Warrior"
+  },
+  {
+    "id": 85,
+    "name": "Gale Duelist"
+  },
+  {
+    "id": 86,
+    "name": "Gale Kata"
+  },
+  {
+    "id": 87,
+    "name": "Galebreathe Master"
+  },
+  {
+    "id": 88,
+    "name": "Galebreather"
+  },
+  {
+    "id": 89,
+    "name": "Galeforce"
+  },
+  {
+    "id": 90,
+    "name": "Genius Intellect"
+  },
+  {
+    "id": 91,
+    "name": "Glassdancer"
+  },
+  {
+    "id": 92,
+    "name": "Grand Pathfinder"
+  },
+  {
+    "id": 93,
+    "name": "Great Wall"
+  },
+  {
+    "id": 94,
+    "name": "Gunslinger"
+  },
+  {
+    "id": 95,
+    "name": "Hammer Rage"
+  },
+  {
+    "id": 96,
+    "name": "Heat Column"
+  },
+  {
+    "id": 97,
+    "name": "Heretic"
+  },
+  {
+    "id": 98,
+    "name": "Human Architecture"
+  },
+  {
+    "id": 99,
+    "name": "Hunter"
+  },
+  {
+    "id": 100,
+    "name": "Ice Age"
+  },
+  {
+    "id": 101,
+    "name": "Ignition Delver"
+  },
+  {
+    "id": 102,
+    "name": "Ignition Union"
+  },
+  {
+    "id": 103,
+    "name": "Immolator"
+  },
+  {
+    "id": 104,
+    "name": "Inferno"
+  },
+  {
+    "id": 105,
+    "name": "Innate"
+  },
+  {
+    "id": 106,
+    "name": "Intellisense"
+  },
+  {
+    "id": 107,
+    "name": "Iron Will"
+  },
+  {
+    "id": 108,
+    "name": "Ironsing Master"
+  },
+  {
+    "id": 109,
+    "name": "Ironsinger"
+  },
+  {
+    "id": 110,
+    "name": "Jade Vigil's Weave"
+  },
+  {
+    "id": 111,
+    "name": "Javelin Lord"
+  },
+  {
+    "id": 112,
+    "name": "Jetstriker"
+  },
+  {
+    "id": 113,
+    "name": "Jus Karita"
+  },
+  {
+    "id": 114,
+    "name": "Justicar"
+  },
+  {
+    "id": 115,
+    "name": "Kickstarter"
+  },
+  {
+    "id": 116,
+    "name": "Lancer"
+  },
+  {
+    "id": 117,
+    "name": "Lava Serpent"
+  },
+  {
+    "id": 118,
+    "name": "Leader"
+  },
+  {
+    "id": 119,
+    "name": "Leaf in the Wind"
+  },
+  {
+    "id": 120,
+    "name": "Legion Shock Trooper"
+  },
+  {
+    "id": 121,
+    "name": "Liberator"
+  },
+  {
+    "id": 122,
+    "name": "Lichtenberg"
+  },
+  {
+    "id": 123,
+    "name": "Limitbreaker"
+  },
+  {
+    "id": 124,
+    "name": "Linkstrider"
+  },
+  {
+    "id": 125,
+    "name": "Marauder"
+  },
+  {
+    "id": 126,
+    "name": "Marksman"
+  },
+  {
+    "id": 127,
+    "name": "Master Survivalist"
+  },
+  {
+    "id": 128,
+    "name": "Meditative Trance"
+  },
+  {
+    "id": 129,
+    "name": "Mental Fortress"
+  },
+  {
+    "id": 130,
+    "name": "Merchant"
+  },
+  {
+    "id": 131,
+    "name": "Metallurgist"
+  },
+  {
+    "id": 132,
+    "name": "Metamancer"
+  },
+  {
+    "id": 133,
+    "name": "Mindbreaker"
+  },
+  {
+    "id": 134,
+    "name": "Ministry Prophet"
+  },
+  {
+    "id": 135,
+    "name": "Miscellaneous"
+  },
+  {
+    "id": 136,
+    "name": "Mr Charm"
+  },
+  {
+    "id": 137,
+    "name": "Murmur"
+  },
+  {
+    "id": 138,
+    "name": "Natural Armor"
+  },
+  {
+    "id": 139,
+    "name": "Navaen Nomad"
+  },
+  {
+    "id": 140,
+    "name": "Navaen War Chief"
+  },
+  {
+    "id": 141,
+    "name": "Needle"
+  },
+  {
+    "id": 142,
+    "name": "Nimble Blade"
+  },
+  {
+    "id": 143,
+    "name": "Oath"
+  },
+  {
+    "id": 144,
+    "name": "Oathless"
+  },
+  {
+    "id": 145,
+    "name": "Omniscient"
+  },
+  {
+    "id": 146,
+    "name": "One Eyed King"
+  },
+  {
+    "id": 147,
+    "name": "Outfit"
+  },
+  {
+    "id": 148,
+    "name": "Outlaw"
+  },
+  {
+    "id": 149,
+    "name": "Pathfinder"
+  },
+  {
+    "id": 150,
+    "name": "Politician"
+  },
+  {
+    "id": 151,
+    "name": "Prospector"
+  },
+  {
+    "id": 152,
+    "name": "Public Figure"
+  },
+  {
+    "id": 153,
+    "name": "Pursuer"
+  },
+  {
+    "id": 154,
+    "name": "Pyroclast"
+  },
+  {
+    "id": 155,
+    "name": "Pyromancer"
+  },
+  {
+    "id": 156,
+    "name": "Quack Doctor"
+  },
+  {
+    "id": 157,
+    "name": "Quest"
+  },
+  {
+    "id": 158,
+    "name": "Raging Bull"
+  },
+  {
+    "id": 159,
+    "name": "Rampaging Brute"
+  },
+  {
+    "id": 160,
+    "name": "Rampant Static"
+  },
+  {
+    "id": 161,
+    "name": "Rending Needle"
+  },
+  {
+    "id": 162,
+    "name": "Saboteur"
+  },
+  {
+    "id": 163,
+    "name": "Sage of Wisps"
+  },
+  {
+    "id": 164,
+    "name": "Saint of Blades"
+  },
+  {
+    "id": 165,
+    "name": "Saintsworn"
+  },
+  {
+    "id": 166,
+    "name": "Saltchemist"
+  },
+  {
+    "id": 167,
+    "name": "Sapper"
+  },
+  {
+    "id": 168,
+    "name": "Scarlet Donor"
+  },
+  {
+    "id": 169,
+    "name": "Scholar of the Cloud"
+  },
+  {
+    "id": 170,
+    "name": "Scoundrel"
+  },
+  {
+    "id": 171,
+    "name": "Scrapsinger"
+  },
+  {
+    "id": 172,
+    "name": "Sea Dog"
+  },
+  {
+    "id": 173,
+    "name": "Self-Shocker"
+  },
+  {
+    "id": 174,
+    "name": "Septicemia"
+  },
+  {
+    "id": 175,
+    "name": "Shadowcast Master"
+  },
+  {
+    "id": 176,
+    "name": "Shadowcaster"
+  },
+  {
+    "id": 177,
+    "name": "Shieldmaster"
+  },
+  {
+    "id": 178,
+    "name": "Shipwright"
+  },
+  {
+    "id": 179,
+    "name": "Shock Therapy"
+  },
+  {
+    "id": 180,
+    "name": "Showboater"
+  },
+  {
+    "id": 181,
+    "name": "Silencer"
+  },
+  {
+    "id": 182,
+    "name": "Silentheart"
+  },
+  {
+    "id": 183,
+    "name": "Silvertongue"
+  },
+  {
+    "id": 184,
+    "name": "Songmaster"
+  },
+  {
+    "id": 185,
+    "name": "Soul Converter"
+  },
+  {
+    "id": 186,
+    "name": "Soulbreaker"
+  },
+  {
+    "id": 187,
+    "name": "Sovereign of Slaughter"
+  },
+  {
+    "id": 188,
+    "name": "Soverign of Slaughter"
+  },
+  {
+    "id": 189,
+    "name": "Specter"
+  },
+  {
+    "id": 190,
+    "name": "Spoils of Enmity"
+  },
+  {
+    "id": 191,
+    "name": "Starkindred"
+  },
+  {
+    "id": 192,
+    "name": "Static Weaver"
+  },
+  {
+    "id": 193,
+    "name": "Stormcaller"
+  },
+  {
+    "id": 194,
+    "name": "Sturdy Resolve"
+  },
+  {
+    "id": 195,
+    "name": "Summer Company"
+  },
+  {
+    "id": 196,
+    "name": "Super Conductor"
+  },
+  {
+    "id": 197,
+    "name": "Superconductor"
+  },
+  {
+    "id": 198,
+    "name": "Survival Instinct"
+  },
+  {
+    "id": 199,
+    "name": "Survivor"
+  },
+  {
+    "id": 200,
+    "name": "Swiftshade"
+  },
+  {
+    "id": 201,
+    "name": "Tactician"
+  },
+  {
+    "id": 202,
+    "name": "Tamed Flame"
+  },
+  {
+    "id": 203,
+    "name": "Tavernkeep"
+  },
+  {
+    "id": 204,
+    "name": "The Demon Blade"
+  },
+  {
+    "id": 205,
+    "name": "The Emperor's Blade"
+  },
+  {
+    "id": 206,
+    "name": "The Knives of Eylis"
+  },
+  {
+    "id": 207,
+    "name": "The Negotiator"
+  },
+  {
+    "id": 208,
+    "name": "Thief"
+  },
+  {
+    "id": 209,
+    "name": "Thunder Brawler"
+  },
+  {
+    "id": 210,
+    "name": "Thunder Caster"
+  },
+  {
+    "id": 211,
+    "name": "Thunderblade"
+  },
+  {
+    "id": 212,
+    "name": "Thundercall Master"
+  },
+  {
+    "id": 213,
+    "name": "Thundercaller"
+  },
+  {
+    "id": 214,
+    "name": "Tower Knight"
+  },
+  {
+    "id": 215,
+    "name": "Toxic Personality"
+  },
+  {
+    "id": 216,
+    "name": "Transitory Vitality"
+  },
+  {
+    "id": 217,
+    "name": "Trickster"
+  },
+  {
+    "id": 218,
+    "name": "Twinblade"
+  },
+  {
+    "id": 219,
+    "name": "Twisted Puppets"
+  },
+  {
+    "id": 220,
+    "name": "Tyrant"
+  },
+  {
+    "id": 221,
+    "name": "Unbounded"
+  },
+  {
+    "id": 222,
+    "name": "Undying Ember"
+  },
+  {
+    "id": 223,
+    "name": "Unknown"
+  },
+  {
+    "id": 224,
+    "name": "Unstable Capacitor"
+  },
+  {
+    "id": 225,
+    "name": "Vaporborne"
+  },
+  {
+    "id": 226,
+    "name": "Vigil Swordsman"
+  },
+  {
+    "id": 227,
+    "name": "Visionshaper"
+  },
+  {
+    "id": 228,
+    "name": "Vocalist"
+  },
+  {
+    "id": 229,
+    "name": "Vow of Mastery"
+  },
+  {
+    "id": 230,
+    "name": "Warrior"
+  },
+  {
+    "id": 231,
+    "name": "Waterborne"
+  },
+  {
+    "id": 232,
+    "name": "Weapon Master"
+  },
+  {
+    "id": 233,
+    "name": "Whisper"
+  },
+  {
+    "id": 234,
+    "name": "Windrunner"
+  },
+  {
+    "id": 235,
+    "name": "Withered Flame"
+  }
+]

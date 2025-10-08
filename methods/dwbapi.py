@@ -1,7 +1,9 @@
 import requests
-import pandas as pd
+import json
 
-hptalents = pd.read_json('data/hptalents.json', typ='series').to_dict()
+with open('data/talents.json') as f:
+    talentBase = json.load(f)
+
 
 class dwbBuild:
     def __str__(self):
@@ -44,14 +46,19 @@ class dwbBuild:
     @classmethod
     def calculate_health(cls, stats, traits, base_attrs, talents):
         hp = traits['Vitality'] * 10 + 196 + stats['power'] * 4
-
         fortitude = base_attrs['Fortitude']
         if fortitude <= 50:
             hp += fortitude / 2
         else:
             hp += (fortitude - 50) / 4 + 25
 
-        hp += sum(hptalents[talent] for talent in set(talents) & hptalents.keys())
+        for talent in talents:
+            for tb in talentBase:
+                # Match by talent name
+                if tb.get('name') == talent:
+                    health = tb.get('data', {}).get('stats', {}).get('health', 0)
+                    hp += health
+                    break
         return hp
 
     def ehp(self, params = {'dps':100, 'pen':50, 'kithp': 100, 'kitresis':50}):
@@ -63,6 +70,32 @@ class dwbBuild:
     @classmethod
     def resisCoefficient(cls ,pen ,res ,penres) -> float:
         return (1- ((res/100) * (1 - (pen * (1 - penres/100) / 100))))
+    
+    @property
+    def summary(self):
+        stat_fields = ['health', 'agility', 'posture', 'ether', 'carry load']
+        stat_map = {
+            'Base Health': 'health',
+            'Passive Agility': 'passive agility',
+            'Posture': 'posture',
+            'Ether': 'ether',
+            'Carry load': 'carry load'
+        }
+        summary = {}
+        summary['Base Health'] = self.health
+        summary['Passive Agility'] = 0
+        summary['Posture'] = 0
+        summary['Ether'] = 0
+        summary['Carry load'] = 0
+
+        for talent in self.talents:
+            for tb in talentBase:
+                if tb.get('name') == talent:
+                    stats_dict = tb.get('data', {}).get('stats', {})
+                    for field_label, field_key in stat_map.items():
+                        if field_key != 'health':  # base health handled above
+                            summary[field_label] += stats_dict.get(field_key, 0)
+        return summary
     
 def talent(id):
     response = requests.get(f'https://api.deepwoken.co/get?type=talent&name={id}')

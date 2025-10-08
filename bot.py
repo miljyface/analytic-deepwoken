@@ -5,12 +5,15 @@ from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
 import torch
 import os
-import pandas as pd
+import json
+import data.extraction as ext
 print('All libraries loaded!')
 
+with open('data/talents.json') as f:
+    talentBase = json.load(f)
+talent_names = [tb.get('name', '') for tb in talentBase]
+
 model = SentenceTransformer("google/embeddinggemma-300m")
-df = pd.read_json('data/talentlist.json')
-talent_names = df['talent_names'].tolist()
 doc_embeddings = model.encode_document(talent_names)
 print(talent_names)
 
@@ -22,91 +25,70 @@ intents.message_content = True
 
 client = discord.Client(intents=intents)
 
+def fetch_talent(talent_name):
+    for tb in talentBase:
+        if tb.get('name', '').lower() == talent_name.lower():
+            return tb
+    return None
+
+def build_talent_embed(talent: dict) -> discord.Embed:
+    data = talent.get("data", {})
+    attunements = data.get("attunements", {})
+    exclusive_with = data.get("exclusive with", [])
+    embed = discord.Embed(
+        title=talent.get("name", "Unknown Talent"),
+        description=data.get("desc", "No description available."),
+        color=0x1A1A1A
+    )
+    embed.add_field(name="ID", value=str(talent.get("id", "N/A")), inline=True)
+    embed.add_field(name="Rarity", value=data.get("rarity", "Unknown"), inline=True)
+    embed.add_field(name="Power", value=str(data.get("power", 0)), inline=True)
+    # Attunements
+    if attunements:
+        attune_text = "\n".join(f"{k.capitalize()}: {v}" for k, v in attunements.items())
+        embed.add_field(name="Attunement Requirements", value=attune_text, inline=False)
+    # Exclusivity
+    if exclusive_with:
+        embed.add_field(name="Exclusive With", value="\n".join(exclusive_with), inline=False)
+    # Category and Vaulted
+    embed.add_field(name="Category", value=str(data.get("category", "N/A")), inline=True)
+    embed.add_field(name="Vaulted", value=str(data.get("vaulted", False)), inline=True)
+    # Footer
+    embed.set_footer(
+        text=f"Auto Talent: {data.get('autotalent', False)} • "
+             f"Does not count toward total: {data.get('dontcounttowardstotal', False)}"
+    )
+    return embed
+
+
 @client.event
 async def on_ready():
-    print(f'We have logged in as {client.user}')
+    print(f'Im fucking poa at {client.user}')
 
+#command manager
 @client.event
 async def on_message(message):
     if message.author == client.user:
         pass
 
-    if message.content.startswith('+talent'):
-        # Get the talent name from command
-        talent_name = message.content[len('+talent'):].strip()
-        if talent_name in talent_names:
-            talent = dwb.talent(talent_name)
+    if message.content.startswith('@talent'):
+        # Get the talent name from command and lowercase it
+        talent_name = message.content[len('@talent'):].strip()
+        talent_substring = message.content[len('@talent'):].strip().lower()
+        # Find the first entry in talent_names that contains the substring, case-insensitive
+        match = next((name for name in talent_names if talent_substring in name.lower()),None)  
+        if match:
+            embed = build_talent_embed(fetch_talent(match))
+            print(embed.to_dict())  # See exactly what would be sent            
         else:
             query_embedding = model.encode_query(talent_name)
             similarities = model.similarity(query_embedding, doc_embeddings)
             most_similar_index = torch.argmax(similarities).item()
             most_similar_talent_name = talent_names[most_similar_index]
             print(most_similar_talent_name)
-            await message.channel.send(f'You probably meant: **{most_similar_talent_name}**')
-        
-        if not talent:
-            await message.channel.send(
-                f"Talent '{talent_name}' not found or API returned no data."
-            )
-            return
-
-        embed = discord.Embed(
-            title=f"Talent: {talent['name']}",
-            description=talent.get('desc', ''),
-            color=discord.Color.purple()
-        )
-
-        embed.add_field(name="Rarity", value=talent.get('rarity', 'Unknown'), inline=True)
-        embed.add_field(name="Category", value=talent.get('category', 'Unknown'), inline=True)
-        embed.add_field(name="Stat Bonus", value=talent.get('stats', 'None'), inline=True)
-        embed.add_field(name="Vaulted", value="Yes" if talent.get('vaulted') else "No", inline=True)
-        embed.add_field(name="Counts Toward Total", value="No" if talent.get('dontCountTowardsTotal') else "Yes", inline=True)
-
-        # Requirements
-        reqs = talent.get('reqs', {})
-        base_stats = reqs.get('base', {})
-        weapon = reqs.get('weapon', {})
-        attunement = reqs.get('attunement', {})
-
-        requirements = (
-            f"Power: {reqs.get('power', 0)}\n"
-            f"Weapon Type: {reqs.get('weaponType', 'None')}\n"
-            f"Strength: {base_stats.get('Strength', 0)} | "
-            f"Fortitude: {base_stats.get('Fortitude', 0)} | "
-            f"Agility: {base_stats.get('Agility', 0)} | "
-            f"Body: {base_stats.get('Body', 0)}\n"
-            f"Intelligence: {base_stats.get('Intelligence', 0)} | "
-            f"Willpower: {base_stats.get('Willpower', 0)} | "
-            f"Charisma: {base_stats.get('Charisma', 0)} | "
-            f"Mind: {base_stats.get('Mind', 0)}"
-        )
-        embed.add_field(name="Base Requirements", value=requirements, inline=False)
-
-        weapon_req = (
-            f"Heavy Weapon: {weapon.get('Heavy Wep.', 0)}\n"
-            f"Medium Weapon: {weapon.get('Medium Wep.', 0)}\n"
-            f"Light Weapon: {weapon.get('Light Wep.', 0)}"
-        )
-        embed.add_field(name="Weapon Requirements", value=weapon_req, inline=True)
-
-        attunement_req = (
-            f"Flamecharm: {attunement.get('Flamecharm', 0)} | "
-            f"Frostdraw: {attunement.get('Frostdraw', 0)} | "
-            f"Thundercall: {attunement.get('Thundercall', 0)} | "
-            f"Galebreathe: {attunement.get('Galebreathe', 0)} | "
-            f"Shadowcast: {attunement.get('Shadowcast', 0)} | "
-            f"Ironsing: {attunement.get('Ironsing', 0)} | "
-            f"Bloodrend: {attunement.get('Bloodrend', 0)}"
-        )
-        embed.add_field(name="Attunement Requirements", value=attunement_req, inline=False)
-
-        # Exclusive talents
-        excl = ', '.join([ex for ex in talent.get('exclusiveWith', []) if ex])
-        embed.add_field(name="Exclusive With", value=excl if excl else "None", inline=False)
-
+            embed = build_talent_embed(fetch_talent(most_similar_talent_name))
+            await message.channel.send(f'You probably meant **{most_similar_talent_name}**')
         await message.channel.send(embed=embed)
-    
-    if message.content.startswith(''):
-        pass
+
 
 client.run(BOT_TOKEN)
