@@ -1,0 +1,3759 @@
+[
+  {
+    "id": 1,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x2 Gold",
+        "x10 Iron"
+      ],
+      "name": "11th Legion Plate",
+      "notes": 100,
+      "stealth": 0,
+      "talents": [],
+      "category": "Adept",
+      "durability": 1500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 30,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 0,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 10,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 2,
+    "data": {
+      "mats": [
+        "x10 Cloth",
+        "x2 Fiber",
+        "x5 Spider Eggs",
+        "x1 Bloodless Gem",
+        "x2 Dark Feathers",
+        "x5 Vibrant Gems"
+      ],
+      "name": "Arachnid's Weave",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        "Corrosive Touch"
+      ],
+      "category": "Master",
+      "durability": 2100,
+      "ether regen": 55,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 10,
+        "physical": 20,
+        "bloodrend": 15,
+        "elemental": 35,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 10
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 3,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Dark Feather",
+        "x1 Lionfish Scale"
+      ],
+      "name": "Authority Captain Uniform",
+      "notes": 500,
+      "stealth": 0,
+      "talents": [],
+      "category": "Expert",
+      "durability": 2000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 25,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 25,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 4,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Blessed Gem",
+        "x5 Vibrant Gem",
+        "x1 Dark Feather",
+        "x1 Bounder Claw",
+        "x1 Thresher Spine"
+      ],
+      "name": "Authority Commander",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        55
+      ],
+      "category": "Master",
+      "durability": 2800,
+      "ether regen": 20,
+      "resistances": {
+        "blunt": 10,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 10,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 5,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "1 Iron"
+      ],
+      "name": "Authority Peacekeeper Armour",
+      "notes": 30,
+      "stealth": 0,
+      "talents": [
+        "Now You See Me"
+      ],
+      "category": "Adept",
+      "durability": 1600,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 10,
+        "ironsing": 0,
+        "physical": 15,
+        "bloodrend": 0,
+        "elemental": 10,
+        "frostdraw": 0,
+        "flamecharm": 15,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 5,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 6,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Blessed Gem",
+        "x5 Vibrant Gem",
+        "x1 Megalodaunt Hide",
+        "x1 Odd Tentacle",
+        "x1 Thresher Spine"
+      ],
+      "name": "Black Diver",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [],
+      "category": "Master",
+      "durability": 2600,
+      "ether regen": 50,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 20,
+        "galebreathe": 0,
+        "thundercall": 20
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 10,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 7,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Eternal Longstone"
+      ],
+      "name": "Bounty Hunter",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [
+        443
+      ],
+      "category": "Adept",
+      "durability": 1500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 20,
+        "bloodrend": 0,
+        "elemental": 10,
+        "frostdraw": 0,
+        "flamecharm": 5,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 8,
+    "data": {
+      "mats": [
+        "x3 Cloth",
+        "x4 Fiber",
+        "x5 Odd Tentacles",
+        "x1 Blue Gem",
+        "x1 Nautilodaunt Beak",
+        "x10 Vibrant Gems"
+      ],
+      "name": "Cala-Mariner",
+      "notes": 2200,
+      "stealth": 0,
+      "talents": [
+        "Tidal Shock"
+      ],
+      "category": "Master",
+      "durability": 2200,
+      "ether regen": 45,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 25,
+        "elemental": 35,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 30,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 5,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 9,
+    "data": {
+      "mats": [
+        "x4 Cloth",
+        "x5 Fiber",
+        "x1 Glass Stone",
+        "x1 Iron"
+      ],
+      "name": "Carefree Garments",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [
+        435
+      ],
+      "category": "Adept",
+      "durability": 2000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 15,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 6,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 10,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x1 Bloodless Gem",
+        "x5 Vibrant Gem",
+        "x5 Umbral Obsidian",
+        "x1 Dark Feather",
+        "x1 Odd Tentacle",
+        "x1 Thresher Spine"
+      ],
+      "name": "Celtorian Tideknight",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        412
+      ],
+      "category": "Master",
+      "durability": 2800,
+      "ether regen": 20,
+      "resistances": {
+        "blunt": 5,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 25,
+        "frostdraw": 5,
+        "flamecharm": 0,
+        "shadowcast": 10,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 11,
+    "data": {
+      "mats": [
+        "x15 Cloth",
+        "x15 Fiber",
+        "x1 Megalodaunt Hide"
+      ],
+      "name": "Cerulean Gown",
+      "notes": 200,
+      "stealth": 0,
+      "talents": [],
+      "category": "Expert",
+      "durability": 1500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 20,
+        "bloodrend": 0,
+        "elemental": 25,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 8,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 12,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x10 Erisore",
+        "x2 Strange Claw",
+        "x1 Vibrant Gem"
+      ],
+      "name": "Cloak of Winds",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [
+        410
+      ],
+      "category": "Expert",
+      "durability": 1200,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 20,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 25,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 13,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Aeon Longstone"
+      ],
+      "name": "Corsair Outlaw",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [
+        443
+      ],
+      "category": "Starter",
+      "durability": 1200,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 15,
+        "bloodrend": 0,
+        "elemental": 10,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 0,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 14,
+    "data": {
+      "mats": [
+        "x4 Cloth",
+        "x4 Fiber",
+        "x5 Iron",
+        "x1 Crystal Lens"
+      ],
+      "name": "Cutthroat Light Armor",
+      "notes": 30,
+      "stealth": 0,
+      "talents": [
+        213
+      ],
+      "category": "Adept",
+      "durability": 1000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 10,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 0,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 15,
+    "data": {
+      "mats": [
+        "x7 Cloth",
+        "x5 Fiber",
+        "x5 Umbral Obsidian",
+        "x10 Vibrant Gem",
+        "x1 Void Feather"
+      ],
+      "name": "Darkened Bastion",
+      "notes": 1000,
+      "stealth": 50,
+      "talents": [
+        "Whitering Soul"
+      ],
+      "category": "Unique",
+      "durability": 2600,
+      "ether regen": 50,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 20,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 16,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x5 Erisore",
+        "x1 Strange Claw",
+        "x1 Dark Feather"
+      ],
+      "name": "Darksteel Plate",
+      "notes": 300,
+      "stealth": 0,
+      "talents": [
+        634
+      ],
+      "category": "Expert",
+      "durability": 2500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 25,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 20,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 17,
+    "data": {
+      "mats": [
+        "x4 Cloth",
+        "x4 Fiber",
+        "x3 Crystal Lens"
+      ],
+      "name": "Diver Apprentice Robes",
+      "notes": 50,
+      "stealth": 0,
+      "talents": [],
+      "category": "Adept",
+      "durability": 1000,
+      "ether regen": 10,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 15,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 10
+      }
+    }
+  },
+  {
+    "id": 18,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x2 Megalodaunt Hide",
+        "x1 Rock"
+      ],
+      "name": "Diver Journeyman Robes",
+      "notes": 30,
+      "stealth": 0,
+      "talents": [],
+      "category": "Expert",
+      "durability": 2500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 10,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 20,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 19,
+    "data": {
+      "mats": [
+        "x5 Glass Stones"
+      ],
+      "name": "Duelist's Attire",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [],
+      "category": "Adept",
+      "durability": 1200,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 10,
+        "ironsing": 0,
+        "physical": 20,
+        "bloodrend": 0,
+        "elemental": 0,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 20,
+    "data": {
+      "mats": [
+        "x3 Cloth",
+        "x3 Fiber"
+      ],
+      "name": "Eager Tradesman",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [
+        497
+      ],
+      "category": "Starter",
+      "durability": 1000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 5,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 0,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 21,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x5 Erisore",
+        "x2 Megalodaunt Hide"
+      ],
+      "name": "Etrean Guard",
+      "notes": 30,
+      "stealth": 0,
+      "talents": [
+        648
+      ],
+      "category": "Expert",
+      "durability": 2000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 20,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 22,
+    "data": {
+      "mats": [
+        "x3 Cloth",
+        "x3 Fiber",
+        "x2 Irithine"
+      ],
+      "name": "Experienced Adventurer",
+      "notes": 25,
+      "stealth": 0,
+      "talents": [
+        408
+      ],
+      "category": "Adept",
+      "durability": 1000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 10,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 0,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 23,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Rock"
+      ],
+      "name": "Familiar Heretic's Armor",
+      "notes": 30,
+      "stealth": 0,
+      "talents": [
+        52
+      ],
+      "category": "Unique",
+      "durability": 1300,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 10,
+        "ironsing": 0,
+        "physical": 15,
+        "bloodrend": 0,
+        "elemental": 0,
+        "frostdraw": 0,
+        "flamecharm": 25,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 24,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Rock"
+      ],
+      "name": "Familiar Knight's Armor",
+      "notes": 30,
+      "stealth": 0,
+      "talents": [
+        52
+      ],
+      "category": "Unique",
+      "durability": 1300,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 10,
+        "ironsing": 0,
+        "physical": 15,
+        "bloodrend": 0,
+        "elemental": 0,
+        "frostdraw": 0,
+        "flamecharm": 25,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 25,
+    "data": {
+      "mats": [
+        "x7 Cloth",
+        "x5 Fiber",
+        "x5 Spark Glands",
+        "x10 Vibrant Gems",
+        "x1 Void Feather"
+      ],
+      "name": "Ferryman's Coat",
+      "notes": 400,
+      "stealth": 0,
+      "talents": [
+        199
+      ],
+      "category": "Unique",
+      "durability": 2500,
+      "ether regen": 50,
+      "resistances": {
+        "blunt": 5,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 20,
+        "bloodrend": 0,
+        "elemental": 35,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 5,
+        "thundercall": 25
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 12,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 26,
+    "data": {
+      "mats": [
+        "x4 Cloth",
+        "x4 Fiber",
+        "x2 Iron"
+      ],
+      "name": "Flame Worshipper Armor",
+      "notes": 30,
+      "stealth": 0,
+      "talents": [
+        736
+      ],
+      "category": "Adept",
+      "durability": 1000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 5,
+        "frostdraw": 0,
+        "flamecharm": 25,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 27,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x5 Erisore",
+        "x5 Gold",
+        "x5 Irithine",
+        "x6 Iron",
+        "x2 Dark Feather"
+      ],
+      "name": "Grand Pathfinder Cloak",
+      "notes": 150,
+      "stealth": 40,
+      "talents": [
+        250
+      ],
+      "category": "Expert",
+      "durability": 2000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 20,
+        "bloodrend": 0,
+        "elemental": 20,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 28,
+    "data": {
+      "mats": [
+        "x10 Cloth",
+        "x5 Fiber",
+        "x5 Gold",
+        "x1 Wayward Gem",
+        "x5 Vibrant Gem"
+      ],
+      "name": "Heretic's Memento",
+      "notes": 500,
+      "stealth": 0,
+      "talents": [
+        116
+      ],
+      "category": "Unique",
+      "durability": 2000,
+      "ether regen": 100,
+      "resistances": {
+        "blunt": 10,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 25,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 5,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 29,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Iron"
+      ],
+      "name": "Hired Mercenary",
+      "notes": 25,
+      "stealth": 0,
+      "talents": [],
+      "category": "Starter",
+      "durability": 1000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 15,
+        "bloodrend": 0,
+        "elemental": 10,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 0,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 30,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x2 Megalodaunt Hide",
+        "x1 Iron"
+      ],
+      "name": "Hive Drone",
+      "notes": 10,
+      "stealth": 0,
+      "talents": [
+        "Now You See Me"
+      ],
+      "category": "Expert",
+      "durability": 1000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 5,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 25,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 31,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x2 Iron",
+        "x2 Dark Feather",
+        "x3 Vibrant Gems"
+      ],
+      "name": "Hive Tactician Armor",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [
+        406
+      ],
+      "category": "Expert",
+      "durability": 1200,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 20,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 10,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 25,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 32,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Blue Gem",
+        "x8 Iron",
+        "x5 Frigid Prism",
+        "x5 Vibrant Gem"
+      ],
+      "name": "Icebringer's Vestments",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        418,
+        743
+      ],
+      "category": "Master",
+      "durability": 2600,
+      "ether regen": 75,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 20,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 45,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 33,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Blue Gem",
+        "x5 Vibrant Gems",
+        "x1 Bounder Claw",
+        "x1 Worn Cog",
+        "x1 Frozen Membrane"
+      ],
+      "name": "Ignition Deepdelver",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        284
+      ],
+      "category": "Master",
+      "durability": 3000,
+      "ether regen": 20,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 15,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 35,
+        "frostdraw": 15,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 34,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x2 Megalodaunt Hide",
+        "x1 Rock"
+      ],
+      "name": "Ignition Trailblazer",
+      "notes": 30,
+      "stealth": 0,
+      "talents": [
+        64,
+        167
+      ],
+      "category": "Expert",
+      "durability": 1000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 5,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 25,
+        "frostdraw": 0,
+        "flamecharm": 5,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 35,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x3 Irithine",
+        "x1 Lionfish Scale"
+      ],
+      "name": "Ignition Union Uniform",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [],
+      "category": "Adept",
+      "durability": 2000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 22,
+        "bloodrend": 0,
+        "elemental": 22,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 6,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 36,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x5 Iron",
+        "x5 Erisore"
+      ],
+      "name": "Ignition Welder",
+      "notes": 300,
+      "stealth": 0,
+      "talents": [
+        39
+      ],
+      "category": "Expert",
+      "durability": 3000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 25,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 10,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 37,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x1 Dark Feather",
+        "x5 Fiber",
+        "x5 Gale Stone",
+        "x1 Thresher Spine",
+        "x1 Wind Gem"
+      ],
+      "name": "Jade Vigil's Weave",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        323
+      ],
+      "category": "Master",
+      "durability": 2800,
+      "ether regen": 25,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 25,
+        "elemental": 25,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 15,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 10,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 38,
+    "data": {
+      "mats": [
+        "x7 Cloth",
+        "x5 Fiber",
+        "x10 Vibrant Gem"
+      ],
+      "name": "Jester's Garb",
+      "notes": 400,
+      "stealth": 0,
+      "talents": [
+        409,
+        273
+      ],
+      "category": "Unique",
+      "durability": 2500,
+      "ether regen": 50,
+      "resistances": {
+        "blunt": 15,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 20,
+        "bloodrend": 0,
+        "elemental": 35,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 12,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 39,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Wayward Gem",
+        "x5 Gale Stone",
+        "x1 Dark Feather",
+        "x4 Thresher Spine"
+      ],
+      "name": "Justicar's Armor",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        331
+      ],
+      "category": "Master",
+      "durability": 2800,
+      "ether regen": 20,
+      "resistances": {
+        "blunt": 5,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 5,
+        "flamecharm": 0,
+        "shadowcast": 5,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 40,
+    "data": {
+      "mats": [
+        "x3 Cloth",
+        "x3 Fiber",
+        "x1 Iron"
+      ],
+      "name": "Keeper",
+      "notes": 25,
+      "stealth": 0,
+      "talents": [],
+      "category": "Adept",
+      "durability": 1000,
+      "ether regen": 20,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 5,
+        "bloodrend": 0,
+        "elemental": 5,
+        "frostdraw": 10,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 10,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 10
+      }
+    }
+  },
+  {
+    "id": 41,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Blue Gem",
+        "x5 Gale Stone",
+        "x1 Dark Feather",
+        "x1 Thresher Spine"
+      ],
+      "name": "Legion Centurion",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        357
+      ],
+      "category": "Master",
+      "durability": 3000,
+      "ether regen": 20,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 5,
+        "thundercall": 5
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 10,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 42,
+    "data": {
+      "mats": [
+        "x7 Cloth",
+        "x5 Fiber",
+        "x1 Odd Tentacle"
+      ],
+      "name": "Martial Artist",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [
+        98
+      ],
+      "category": "Expert",
+      "durability": 1200,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 20,
+        "frostdraw": 0,
+        "flamecharm": 5,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 15,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 43,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber"
+      ],
+      "name": "Merchant Robes",
+      "notes": 25,
+      "stealth": 0,
+      "talents": [
+        "Mates' Rates"
+      ],
+      "category": "Starter",
+      "durability": 1200,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 0,
+        "bloodrend": 0,
+        "elemental": 0,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 0,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 44,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x8 Erisore",
+        "x2 Frigid Prisms"
+      ],
+      "name": "Navaen Nomad Robes",
+      "notes": 100,
+      "stealth": 50,
+      "talents": [
+        "Fists of Navae (Bugged)"
+      ],
+      "category": "Adept",
+      "durability": 1800,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 10,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 10,
+        "frostdraw": 15,
+        "flamecharm": 0,
+        "shadowcast": 15,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 45,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Wind Gem",
+        "x8 Erisore",
+        "x2 Frigid Prisms",
+        "x1 Odd Tentacle",
+        "x2 Thresher Spine"
+      ],
+      "name": "Navaen War Chief",
+      "notes": 1000,
+      "stealth": 50,
+      "talents": [
+        450
+      ],
+      "category": "Master",
+      "durability": 3000,
+      "ether regen": 20,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 10,
+        "flamecharm": 0,
+        "shadowcast": 5,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 46,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x10 Irithine",
+        "x1 Lionfish Scale",
+        "x1 Strange Claw"
+      ],
+      "name": "Pathfinder Arch-Sorcerer",
+      "notes": 100,
+      "stealth": 0,
+      "talents": [
+        42
+      ],
+      "category": "Expert",
+      "durability": 1500,
+      "ether regen": 40,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 25,
+        "frostdraw": 10,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 10
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 25
+      }
+    }
+  },
+  {
+    "id": 47,
+    "data": {
+      "mats": [
+        "x4 Cloth",
+        "x4 Fiber",
+        "x6 Iron"
+      ],
+      "name": "Pathfinder Cloak",
+      "notes": 30,
+      "stealth": 0,
+      "talents": [
+        468
+      ],
+      "category": "Adept",
+      "durability": 1200,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 18,
+        "bloodrend": 0,
+        "elemental": 8,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 48,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Rock"
+      ],
+      "name": "Pathfinder Sorcerer",
+      "notes": 30,
+      "stealth": 0,
+      "talents": [
+        "Now You See Me"
+      ],
+      "category": "Starter",
+      "durability": 1000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 5,
+        "bloodrend": 0,
+        "elemental": 10,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 0,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 5
+      }
+    }
+  },
+  {
+    "id": 49,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Rock"
+      ],
+      "name": "Pathfinder Thaumaturge",
+      "notes": 30,
+      "stealth": 0,
+      "talents": [
+        "Now You See Me"
+      ],
+      "category": "Adept",
+      "durability": 1000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 15,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 10
+      }
+    }
+  },
+  {
+    "id": 50,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x1 Bloodless Gem",
+        "x5 Vibrant Gem",
+        "x5 Umbral Obsidian",
+        "x1 Dark Feather",
+        "x1 Odd Tentacle",
+        "x1 Thresher Spine"
+      ],
+      "name": "Prophet's Cloak",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        392
+      ],
+      "category": "Master",
+      "durability": 2600,
+      "ether regen": 50,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 25,
+        "frostdraw": 20,
+        "flamecharm": 20,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 51,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 King Thresher Spine",
+        "x10 Umbral Obsidian",
+        "x5 Vibrant Gem",
+        "x1 Void Feather"
+      ],
+      "name": "Royal Etrean Guard",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        410
+      ],
+      "category": "Master",
+      "durability": 3000,
+      "ether regen": 20,
+      "resistances": {
+        "blunt": 0,
+        "slash": 5,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 20,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 52,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x5 Heart Star",
+        "x8 Umbrite",
+        "x1 Bloodless Gem",
+        "x5 Vibrant Gem"
+      ],
+      "name": "Sanguine Finery",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        419,
+        90
+      ],
+      "category": "Master",
+      "durability": 2600,
+      "ether regen": 75,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 25,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 45,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 53,
+    "data": {
+      "mats": [
+        "x3 Cloth",
+        "x3 Fiber"
+      ],
+      "name": "Scholar",
+      "notes": 50,
+      "stealth": 0,
+      "talents": [
+        411
+      ],
+      "category": "Starter",
+      "durability": 1000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 8,
+        "bloodrend": 0,
+        "elemental": 10,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 0,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 54,
+    "data": {
+      "mats": [
+        "x10 Cloth",
+        "x10 Fiber",
+        "x5 Iron",
+        "x2 Megalodaunt Hide"
+      ],
+      "name": "Seamstress's Attire",
+      "notes": 100,
+      "stealth": 0,
+      "talents": [],
+      "category": "Expert",
+      "durability": 2000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 20,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 8,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 55,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x2 Gold",
+        "x10 Iron"
+      ],
+      "name": "Shadow Hunter",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [
+        "Now You See Me"
+      ],
+      "category": "Adept",
+      "durability": 1500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 5,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 10,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 0,
+        "agility": 10,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 56,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Crystal Lens"
+      ],
+      "name": "Skeptic Pioneer",
+      "notes": 25,
+      "stealth": 0,
+      "talents": [
+        26
+      ],
+      "category": "Starter",
+      "durability": 1200,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 12,
+        "bloodrend": 0,
+        "elemental": 12,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 0,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 57,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Insignia Gem",
+        "x8 Iron",
+        "x5 Spark Gland",
+        "x5 Vibrant Gem"
+      ],
+      "name": "Stormchanter's Raiments",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        337,
+        415
+      ],
+      "category": "Master",
+      "durability": 2600,
+      "ether regen": 75,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 25,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 25
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 45,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 58,
+    "data": {
+      "mats": [],
+      "name": "Stranded",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [],
+      "category": "Starter",
+      "durability": 0,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 0,
+        "bloodrend": 0,
+        "elemental": 0,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 0,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 59,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x10 Iron"
+      ],
+      "name": "Summer Company Uniform",
+      "notes": 100,
+      "stealth": 0,
+      "talents": [
+        252
+      ],
+      "category": "Adept",
+      "durability": 1500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 10,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 5,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 25,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 60,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x1 Bloodless Gem",
+        "x5 Vibrant Gem",
+        "x1 Megalodaunt Hide",
+        "x1 Bounder Claw",
+        "x1 Thresher Spine"
+      ],
+      "name": "Summer Dragoon",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        604
+      ],
+      "category": "Master",
+      "durability": 2800,
+      "ether regen": 20,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 20,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 61,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x5 Gale Stone",
+        "x8 Iron",
+        "x5 Vibrant Gem",
+        "x1 Wind Gem"
+      ],
+      "name": "Tempestmaker's Threads",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        417,
+        17
+      ],
+      "category": "Master",
+      "durability": 2600,
+      "ether regen": 75,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 25,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 45,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 62,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x3 Might Gem",
+        "x3 Wrath Gem",
+        "x1 Titus' Armor Piece",
+        "x1 Warden's Armor Piece"
+      ],
+      "name": "Titus Raiment",
+      "notes": 2500,
+      "stealth": 0,
+      "talents": [
+        712
+      ],
+      "category": "Master",
+      "durability": 3000,
+      "ether regen": 30,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 35,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 10,
+        "thundercall": 10
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 15,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 30,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 63,
+    "data": {
+      "mats": [
+        "x1 Cloth"
+      ],
+      "name": "Traveler Jacket",
+      "notes": 10,
+      "stealth": 0,
+      "talents": [],
+      "category": "Starter",
+      "durability": 1000,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 10,
+        "bloodrend": 0,
+        "elemental": 0,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 0,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 64,
+    "data": {
+      "mats": [
+        "x7 Cloth",
+        "x5 Fiber",
+        "x10 Vibrant Gem"
+      ],
+      "name": "Trickster's Habit",
+      "notes": 400,
+      "stealth": 0,
+      "talents": [
+        409,
+        273
+      ],
+      "category": "Unique",
+      "durability": 2500,
+      "ether regen": 50,
+      "resistances": {
+        "blunt": 15,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 20,
+        "bloodrend": 0,
+        "elemental": 35,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 12,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 65,
+    "data": {
+      "mats": [
+        "x10 Cloth",
+        "x10 Fiber",
+        "x5 Iron",
+        "x5 Megalodaunt Hide"
+      ],
+      "name": "Troublemaker's Overcoat",
+      "notes": 100,
+      "stealth": 0,
+      "talents": [],
+      "category": "Expert",
+      "durability": 2500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 20,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 8,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 66,
+    "data": {
+      "mats": [],
+      "name": "Union Initiate",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [],
+      "category": "Starter",
+      "durability": 1500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 15,
+        "bloodrend": 0,
+        "elemental": 5,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 6,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 67,
+    "data": {
+      "mats": [
+        "x3 Alestrian Coral",
+        "x7 Cloth",
+        "x5 Fiber",
+        "x5 Irithine",
+        "x10 Vibrant Gem"
+      ],
+      "name": "Varicosan Finery",
+      "notes": 100,
+      "stealth": 0,
+      "talents": [
+        434
+      ],
+      "category": "Expert",
+      "durability": 1500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 20,
+        "bloodrend": 0,
+        "elemental": 20,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 68,
+    "data": {
+      "mats": [
+        "x10 Cloth",
+        "x2 Megalodaunt Hide",
+        "x2 Vibrant Gems"
+      ],
+      "name": "Verdant Sniper",
+      "notes": 100,
+      "stealth": 0,
+      "talents": [],
+      "category": "Expert",
+      "durability": 1500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 20,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 10,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 69,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x2 Gold",
+        "x10 Iron",
+        "x2 Lionfish Scale"
+      ],
+      "name": "Veteran Adventurer",
+      "notes": 100,
+      "stealth": 0,
+      "talents": [
+        612
+      ],
+      "category": "Expert",
+      "durability": 1500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 15,
+        "bloodrend": 0,
+        "elemental": 15,
+        "frostdraw": 0,
+        "flamecharm": 5,
+        "shadowcast": 5,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 70,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x4 Iron"
+      ],
+      "name": "Vigil Initiate",
+      "notes": 0,
+      "stealth": 0,
+      "talents": [
+        410
+      ],
+      "category": "Adept",
+      "durability": 1200,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 10,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 20,
+        "bloodrend": 0,
+        "elemental": 0,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 71,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x5 Gale Stone",
+        "x5 Irithine",
+        "x5 Vibrant Gem",
+        "x1 Wind Gem"
+      ],
+      "name": "Vigil Sentinel",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        416,
+        686
+      ],
+      "category": "Master",
+      "durability": 2500,
+      "ether regen": 25,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 30,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 10,
+        "shadowcast": 10,
+        "galebreathe": 25,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 5,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 72,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x2 Gold",
+        "x10 Iron",
+        "x2 Lionfish Scale"
+      ],
+      "name": "Whaler Coat",
+      "notes": 100,
+      "stealth": 50,
+      "talents": [],
+      "category": "Expert",
+      "durability": 1500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 15,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 73,
+    "data": {
+      "mats": [
+        "Obtained from Voidwalker Origin"
+      ],
+      "name": "Whaler Initiate",
+      "notes": 0,
+      "stealth": 25,
+      "talents": [],
+      "category": "Starter",
+      "durability": 1500,
+      "ether regen": 0,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 5,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 5,
+        "agility": 0,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  },
+  {
+    "id": 74,
+    "data": {
+      "mats": [
+        "x5 Cloth",
+        "x5 Fiber",
+        "x8 Erisore",
+        "x5 Gale stone",
+        "x5 Vibrant Gem",
+        "x1 Wind Gem"
+      ],
+      "name": "Windrunner Robes",
+      "notes": 1000,
+      "stealth": 0,
+      "talents": [
+        413
+      ],
+      "category": "Master",
+      "durability": 2600,
+      "ether regen": 50,
+      "resistances": {
+        "blunt": 0,
+        "slash": 0,
+        "ironsing": 0,
+        "physical": 25,
+        "bloodrend": 0,
+        "elemental": 30,
+        "frostdraw": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 25,
+        "thundercall": 0
+      },
+      "requirements": {
+        "body": 0,
+        "mind": 0,
+        "power": 10,
+        "agility": 10,
+        "charisma": 0,
+        "ironsing": 0,
+        "strength": 0,
+        "bloodrend": 0,
+        "fortitude": 0,
+        "frostdraw": 0,
+        "willpower": 0,
+        "flamecharm": 0,
+        "shadowcast": 0,
+        "galebreathe": 0,
+        "thundercall": 0,
+        "intelligence": 0
+      }
+    }
+  }
+]
