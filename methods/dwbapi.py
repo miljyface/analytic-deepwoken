@@ -13,6 +13,7 @@ class dwbBuild:
         response = requests.get(f'https://api.deepwoken.co/build?id={build_id}')
         data = response.json()
         stats = data['stats']
+        self.rawdata = response.json()
         self.name = stats['buildName']
         self.desc = stats['buildDescription']
         self.talents = data['talents']
