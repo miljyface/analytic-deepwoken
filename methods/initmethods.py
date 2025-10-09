@@ -25,9 +25,27 @@ def update_json(data, file_path):
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"Saved {len(data)} rows to {file_path}")
 
-with open('data/talents.json') as f:
-    talentBase = json.load(f)
-talent_names = [tb.get('name', '') for tb in talentBase]
-model = SentenceTransformer("google/embeddinggemma-300m")
-doc_embeddings = model.encode_document(talent_names)
-np.save('data/talent_embeddings.npy', doc_embeddings)
+def update_weights():
+    with open('data/talents.json') as f:
+        talentBase = json.load(f)
+
+    with open('data/mantras.json') as f:
+        mantraBase = json.load(f)
+
+    with open('data/equipments.json') as f:
+        equipmentBase = json.load(f)
+
+    with open('data/outfits.json') as f:
+        outfitBase = json.load(f)
+    
+    mantra_names = [mb.get('name', '') for mb in mantraBase]
+    equipment_names = [eb['data']['name'] for eb in equipmentBase]
+    outfit_names = [ob['data']['name'] for ob in outfitBase]
+    talent_names = [tb.get('name', '') for tb in talentBase]
+
+    model = SentenceTransformer("google/embeddinggemma-300m")
+
+    np.save('data/weights/mantra_embeddings.npy', model.encode_document(mantra_names))
+    np.save('data/weights/equipment_embeddings.npy', model.encode_document(equipment_names))
+    np.save('data/weights/outfit_embeddings.npy', model.encode_document(outfit_names))
+    np.save('data/weights/talent_embeddings.npy', model.encode_document(talent_names))

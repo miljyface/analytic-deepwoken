@@ -31,6 +31,16 @@ def build_talent_embed(talent: dict) -> discord.Embed:
     )
     return embed
 
+def build_mantra_embed(mantra: dict) -> discord.Embed:
+    pass
+
+def build_equipment_embed(equipment: dict) -> discord.Embed:
+    pass
+
+def build_outfit_embed(outfit: dict) -> discord.Embed:
+    pass
+
+
 def get_deepwoken_build_embed(build_id: str):
     build = dwb.dwbBuild(build_id)
     stats = build.rawdata
