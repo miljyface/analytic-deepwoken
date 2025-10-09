@@ -27,7 +27,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 #constants
-PREFIX = '@'
+PREFIX = '.'
 load_dotenv()
 BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
 client = discord.Client(intents=intents)
@@ -94,7 +94,7 @@ async def on_message(message):
             if 'https://deepwoken.co/builder?id=' in replied_msg.content:
                 try:
                     link = replied_msg.content.split('https://deepwoken.co/builder?id=')[1].split()[0]
-                    build_id = link.split('&')[0]  # In case of extra parameters
+                    build_id = link.split('&')[0]
                     build = dwb.dwbBuild(build_id)
                     if message.content.strip().lower() == 'analytics':
                         summary = (
@@ -105,7 +105,6 @@ async def on_message(message):
                     elif message.content.strip().lower() == 'display':
                         embeds = emb.get_deepwoken_build_embed(build_id)
                         for embed in embeds:
-                            print(embed.to_dict())  # See exactly what would be sent
                             await message.channel.send(embed=embed, reference = message)
                 except Exception as e:
                     await message.channel.send(f'Error fetching build: {str(e)}')

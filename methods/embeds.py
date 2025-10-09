@@ -1,6 +1,12 @@
 import discord
 import methods.dwbapi as dwb
 from methods.shrineoforder import order
+import json
+
+with open('data/categories.json') as f:
+    categories = json.load(f)
+category_map = {entry["id"]: entry["name"] for entry in categories}
+
 
 def build_talent_embed(talent: dict) -> discord.Embed:
     data = talent.get("data", {})
@@ -22,17 +28,50 @@ def build_talent_embed(talent: dict) -> discord.Embed:
     if exclusive_with:
         embed.add_field(name="Exclusive With", value="\n".join(exclusive_with), inline=False)
     # Category and Vaulted
-    embed.add_field(name="Category", value=str(data.get("category", "N/A")), inline=True)
+    category_name = category_map.get(data.get("category", 1), "Unknown")
+    embed.add_field(name="Category", value = category_name, inline=True)
     embed.add_field(name="Vaulted", value=str(data.get("vaulted", False)), inline=True)
     # Footer
     embed.set_footer(
-        text=f"Auto Talent: {data.get('autotalent', False)} • "
-             f"Does not count toward total: {data.get('dontcounttowardstotal', False)}"
+        text=f"Does not count toward total: {data.get('dontcounttowardstotal', False)}"
     )
     return embed
 
 def build_mantra_embed(mantra: dict) -> discord.Embed:
-    pass
+    # Basic setup
+    name = mantra.get('name', 'Unknown')
+    description = mantra.get('description', 'No description available.')
+    stars = mantra.get('stars', 'N/A')
+    category = mantra.get('category', 'N/A')
+    mantra_type = mantra.get('mantra_type', 'N/A')
+    attributes = ', '.join(mantra.get('attribute', [])) if mantra.get('attribute') else 'None'
+    gif_url = mantra.get('gif', '')
+
+    # Requirements formatting
+    reqs = mantra.get('reqs', {})
+    attunement_reqs = ', '.join(f"{k}: {v}" for k, v in reqs.get('attunement', {}).items()) if reqs.get('attunement') else 'None'
+    base_reqs = ', '.join(f"{k}: {v}" for k, v in reqs.get('base', {}).items()) if reqs.get('base') else 'None'
+    weapon_reqs = ', '.join(f"{k}: {v}" for k, v in reqs.get('weapon', {}).items()) if reqs.get('weapon') else 'None'
+    weapon_type = reqs.get('weaponType', 'None')
+
+    embed = discord.Embed(
+        title=f"{name} {'★' * int(stars) if str(stars).isdigit() else ''}",
+        description=description,
+        color=0xffffff
+    )
+    embed.add_field(name="Category", value=category, inline=True)
+    embed.add_field(name="Type", value=mantra_type, inline=True)
+    embed.add_field(name="Attribute", value=attributes, inline=True)
+    embed.add_field(name="Attunement Requirement", value=attunement_reqs, inline=False) if attunement_reqs != 'None' else None
+    embed.add_field(name="Base Requirement", value=base_reqs, inline=False) if base_reqs != 'None' else None
+    embed.add_field(name="Weapon Requirement", value=weapon_reqs, inline=False) if weapon_reqs != 'None' else None
+
+    # If there's a gif, add as image
+    if gif_url:
+        embed.set_image(url=gif_url)
+
+    return embed
+
 
 def build_equipment_embed(equipment: dict) -> discord.Embed:
     pass
@@ -61,9 +100,6 @@ def get_deepwoken_build_embed(build_id: str):
     traits = stats.get('traits', {})
     traits_str = '\n'.join([f"{v} {k}" for k, v in traits.items() if v > 0]) or "None"
     embed_meta.add_field(name="Traits", value=traits_str, inline=False)
-
-    
-
 
     weapon_names = ['Heavy Wep.', 'Medium Wep.', 'Light Wep.']
     base_names = ['Strength', 'Fortitude', 'Agility', 'Intelligence', 'Willpower', 'Charisma']
