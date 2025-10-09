@@ -1,4 +1,7 @@
 from supabase import create_client, Client
+from sentence_transformers import SentenceTransformer
+import torch
+import numpy as np
 import json
 import dotenv
 import os
@@ -22,4 +25,9 @@ def update_json(data, file_path):
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"Saved {len(data)} rows to {file_path}")
 
-update_json(fetch_table('categories'), 'data/categories.json')
+with open('data/talents.json') as f:
+    talentBase = json.load(f)
+talent_names = [tb.get('name', '') for tb in talentBase]
+model = SentenceTransformer("google/embeddinggemma-300m")
+doc_embeddings = model.encode_document(talent_names)
+np.save('data/talent_embeddings.npy', doc_embeddings)
