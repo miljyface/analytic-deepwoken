@@ -1,6 +1,5 @@
 import discord
 import os
-import json
 import numpy as np
 from dotenv import load_dotenv
 
@@ -8,20 +7,10 @@ import methods.initmethods as init
 import methods.dwbapi as dwb
 import methods.embeds as emb
 from methods.lookup import find
-from methods.lookup import fetch_mantra, fetch_outfit, fetch_equipment, fetch_talent
+from methods.lookup import fetch_mantra, fetch_outfit, fetch_equipment, fetch_talent, fetch_weapon
 from methods.shrineoforder import order
 
-with open('data/talents.json') as f:
-    talentBase = json.load(f)
-
-with open('data/mantras.json') as f:
-    mantraBase = json.load(f)
-
-with open('data/equipments.json') as f:
-    equipmentBase = json.load(f)
-
-with open('data/outfits.json') as f:
-    outfitBase = json.load(f)
+from methods.initmethods import talent_names, mantra_names, equipment_names, outfit_names, weapon_names
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -31,10 +20,6 @@ PREFIX = '.'
 load_dotenv()
 BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
 client = discord.Client(intents=intents)
-talent_names = [tb.get('name', '') for tb in talentBase]
-mantra_names = [mb.get('name', '') for mb in mantraBase]    
-equipment_names = [eb['data']['name'] for eb in equipmentBase]
-outfit_names = [ob['data']['name'] for ob in outfitBase]
 
 @client.event
 async def on_ready():
@@ -52,7 +37,8 @@ async def on_message(message):
         'talent': talent_names,
         'mantra': mantra_names,
         'outfit': outfit_names,
-        'equipment': equipment_names
+        'equipment': equipment_names,
+        'weapon': weapon_names
     }
     
     for type_name, name_list in prefixes.items():
@@ -76,6 +62,9 @@ async def on_message(message):
             elif type_name == 'equipment':
                 fetch_func = fetch_equipment
                 build_embed = emb.build_equipment_embed
+            elif type_name == 'weapon':
+                fetch_func = fetch_weapon
+                build_embed = emb.build_weapon_embed
             
             if match:
                 embed = build_embed(fetch_func(match))

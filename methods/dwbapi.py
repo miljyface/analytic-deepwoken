@@ -1,8 +1,6 @@
 import requests
 import json
-
-with open('data/talents.json') as f:
-    talentBase = json.load(f)
+from methods.initmethods import talentBase
 
 
 class dwbBuild:

@@ -1,0 +1,5383 @@
+[
+  {
+    "id": 1,
+    "name": "Sword",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 18,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 2.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 2,
+    "name": "Guiding Star",
+    "type": "Bow",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {
+          "Mind": 25
+        },
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.05,
+      "damage": 14,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 10
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 3,
+    "name": "Ignition Deepcrusher (Bleed)",
+    "type": "Club",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 40
+        },
+        "attunement": {
+          "Ironsing": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.05,
+      "damage": 18,
+      "weight": 4,
+      "scaling": {
+        "Ironsing": 4,
+        "Medium Wep.": 3
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 4,
+    "name": "Mace",
+    "type": "Club",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 10
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 0.93,
+      "damage": 20,
+      "weight": 6,
+      "scaling": {
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 5,
+    "name": "Morning Star (Bleed)",
+    "type": "Club",
+    "damagetype": "Blunt + Bleed",
+    "details": {
+      "pen": 0.2,
+      "chip": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 50
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 0.98,
+      "damage": 16,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 5.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 6,
+    "name": "Pernach (Bleed)",
+    "type": "Club",
+    "damagetype": "Blunt + Bleed",
+    "details": {
+      "pen": 0.3,
+      "chip": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.98,
+      "damage": 18.5,
+      "weight": 7,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 7,
+    "name": "Pleeksty's Inferno",
+    "type": "Club",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.3,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 40
+        },
+        "attunement": {
+          "Flamecharm": 80
+        },
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.94,
+      "damage": 22,
+      "weight": 8,
+      "scaling": {
+        "Flamecharm": 4,
+        "Medium Wep.": 3
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 8,
+    "name": "Sacred Hammer",
+    "type": "Club",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 65
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 0.97,
+      "damage": 19.5,
+      "weight": 6,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 9,
+    "name": "The Pastry Paster",
+    "type": "Club",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {
+          "Mind": 30
+        },
+        "weapon": {
+          "Medium Wep.": 70
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 1,
+      "damage": 18,
+      "weight": 7,
+      "scaling": {
+        "Mind": 3,
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 10,
+    "name": "Toothed Club (Bleed)",
+    "type": "Club",
+    "damagetype": "Blunt + Bleed",
+    "details": {
+      "pen": 0.1,
+      "chip": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 30
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 0.98,
+      "damage": 15.5,
+      "weight": 6,
+      "scaling": {
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 11,
+    "name": "Alloyed Tanto",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 80
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 1.14,
+      "damage": 16,
+      "weight": 3,
+      "scaling": {
+        "Light Wep.": 8.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 12,
+    "name": "Alloyed Whaling Knife",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.25,
+      "damage": 15,
+      "endlag": 0.05,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 13,
+    "name": "Canor Fang",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.25,
+      "damage": 11,
+      "endlag": 0.05,
+      "weight": 5,
+      "scaling": {
+        "Light Wep.": 10
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 14,
+    "name": "Central Dirk",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 50
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 0.96,
+      "damage": 15,
+      "endlag": 0.05,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 15,
+    "name": "Cerulean Thread",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "reqs": {
+        "base": {},
+        "power": 10,
+        "weapon": {
+          "Light Wep.": 85
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.2,
+      "damage": 16.5,
+      "endlag": 0.05,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 8.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 16,
+    "name": "Champion's Dagger",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 50
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.25,
+      "damage": 14.5,
+      "endlag": 0.05,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 17,
+    "name": "Divine Dagger",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.3,
+      "damage": 18,
+      "endlag": 0.05,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 18,
+    "name": "Flareblood Kamas (Bleed)",
+    "type": "Dagger",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.3,
+      "reqs": {
+        "base": {
+          "Intelligence": 30
+        },
+        "weapon": {
+          "Light Wep.": 60
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.25,
+      "damage": 13,
+      "endlag": 0.05,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 8,
+        "Intelligence": 2.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 19,
+    "name": "Gilded Knife",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 25
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.23,
+      "damage": 13,
+      "endlag": 0.05,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 20,
+    "name": "Krulian Knife",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.25,
+      "damage": 12.5,
+      "endlag": 0.05,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 10.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 21,
+    "name": "Kyrsedge",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.3,
+      "chip": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.25,
+      "damage": 13,
+      "endlag": 0.05,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 8.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 22,
+    "name": "Nemit's Sickle",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.3,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 60
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.25,
+      "damage": 11,
+      "endlag": 0.05,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 13
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 23,
+    "name": "Silver Dagger",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 35
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.25,
+      "damage": 12,
+      "endlag": 0.05,
+      "weight": 2,
+      "scaling": {
+        "Light Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 24,
+    "name": "Spectral Grasp",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 1.23,
+      "damage": 16,
+      "endlag": 0.05,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 25,
+    "name": "Stiletto",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.25,
+      "damage": 11,
+      "endlag": 0.05,
+      "weight": 2,
+      "scaling": {
+        "Light Wep.": 3
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 26,
+    "name": "Tanto",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 50
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.13,
+      "damage": 15.5,
+      "weight": 3,
+      "scaling": {
+        "Light Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 27,
+    "name": "The Flippers of Fate",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {
+          "Mind": 30
+        },
+        "weapon": {
+          "Light Wep.": 70
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 1.26,
+      "damage": 13,
+      "endlag": 0.04,
+      "weight": 3.5,
+      "scaling": {
+        "Mind": 5,
+        "Light Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 28,
+    "name": "Whaling Knife",
+    "type": "Dagger",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 1.25,
+      "damage": 15.3,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 29,
+    "name": "Anklets of Alsin",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.15,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 25
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 1.14,
+      "damage": 13.5,
+      "endlag": 0.05,
+      "weight": 3,
+      "scaling": {
+        "Light Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 30,
+    "name": "Broodalloy Cestus",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 85
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.09,
+      "damage": 15.5,
+      "weight": 5.5,
+      "scaling": {
+        "Light Wep.": 9.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 31,
+    "name": "Coral Cestus",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 50
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.09,
+      "damage": 16,
+      "weight": 5,
+      "scaling": {
+        "Light Wep.": 9.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 32,
+    "name": "Drakemaw Gauntlets (Bleed)",
+    "type": "Fists",
+    "damagetype": "Blunt + Bleed",
+    "details": {
+      "pen": 0.1,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.09,
+      "damage": 15,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 7.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 33,
+    "name": "Fist",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.11,
+      "damage": 12,
+      "weight": 3,
+      "scaling": {
+        "Light Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 34,
+    "name": "Flamekeeper Cestus",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 65
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.11,
+      "damage": 15.5,
+      "weight": 5,
+      "scaling": {
+        "Light Wep.": 9.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 35,
+    "name": "Gaunts of Enmity",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "chip": 0.2,
+      "reqs": {
+        "base": {
+          "Fortitude": 10
+        },
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.11,
+      "damage": 15,
+      "weight": 6,
+      "scaling": {
+        "Light Wep.": 10.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 36,
+    "name": "Iron Cestus",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.11,
+      "damage": 13.5,
+      "weight": 5,
+      "scaling": {
+        "Light Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 37,
+    "name": "Jus Karita",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 1.14,
+      "damage": 14,
+      "endlag": 0.05,
+      "weight": 3,
+      "scaling": {
+        "Light Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 38,
+    "name": "Legion Cestus",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 30
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.11,
+      "damage": 15,
+      "endlag": 0.05,
+      "weight": 5,
+      "scaling": {
+        "Light Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 39,
+    "name": "Light's Final Toll",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {
+          "Willpower": 60
+        },
+        "weapon": {
+          "Light Wep.": 35
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 1.1,
+      "damage": 12,
+      "weight": 5,
+      "scaling": {
+        "Willpower": 11,
+        "Light Wep.": 4
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 40,
+    "name": "Sovereign Bangle",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 0.98,
+      "damage": 32,
+      "weight": 8,
+      "scaling": {
+        "": null
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 41,
+    "name": "Vortex Echo",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "chip": 0.08,
+      "reqs": {
+        "base": {
+          "Charisma": 65
+        },
+        "weapon": {
+          "Light Wep.": 65
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.12,
+      "damage": 13.5,
+      "weight": 4,
+      "scaling": {
+        "Charisma": 3.5,
+        "Light Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 42,
+    "name": "Worldpiercer Gauntlets",
+    "type": "Fists",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {
+          "Strength": 30
+        },
+        "weapon": {
+          "Light Wep.": 85
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1.15,
+      "damage": 18,
+      "weight": 7,
+      "scaling": {
+        "Light Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 125,
+    "name": "Khan Shield",
+    "type": "Offhand",
+    "damagetype": "Unknown",
+    "details": {
+      "reqs": {
+        "base": {
+          "Fortitude": 60
+        },
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "weight": 2.1,
+      "scaling": {
+        "": null
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 43,
+    "name": "Wraithclaw",
+    "type": "Fists",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "chip": 0.25,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 25
+        },
+        "attunement": {
+          "Galebreathe": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 1.1,
+      "damage": 16,
+      "weight": 5,
+      "scaling": {
+        "Light Wep.": 4,
+        "Galebreathe": 5.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 44,
+    "name": "Adretian Axe",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 35
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.85,
+      "damage": 24,
+      "weight": 5,
+      "scaling": {
+        "Heavy Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 45,
+    "name": "Alloyed Adretian Axe",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.87,
+      "damage": 24,
+      "weight": 7,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 46,
+    "name": "Alloyed Canorian Axe",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.83,
+      "damage": 24,
+      "weight": 8,
+      "scaling": {
+        "Heavy Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 47,
+    "name": "Alloyed Halberd",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 24,
+      "weight": 5,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 48,
+    "name": "Battleaxe",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.83,
+      "damage": 20,
+      "weight": 6,
+      "scaling": {
+        "Heavy Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 49,
+    "name": "Canorian Axe",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 35
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.83,
+      "damage": 23.5,
+      "weight": 6,
+      "scaling": {
+        "Heavy Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 50,
+    "name": "Chorus of Agonies",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "chip": 0.25,
+      "reqs": {
+        "base": {
+          "Strength": 20
+        },
+        "power": 10,
+        "weapon": {
+          "Heavy Wep.": 100
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10,
+      "speed": 0.7,
+      "damage": 27.6,
+      "endlag": 0.1,
+      "weight": 10,
+      "scaling": {
+        "Heavy Wep.": 11
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 51,
+    "name": "Divine Axe",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10.1,
+      "speed": 0.8,
+      "damage": 28,
+      "weight": 8,
+      "scaling": {
+        "Heavy Wep.": 13
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 52,
+    "name": "Enforcer's Axe",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "power": 6,
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.79,
+      "damage": 26,
+      "weight": 8,
+      "scaling": {
+        "Heavy Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 53,
+    "name": "Evanspear Handaxe (Bleed)",
+    "type": "Greataxe",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 70
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.73,
+      "damage": 25,
+      "weight": 8,
+      "scaling": {
+        "Heavy Wep.": 9.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 54,
+    "name": "Gran Sudaruska",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.05,
+      "reqs": {
+        "base": {},
+        "power": 10,
+        "weapon": {
+          "Heavy Wep.": 30
+        },
+        "attunement": {
+          "Frostdraw": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.83,
+      "damage": 24,
+      "weight": 6,
+      "scaling": {
+        "Frostdraw": 8,
+        "Heavy Wep.": 4
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 55,
+    "name": "Halberd",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 25
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 22,
+      "weight": 5,
+      "scaling": {
+        "Heavy Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 56,
+    "name": "Iron Birch",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 50
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.85,
+      "damage": 26.5,
+      "weight": 4,
+      "scaling": {
+        "Heavy Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 57,
+    "name": "Master Hawk's Handaxe",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.05,
+      "chip": 0.25,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.8,
+      "damage": 24,
+      "weight": 10,
+      "scaling": {
+        "Heavy Wep.": 10
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 58,
+    "name": "Night Axe",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.05,
+      "chip": 0.8,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.77,
+      "damage": 23,
+      "weight": 10,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 59,
+    "name": "Pale Briar",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "power": 10,
+        "weapon": {
+          "Heavy Wep.": 85
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10,
+      "speed": 0.81,
+      "damage": 23,
+      "weight": 7,
+      "scaling": {
+        "Heavy Wep.": 7.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 60,
+    "name": "Quartztone Pickaxe",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.94,
+      "damage": 22,
+      "weight": 7,
+      "scaling": {
+        "Heavy Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 61,
+    "name": "Relic Axe",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.8,
+      "damage": 25,
+      "weight": 10,
+      "scaling": {
+        "Heavy Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 62,
+    "name": "Skyreap Blade",
+    "type": "Greataxe",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.91,
+      "damage": 23,
+      "weight": 7.5,
+      "scaling": {
+        "Heavy Wep.": 7.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 63,
+    "name": "Edenbrand Hellcoil",
+    "type": "Greatcannon",
+    "damagetype": "Blunt",
+    "details": {
+      "chip": 0.2,
+      "reqs": {
+        "base": {
+          "Strength": 30
+        },
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.8,
+      "damage": 27,
+      "endlag": 0.1,
+      "weight": 10,
+      "scaling": {
+        "Heavy Wep.": 8.3
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 64,
+    "name": "Alloyed Forge Greathammer",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 24,
+      "endlag": 0.1,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 65,
+    "name": "Alloyed Steel Maul",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.85,
+      "damage": 24,
+      "endlag": 0.1,
+      "weight": 7,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 66,
+    "name": "Boltcrusher",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.2,
+      "chip": 0.3,
+      "reqs": {
+        "base": {
+          "Strength": 20
+        },
+        "weapon": {
+          "Heavy Wep.": 55
+        },
+        "attunement": {
+          "Thundercall": 80
+        },
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.87,
+      "damage": 25,
+      "endlag": 0.15,
+      "weight": 8,
+      "scaling": {
+        "Heavy Wep.": 4.2,
+        "Thundercall": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 67,
+    "name": "Enforcer's Hammer",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.1,
+      "chip": 0.2,
+      "reqs": {
+        "base": {
+          "Strength": 25
+        },
+        "power": 10,
+        "weapon": {
+          "Heavy Wep.": 80
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.8,
+      "damage": 25,
+      "endlag": 0.1,
+      "weight": 12,
+      "scaling": {
+        "Heavy Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 68,
+    "name": "Forge Greathammer",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 55
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 24,
+      "endlag": 0.1,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 69,
+    "name": "Great Maul",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.05,
+      "chip": 0.1,
+      "reqs": {
+        "base": {
+          "Strength": 30
+        },
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.85,
+      "damage": 25,
+      "endlag": 0.1,
+      "weight": 10,
+      "scaling": {
+        "Heavy Wep.": 8.3
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 70,
+    "name": "Hivelord's Hubris",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.05,
+      "reqs": {
+        "base": {
+          "Strength": 60
+        },
+        "weapon": {
+          "Heavy Wep.": 100
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10,
+      "speed": 0.62,
+      "damage": 28,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 10
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 71,
+    "name": "Kanabo",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "chip": 0.1,
+      "reqs": {
+        "base": {
+          "Strength": 40
+        },
+        "weapon": {
+          "Heavy Wep.": 100
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 25,
+      "endlag": 0.1,
+      "weight": 9,
+      "scaling": {
+        "Strength": 3,
+        "Heavy Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 72,
+    "name": "Pale Morning",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "power": 10,
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.83,
+      "damage": 24,
+      "endlag": 0.1,
+      "weight": 10,
+      "scaling": {
+        "Heavy Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 73,
+    "name": "Petra's Anchor",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 26,
+      "endlag": 0.1,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 74,
+    "name": "Putrid Edenstaff",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.81,
+      "damage": 25,
+      "endlag": 0.1,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 8.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 75,
+    "name": "Rockmaller",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 55
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.82,
+      "damage": 25,
+      "endlag": 0.1,
+      "weight": 9.5,
+      "scaling": {
+        "Heavy Wep.": 7.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 76,
+    "name": "Sovereign's Punishment",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.2,
+      "chip": 0.1,
+      "reqs": {
+        "base": {
+          "Strength": 20
+        },
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.73,
+      "damage": 26,
+      "weight": 13,
+      "scaling": {
+        "Heavy Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 77,
+    "name": "Steel Maul",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 20
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 22,
+      "endlag": 0.1,
+      "weight": 7,
+      "scaling": {
+        "Heavy Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 78,
+    "name": "Stoneheart",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.1,
+      "chip": 0.1,
+      "reqs": {
+        "base": {
+          "Strength": 20
+        },
+        "weapon": {
+          "Heavy Wep.": 80
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.8,
+      "damage": 24,
+      "endlag": 0.1,
+      "weight": 12,
+      "scaling": {
+        "Heavy Wep.": 10
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 79,
+    "name": "Warmonger",
+    "type": "Greathammer",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {
+          "Strength": 30
+        },
+        "weapon": {
+          "Heavy Wep.": 60
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 22.9,
+      "endlag": 0.1,
+      "weight": 7,
+      "scaling": {
+        "Heavy Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 80,
+    "name": "Alloyed Crescent Cleaver (Bleed)",
+    "type": "Greatsword",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "chip": 0.2,
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 22.4,
+      "endlag": 0.1,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 9.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 81,
+    "name": "Alloyed Inheritor",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.85,
+      "damage": 24,
+      "weight": 8,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 82,
+    "name": "Alloyed Zweihander",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.83,
+      "damage": 23,
+      "endlag": 0.1,
+      "weight": 7,
+      "scaling": {
+        "Heavy Wep.": 10
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 83,
+    "name": "Avenger",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.83,
+      "damage": 21,
+      "endlag": 0.1,
+      "weight": 8,
+      "scaling": {
+        "Heavy Wep.": 6.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 84,
+    "name": "Bloodfouler (Bleed)",
+    "type": "Greatsword",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "power": 10,
+        "weapon": {
+          "Heavy Wep.": 50
+        },
+        "attunement": {
+          "Bloodrend": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 9.5,
+      "speed": 0.86,
+      "damage": 19,
+      "weight": 8.5,
+      "scaling": {
+        "Bloodrend": 4,
+        "Heavy Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 85,
+    "name": "Crescent Cleaver (Bleed)",
+    "type": "Greatsword",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 45
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 22.4,
+      "endlag": 0.1,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 86,
+    "name": "Crypt Blade",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "power": 10,
+        "weapon": {
+          "Heavy Wep.": 40
+        },
+        "attunement": {
+          "Shadowcast": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.85,
+      "damage": 22,
+      "endlag": 0.15,
+      "weight": 8.5,
+      "scaling": {
+        "Heavy Wep.": 4,
+        "Shadowcast": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 87,
+    "name": "Darkalloy Greatsword",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "chip": 0.1,
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 26,
+      "endlag": 0.1,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 88,
+    "name": "Darksteel Greatsword",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "power": 6,
+        "weapon": {
+          "Heavy Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 26,
+      "endlag": 0.1,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 89,
+    "name": "Divine Greatsword",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9.2,
+      "speed": 0.84,
+      "damage": 30,
+      "endlag": 0.25,
+      "weight": 8.5,
+      "scaling": {
+        "Heavy Wep.": 12
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 90,
+    "name": "Enforcer's Blade",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "chip": 0.15,
+      "reqs": {
+        "base": {
+          "Strength": 25
+        },
+        "power": 6,
+        "weapon": {
+          "Heavy Wep.": 80
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.79,
+      "damage": 25,
+      "weight": 10,
+      "scaling": {
+        "Heavy Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 91,
+    "name": "First Light",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.82,
+      "damage": 23,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 92,
+    "name": "Fractine",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "chip": 0.2,
+      "reqs": {
+        "base": {
+          "Intelligence": 40
+        },
+        "power": 10,
+        "weapon": {
+          "Heavy Wep.": 80
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.81,
+      "damage": 22,
+      "weight": 6,
+      "scaling": {
+        "Heavy Wep.": 7,
+        "Intelligence": 4
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 93,
+    "name": "Hailbreaker",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "power": 10,
+        "weapon": {
+          "Heavy Wep.": 65
+        },
+        "attunement": {
+          "Frostdraw": 55
+        },
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.85,
+      "damage": 22,
+      "endlag": 0.1,
+      "weight": 7.5,
+      "scaling": {
+        "Frostdraw": 4,
+        "Heavy Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 94,
+    "name": "Inquisitor's Greatsword",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.84,
+      "damage": 23.5,
+      "endlag": 0.1,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 8.3
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 95,
+    "name": "Kyrscleave (Bleed)",
+    "type": "Greatsword",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "chip": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.81,
+      "damage": 23,
+      "endlag": 0.1,
+      "weight": 9,
+      "scaling": {
+        "Heavy Wep.": 8.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 96,
+    "name": "Kyrsieger",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "chip": 0.1,
+      "reqs": {
+        "base": {
+          "Charisma": 15
+        },
+        "weapon": {
+          "Heavy Wep.": 50
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.83,
+      "damage": 24,
+      "weight": 9,
+      "scaling": {
+        "Charisma": 2,
+        "Heavy Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 97,
+    "name": "Lumensplitter",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {
+          "Strength": 40
+        },
+        "weapon": {
+          "Heavy Wep.": 100
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 24,
+      "endlag": 0.1,
+      "weight": 7,
+      "scaling": {
+        "Heavy Wep.": 8.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 98,
+    "name": "Markor's Inheritor",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 30
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.85,
+      "damage": 24,
+      "endlag": 0.1,
+      "weight": 8,
+      "scaling": {
+        "Heavy Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 99,
+    "name": "Railblade",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "reqs": {
+        "base": {},
+        "power": 10,
+        "weapon": {
+          "Heavy Wep.": 80
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 0.91,
+      "damage": 22,
+      "weight": 8,
+      "scaling": {
+        "Heavy Wep.": 8.3
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 100,
+    "name": "The Long Tong of the Law",
+    "type": "Greatsword",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "chip": 0.4,
+      "reqs": {
+        "base": {
+          "Mind": 30
+        },
+        "weapon": {
+          "Heavy Wep.": 70
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10,
+      "speed": 0.82,
+      "damage": 20,
+      "weight": 8,
+      "scaling": {
+        "Mind": 5,
+        "Heavy Wep.": 7.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 101,
+    "name": "Wretched Mawblades",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "chip": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.84,
+      "damage": 27,
+      "endlag": 0.1,
+      "weight": 8,
+      "scaling": {
+        "Heavy Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 126,
+    "name": "Kite Shield",
+    "type": "Offhand",
+    "damagetype": "Unknown",
+    "details": {
+      "reqs": {
+        "base": {
+          "Fortitude": 20
+        },
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "weight": 1.75,
+      "scaling": {
+        "": null
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 102,
+    "name": "Ysley's Pyre Keeper",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Heavy Wep.": 25,
+          "Light Wep.": 10
+        },
+        "attunement": {
+          "Flamecharm": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.93,
+      "damage": 21,
+      "weight": 5,
+      "scaling": {
+        "Flamecharm": 4,
+        "Heavy Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 103,
+    "name": "Zweihander",
+    "type": "Greatsword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {
+          "Strength": 10
+        },
+        "weapon": {
+          "Heavy Wep.": 20
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.8,
+      "damage": 22,
+      "endlag": 0.1,
+      "weight": 7,
+      "scaling": {
+        "Heavy Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 104,
+    "name": "Alloyed Dawnshot",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.05,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10.5,
+      "speed": 1.17,
+      "damage": 16,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 12
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 105,
+    "name": "Dawnshot",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10.5,
+      "speed": 1.17,
+      "damage": 14.8,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 12
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 106,
+    "name": "Divine Flintlock",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.14,
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 12,
+      "speed": 1.33,
+      "damage": 15,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 15
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 107,
+    "name": "Dragoon",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 65
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 11,
+      "speed": 1.17,
+      "damage": 16,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 12
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 108,
+    "name": "Flintlock",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 20
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10,
+      "speed": 1.17,
+      "damage": 11,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 12
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 109,
+    "name": "Iron Blunderbuss",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.25,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7,
+      "speed": 0.97,
+      "damage": 20,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 110,
+    "name": "Iron Requiem",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 40
+        },
+        "attunement": {
+          "Ironsing": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 10,
+      "speed": 1.17,
+      "damage": 21,
+      "weight": 1,
+      "scaling": {
+        "Ironsing": 4,
+        "Light Wep.": 3
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 111,
+    "name": "Repeater",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 65
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 12,
+      "speed": 1.25,
+      "damage": 14,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 15
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 112,
+    "name": "Rosen's Hellflame",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 40
+        },
+        "attunement": {
+          "Flamecharm": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 7,
+      "speed": 0.93,
+      "damage": 19,
+      "weight": 3,
+      "scaling": {
+        "Flamecharm": 4,
+        "Medium Wep.": 3
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 113,
+    "name": "Rosen's Peacemaker",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 18,
+      "weight": 4,
+      "scaling": {
+        "Medium Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 114,
+    "name": "Rosen's Roscoe",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "chip": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 11,
+      "speed": 1.2,
+      "damage": 16,
+      "weight": 3.5,
+      "scaling": {
+        "Light Wep.": 11
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 115,
+    "name": "Silversix",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10,
+      "speed": 1.17,
+      "damage": 10,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 13
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 116,
+    "name": "Stormseye",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "power": 6,
+        "weapon": {
+          "Medium Wep.": 40
+        },
+        "attunement": {
+          "Thundercall": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 19.5,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 3,
+        "Thundercall": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 117,
+    "name": "Summer Rifle",
+    "type": "Guns",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 17,
+      "weight": 4,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 118,
+    "name": "Lumber Axe",
+    "type": "Item",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 1,
+      "damage": 10,
+      "endlag": 0.65,
+      "weight": 3,
+      "scaling": {
+        "Strength": 10
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 119,
+    "name": "Alloyed Dawnshot (Offhand)",
+    "type": "Offhand",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.05,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10.5,
+      "speed": 1.17,
+      "damage": 16,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 12
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 120,
+    "name": "Dawnshot (Offhand)",
+    "type": "Offhand",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10.5,
+      "speed": 1.17,
+      "damage": 14.8,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 12
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 121,
+    "name": "Dragoon (Offhand)",
+    "type": "Offhand",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 65
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 12,
+      "speed": 1.17,
+      "damage": 17,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 12
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 122,
+    "name": "Ethiron Curseshield",
+    "type": "Offhand",
+    "damagetype": "Unknown",
+    "details": {
+      "reqs": {
+        "base": {
+          "Fortitude": 50
+        },
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "weight": 1.9,
+      "scaling": {
+        "": null
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 123,
+    "name": "Flintlock (Offhand)",
+    "type": "Offhand",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 20
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10,
+      "speed": 1.17,
+      "damage": 10,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 10
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 124,
+    "name": "Gourdguad",
+    "type": "Offhand",
+    "damagetype": "Unknown",
+    "details": {
+      "reqs": {
+        "base": {
+          "Fortitude": 50
+        },
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "weight": 1.9,
+      "scaling": {
+        "": null
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 127,
+    "name": "Kyrstear",
+    "type": "Offhand",
+    "damagetype": "Posture",
+    "details": {
+      "reqs": {
+        "base": {
+          "Agility": 40
+        },
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 1.3,
+      "damage": 5,
+      "endlag": 0.1,
+      "weight": 4,
+      "scaling": {
+        "Agility": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 128,
+    "name": "Old World Greatshield",
+    "type": "Offhand",
+    "damagetype": "Unknown",
+    "details": {
+      "reqs": {
+        "base": {
+          "Fortitude": 30
+        },
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "weight": 1.6,
+      "scaling": {
+        "": null
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 129,
+    "name": "Parry Dagger",
+    "type": "Offhand",
+    "damagetype": "Posture",
+    "details": {
+      "reqs": {
+        "base": {
+          "Agility": 10
+        },
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.4,
+      "damage": 4,
+      "weight": 1,
+      "scaling": {
+        "None": null
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 130,
+    "name": "Repeater (Offhand)",
+    "type": "Offhand",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 65
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 12,
+      "speed": 1.25,
+      "damage": 13,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 15
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 131,
+    "name": "Silversix (Offhand)",
+    "type": "Offhand",
+    "damagetype": "Blunt",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10,
+      "speed": 1.17,
+      "damage": 10,
+      "weight": 1,
+      "scaling": {
+        "Light Wep.": 13
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 132,
+    "name": "Targe",
+    "type": "Offhand",
+    "damagetype": "Unknown",
+    "details": {
+      "reqs": {
+        "base": {
+          "Fortitude": 10
+        },
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "weight": 1.5,
+      "scaling": {
+        "": null
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 133,
+    "name": "The Path's Defender",
+    "type": "Offhand",
+    "damagetype": "Unknown",
+    "details": {
+      "reqs": {
+        "base": {
+          "Fortitude": 75
+        },
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "weight": 2.35,
+      "scaling": {
+        "": null
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 134,
+    "name": "Worshipper's Shield",
+    "type": "Offhand",
+    "damagetype": "Unknown",
+    "details": {
+      "reqs": {
+        "base": {
+          "Fortitude": 40
+        },
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "weight": 1.85,
+      "scaling": {
+        "": null
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 135,
+    "name": "Apprentice Rapier",
+    "type": "Rapier",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 25
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.06,
+      "damage": 13,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 136,
+    "name": "Crucible Rapier",
+    "type": "Rapier",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.09,
+      "damage": 15,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 137,
+    "name": "Deepspindle",
+    "type": "Rapier",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 50
+        },
+        "attunement": {
+          "Shadowcast": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.09,
+      "damage": 14,
+      "weight": 5,
+      "scaling": {
+        "Light Wep.": 4,
+        "Shadowcast": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 138,
+    "name": "Golden Swordfish",
+    "type": "Rapier",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.1,
+      "speed": 1.09,
+      "damage": 15,
+      "weight": 5,
+      "scaling": {
+        "Light Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 139,
+    "name": "Inquisitor's Thorn",
+    "type": "Rapier",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.08,
+      "damage": 14,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 140,
+    "name": "Kyrstreza",
+    "type": "Rapier",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.3,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.09,
+      "damage": 15,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 8.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 141,
+    "name": "Needle's Eye",
+    "type": "Rapier",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.05,
+      "damage": 16.5,
+      "weight": 5,
+      "scaling": {
+        "Light Wep.": 8.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 142,
+    "name": "Quickfang",
+    "type": "Rapier",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.08,
+      "damage": 12,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 143,
+    "name": "Skull Piercer (Bleed)",
+    "type": "Rapier",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "power": 6,
+        "weapon": {
+          "Light Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 1.08,
+      "damage": 14,
+      "weight": 4,
+      "scaling": {
+        "Light Wep.": 7.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 144,
+    "name": "Acheron's Warspear (Bleed)",
+    "type": "Spear",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.93,
+      "damage": 18,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 145,
+    "name": "Alloyed Longspear",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 1,
+      "damage": 20,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 6.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 146,
+    "name": "Alloyed Trident Spear",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 85
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.92,
+      "damage": 19,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 147,
+    "name": "Bloodtide Trident (Bleed)",
+    "type": "Spear",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.25,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.93,
+      "damage": 18.7,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 148,
+    "name": "Divine Spear",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10,
+      "speed": 0.93,
+      "damage": 23,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 149,
+    "name": "Gremorian Longspear",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 20
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.9,
+      "damage": 18,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 4
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 150,
+    "name": "Imperator's Edge",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {
+          "Strength": 80,
+          "Fortitude": 80
+        },
+        "weapon": {
+          "Medium Wep.": 80
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 11,
+      "speed": 0.93,
+      "damage": 20,
+      "weight": 7,
+      "scaling": {
+        "Strength": 3,
+        "Fortitude": 4,
+        "Medium Wep.": 2
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 151,
+    "name": "Imperial Staff",
+    "type": "Spear",
+    "damagetype": "Blunt",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {
+          "Strength": 40
+        },
+        "weapon": {
+          "Medium Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 19,
+      "weight": 6,
+      "scaling": {
+        "Strength": 3.5,
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 152,
+    "name": "Iron Spear",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.9,
+      "damage": 17,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 2.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 153,
+    "name": "Irontusk",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.9,
+      "damage": 16.5,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 3
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 154,
+    "name": "Kyrsglaive (Bleed)",
+    "type": "Spear",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 90
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.96,
+      "damage": 18.5,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 155,
+    "name": "Kyrswynter (Bleed)",
+    "type": "Spear",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 50
+        },
+        "attunement": {
+          "Frostdraw": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.96,
+      "damage": 16,
+      "weight": 6,
+      "scaling": {
+        "Frostdraw": 3,
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 156,
+    "name": "Red Death (Bleed)",
+    "type": "Spear",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {
+          "Mind": 25
+        },
+        "power": 8,
+        "weapon": {
+          "Medium Wep.": 30
+        },
+        "attunement": {
+          "Bloodrend": 35,
+          "Shadowcast": 45
+        },
+        "weaponType": "None"
+      },
+      "range": 9.5,
+      "speed": 0.92,
+      "damage": 16,
+      "weight": 5.5,
+      "scaling": {
+        "Mind": 2,
+        "Bloodrend": 3,
+        "Shadowcast": 3,
+        "Medium Wep.": 2
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 157,
+    "name": "Rifle Spear",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.9,
+      "damage": 21,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 158,
+    "name": "Ritual Spear",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 30
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.68,
+      "damage": 19,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 159,
+    "name": "Serrated Warspear (Bleed)",
+    "type": "Spear",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.2,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 65
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.93,
+      "damage": 18,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 6.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 160,
+    "name": "Trident Spear",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 50
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.9,
+      "damage": 19,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 161,
+    "name": "True Seraph Spear",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "chip": 0.4,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 80
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.96,
+      "damage": 18.5,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 162,
+    "name": "Weal and Woe",
+    "type": "Spear",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "chip": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 80
+        },
+        "attunement": {
+          "Shadowcast": 65
+        },
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.92,
+      "damage": 17.5,
+      "weight": 7.5,
+      "scaling": {
+        "Shadowcast": 6.5,
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 163,
+    "name": "Alloyed Falchion",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 1.06,
+      "damage": 16,
+      "weight": 4,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 164,
+    "name": "Alloyed Katana",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 20,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 165,
+    "name": "Alloyed Messer",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "chip": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 0.97,
+      "damage": 21,
+      "weight": 7,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 166,
+    "name": "Alloyed Shotel",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "chip": 0.3,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.97,
+      "damage": 22,
+      "weight": 4,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 167,
+    "name": "Alloyed Vigil Longsword",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 20,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 7.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 168,
+    "name": "Cavalry Saber",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 21,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 169,
+    "name": "Alloyed Calvary Saber",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 22,
+      "weight": 6,
+      "scaling": {
+        "Medium Wep.": 5.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 170,
+    "name": "Champion's Sword",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.02,
+      "damage": 19,
+      "weight": 4,
+      "scaling": {
+        "Medium Wep.": 6.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 171,
+    "name": "Curved Blade Of Winds",
+    "type": "Sword",
+    "damagetype": "Slash + Aftercut",
+    "details": {
+      "pen": 0.15,
+      "chip": 0.05,
+      "reqs": {
+        "base": {},
+        "power": 10,
+        "weapon": {
+          "Medium Wep.": 25
+        },
+        "attunement": {
+          "Galebreathe": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.04,
+      "damage": 17.5,
+      "weight": 5,
+      "scaling": {
+        "Galebreathe": 5,
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 172,
+    "name": "Death's Reverie (Bleed)",
+    "type": "Sword",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.01,
+      "damage": 18,
+      "weight": 7.5,
+      "scaling": {
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 173,
+    "name": "Divine Longsword",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 1.06,
+      "damage": 25,
+      "weight": 5.5,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 174,
+    "name": "Dormant Splinter",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 5
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.9,
+      "damage": 5,
+      "weight": 4,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 175,
+    "name": "Eye of Malice",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "chip": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 10.5,
+      "speed": 0.95,
+      "damage": 21,
+      "weight": 4,
+      "scaling": {
+        "Medium Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 176,
+    "name": "Falchion",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "power": 6,
+        "weapon": {
+          "Medium Wep.": 20
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.06,
+      "damage": 16,
+      "weight": 4,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 177,
+    "name": "False Memory",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 18,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 2.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 178,
+    "name": "Fondant Splitter",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.05,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 5
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6,
+      "speed": 1,
+      "damage": 15,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 179,
+    "name": "Forgotten Gladius",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.13,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 65
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 1.04,
+      "damage": 18,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 7.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 180,
+    "name": "Hallowscleave",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.25,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 19,
+      "weight": 6,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 181,
+    "name": "Hero's Blade Of Flame",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "power": 11,
+        "weapon": {},
+        "attunement": {
+          "Flamecharm": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 20,
+      "weight": 5,
+      "scaling": {
+        "Flamecharm": 5.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 182,
+    "name": "Hero's Blade Of Frost",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "power": 11,
+        "weapon": {},
+        "attunement": {
+          "Frostdraw": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 20,
+      "weight": 5,
+      "scaling": {
+        "Frostdraw": 5.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 183,
+    "name": "Hero's Blade Of Lightning",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "power": 11,
+        "weapon": {},
+        "attunement": {
+          "Thundercall": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 20,
+      "weight": 5,
+      "scaling": {
+        "Thundercall": 5.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 184,
+    "name": "Hero's Blade Of Shadow",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "power": 11,
+        "weapon": {},
+        "attunement": {
+          "Shadowcast": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 20,
+      "weight": 5,
+      "scaling": {
+        "Shadowcast": 5.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 185,
+    "name": "Hero's Blade Of Wind",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "power": 11,
+        "weapon": {},
+        "attunement": {
+          "Galebreathe": 75
+        },
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 20,
+      "weight": 5,
+      "scaling": {
+        "Galebreathe": 5.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 186,
+    "name": "Katana",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 25
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 18,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 187,
+    "name": "Kyrsblade",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.05,
+      "chip": 0.3,
+      "reqs": {
+        "base": {},
+        "power": 6,
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 1,
+      "damage": 22,
+      "weight": 6,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 188,
+    "name": "Messer",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 10
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 0.93,
+      "damage": 20,
+      "weight": 6,
+      "scaling": {
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 189,
+    "name": "Nocturne",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.3,
+      "reqs": {
+        "base": {},
+        "power": 10,
+        "weapon": {
+          "Medium Wep.": 90
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 1.02,
+      "damage": 19,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 190,
+    "name": "Officer Saber",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 30
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 22,
+      "weight": 7,
+      "scaling": {
+        "Medium Wep.": 4.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 191,
+    "name": "Alloyed Officer Saber",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 23,
+      "weight": 6,
+      "scaling": {
+        "Medium Wep.": 4.8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 192,
+    "name": "Purple Cloud",
+    "type": "Sword",
+    "damagetype": "Blunt + Slash",
+    "details": {
+      "pen": 0.15,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "power": 10,
+        "weapon": {
+          "Medium Wep.": 85
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 6.5,
+      "speed": 1.06,
+      "damage": 16.5,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 9
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 193,
+    "name": "Razor Cutlass (Bleed)",
+    "type": "Sword",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "pen": 0.25,
+      "chip": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 60
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.94,
+      "damage": 18,
+      "weight": 8,
+      "scaling": {
+        "Medium Wep.": 7.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 194,
+    "name": "Saintsblade",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {
+          "Frostdraw": 20,
+          "Flamecharm": 20,
+          "Shadowcast": 20,
+          "Galebreathe": 20,
+          "Thundercall": 20
+        },
+        "weaponType": "None"
+      },
+      "range": 8.5,
+      "speed": 1.04,
+      "damage": 30,
+      "weight": 7,
+      "scaling": {
+        "Frostdraw": 0,
+        "Flamecharm": 0,
+        "Shadowcast": 0,
+        "Galebreathe": 0,
+        "Thundercall": 0
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 195,
+    "name": "Scimitar",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 20
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.09,
+      "damage": 15,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 3
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 196,
+    "name": "Serpent's Edge",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8.2,
+      "speed": 0.97,
+      "damage": 22,
+      "weight": 6,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 197,
+    "name": "Shattered Katana",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.3,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 90
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 20,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 198,
+    "name": "Shotel",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "chip": 0.2,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 45
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 0.97,
+      "damage": 22,
+      "weight": 4,
+      "scaling": {
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 199,
+    "name": "Soulthorn",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "chip": 0.3,
+      "reqs": {
+        "base": {
+          "Intelligence": 40
+        },
+        "power": 10,
+        "weapon": {
+          "Medium Wep.": 80
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.02,
+      "damage": 17,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 7,
+        "Intelligence": 3.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 200,
+    "name": "Scoundrel's Saber",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 55
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 22,
+      "weight": 5.5,
+      "scaling": {
+        "Medium Wep.": 4.8
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 201,
+    "name": "Vigil Longsword",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 20,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 202,
+    "name": "Warden Ceremonial Sword",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 50
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 1.06,
+      "damage": 17,
+      "weight": 4,
+      "scaling": {
+        "Medium Wep.": 7
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 203,
+    "name": "Worshipper Longsword",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 30
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 19,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 4.5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 204,
+    "name": "Wyrmtooth",
+    "type": "Sword",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.2,
+      "reqs": {
+        "base": {},
+        "power": 15,
+        "weapon": {
+          "Heavy Wep.": 40,
+          "Medium Wep.": 60
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 9,
+      "speed": 0.93,
+      "damage": 20,
+      "weight": 7,
+      "scaling": {
+        "Heavy Wep.": 4.2,
+        "Medium Wep.": 6.2
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 205,
+    "name": "Umbrite Witherblade (Bleed)",
+    "type": "Sword",
+    "damagetype": "Slash + Bleed",
+    "details": {
+      "chip": 0.2,
+      "reqs": {
+        "base": {
+          "Willpower": 10
+        },
+        "power": 10,
+        "weapon": {
+          "Medium Wep.": 65
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1.02,
+      "damage": 13,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 12
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 206,
+    "name": "Alloyed Scalesplitter",
+    "type": "Twinblade",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.15,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 65
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 8,
+      "speed": 1,
+      "damage": 20,
+      "weight": 6,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 207,
+    "name": "Crescendo",
+    "type": "Twinblade",
+    "damagetype": "Slash",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 75
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 0.92,
+      "damage": 22,
+      "weight": 6,
+      "scaling": {
+        "Medium Wep.": 6
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 208,
+    "name": "Iron Twinblade",
+    "type": "Twinblade",
+    "damagetype": "Slash",
+    "details": {
+      "chip": 0.3,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 15
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7,
+      "speed": 1,
+      "damage": 15,
+      "weight": 4,
+      "scaling": {
+        "Medium Wep.": 4
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 209,
+    "name": "Scalesplitter",
+    "type": "Twinblade",
+    "damagetype": "Slash",
+    "details": {
+      "pen": 0.1,
+      "reqs": {
+        "base": {},
+        "weapon": {
+          "Medium Wep.": 40
+        },
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "range": 7.5,
+      "speed": 0.9,
+      "damage": 17.5,
+      "weight": 5,
+      "scaling": {
+        "Medium Wep.": 5
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  },
+  {
+    "id": 210,
+    "name": "test 10",
+    "type": "",
+    "damagetype": "Unknown",
+    "details": {
+      "reqs": {
+        "base": {},
+        "weapon": {},
+        "attunement": {},
+        "weaponType": "None"
+      },
+      "scaling": {
+        "": null
+      }
+    },
+    "created_at": "2025-08-16T08:54:14.399011+00:00"
+  }
+]

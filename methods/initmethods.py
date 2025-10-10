@@ -8,9 +8,10 @@ import os
 
 dotenv.load_dotenv()
 DATABASE_KEY = str(os.getenv("DATABASE_KEY"))
+DATABASE_URL = str(os.getenv("DATABASE_URL"))
 
 # Supabase configuration
-SUPABASE_URL = "https://idyjvmmldtdvpklkzrgr.supabase.co"
+SUPABASE_URL = DATABASE_URL
 SUPABASE_KEY = DATABASE_KEY
 
 # Initialize Supabase client
@@ -25,19 +26,23 @@ def update_json(data, file_path):
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"Saved {len(data)} rows to {file_path}")
 
-def update_weights():
-    with open('data/talents.json') as f:
+with open('data/talents.json') as f:
         talentBase = json.load(f)
 
-    with open('data/mantras.json') as f:
-        mantraBase = json.load(f)
+with open('data/mantras.json') as f:
+    mantraBase = json.load(f)
 
-    with open('data/equipments.json') as f:
-        equipmentBase = json.load(f)
+with open('data/equipments.json') as f:
+    equipmentBase = json.load(f)
 
-    with open('data/outfits.json') as f:
-        outfitBase = json.load(f)
-    
+with open('data/outfits.json') as f:
+    outfitBase = json.load(f)
+
+with open('data/weapons.json') as f:
+    weaponBase = json.load(f)
+
+def update_weights():
+    weapon_names = [wb['name'] for wb in weaponBase]
     mantra_names = [mb.get('name', '') for mb in mantraBase]
     equipment_names = [eb['data']['name'] for eb in equipmentBase]
     outfit_names = [ob['data']['name'] for ob in outfitBase]
@@ -49,3 +54,8 @@ def update_weights():
     np.save('data/weights/equipment_embeddings.npy', model.encode_document(equipment_names))
     np.save('data/weights/outfit_embeddings.npy', model.encode_document(outfit_names))
     np.save('data/weights/talent_embeddings.npy', model.encode_document(talent_names))
+    np.save('data/weights/weapon_embeddings.npy', model.encode_document(weapon_names))
+
+    return weapon_names, mantra_names, equipment_names, outfit_names, talent_names
+
+weapon_names, mantra_names, equipment_names, outfit_names, talent_names = update_weights()

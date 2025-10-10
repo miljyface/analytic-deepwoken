@@ -3,42 +3,30 @@ import torch
 import numpy as np
 from methods.shrineoforder import order
 from sentence_transformers import SentenceTransformer
+from methods.initmethods import talentBase, mantraBase, equipmentBase, outfitBase, weaponBase
+from methods.initmethods import talent_names, mantra_names, equipment_names, outfit_names, weapon_names
 
 model = SentenceTransformer("google/embeddinggemma-300m")
 talent_embeddings = np.load('data/weights/talent_embeddings.npy')
 mantra_embeddings = np.load('data/weights/mantra_embeddings.npy')
 outfit_embeddings = np.load('data/weights/outfit_embeddings.npy')
 equipment_embeddings = np.load('data/weights/equipment_embeddings.npy')
+weapon_embeddings = np.load('data/weights/weapon_embeddings.npy')
 
 embeddings_dict = {
         "talent": talent_embeddings,
         "mantra": mantra_embeddings,
         "outfit": outfit_embeddings,
-        "equipment": equipment_embeddings
+        "equipment": equipment_embeddings,
+        "weapon": weapon_embeddings
     }
-
-with open('data/talents.json') as f:
-    talentBase = json.load(f)
-
-with open('data/mantras.json') as f:
-    mantraBase = json.load(f)
-
-with open('data/equipments.json') as f:
-    equipmentBase = json.load(f)
-
-with open('data/outfits.json') as f:
-    outfitBase = json.load(f)
-
-talent_names = [tb.get('name', '') for tb in talentBase]
-mantra_names = [mb.get('name', '') for mb in mantraBase]    
-equipment_names = [eb['data']['name'] for eb in equipmentBase]
-outfit_names = [ob['data']['name'] for ob in outfitBase]
 
 names_dict = {
     "talent": talent_names,
     "mantra": mantra_names,
     "outfit": outfit_names,
-    "equipment": equipment_names
+    "equipment": equipment_names,
+    "weapon": weapon_names
 }
 def find(argument, type):
     query_embedding = model.encode_query(argument)
@@ -69,5 +57,17 @@ def fetch_equipment(equipment_name):
 def fetch_talent(talent_name):
     for tb in talentBase:
         if tb.get('name', '').lower() == talent_name.lower():
+            return tb
+    return None
+
+def fetch_weapon(weapon_name):
+    for wb in weaponBase:
+        if wb.get('name', '').lower() == weapon_name.lower():
+            return wb
+    return None
+
+def fetch_talent_by_id(talent_id):
+    for tb in talentBase:
+        if str(tb.get('id', '')) == str(talent_id):
             return tb
     return None

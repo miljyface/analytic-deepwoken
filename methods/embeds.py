@@ -1,6 +1,7 @@
 import discord
 import methods.dwbapi as dwb
 from methods.shrineoforder import order
+import methods.lookup as lookup
 import json
 
 with open('data/categories.json') as f:
@@ -10,35 +11,38 @@ category_map = {entry["id"]: entry["name"] for entry in categories}
 
 def build_talent_embed(talent: dict) -> discord.Embed:
     data = talent.get("data", {})
+    stats = data.get('base', {})
+    weapons = data.get("weapons", {})
     attunements = data.get("attunements", {})
     exclusive_with = data.get("exclusive with", [])
+    category_name = category_map.get(data.get("category", 1), "Unknown")
     embed = discord.Embed(
-        title=talent.get("name", "Unknown Talent"),
+        title=f'{talent.get("name", "Unknown Talent")} - {category_name}',
         description=data.get("desc", "No description available."),
         color=0xffffff
     )
     embed.add_field(name="ID", value=str(talent.get("id", "N/A")), inline=True)
     embed.add_field(name="Rarity", value=data.get("rarity", "Unknown"), inline=True)
     embed.add_field(name="Power", value=str(data.get("power", 0)), inline=True)
-    # Attunements
     if attunements:
         attune_text = "\n".join(f"{k.capitalize()}: {v}" for k, v in attunements.items())
         embed.add_field(name="Attunement Requirements", value=attune_text, inline=False)
-    # Exclusivity
-    if exclusive_with:
-        embed.add_field(name="Exclusive With", value="\n".join(exclusive_with), inline=False)
-    # Category and Vaulted
-    category_name = category_map.get(data.get("category", 1), "Unknown")
-    embed.add_field(name="Category", value = category_name, inline=True)
+    if stats:
+        stats_text = "\n".join(f"{k.capitalize()}: {v}" for k, v in stats.items())
+        embed.add_field(name="Base Requirements", value=stats_text, inline=False)
+    if weapons:
+        wep_text = "\n".join(f"{k.capitalize()}: {v}" for k, v in weapons.items())
+        embed.add_field(name="Weapon Requirements", value=wep_text, inline=False)
+
+    embed.add_field(name="Exclusive With", value="\n".join(exclusive_with), inline=False) if exclusive_with else None
     embed.add_field(name="Vaulted", value=str(data.get("vaulted", False)), inline=True)
-    # Footer
+
     embed.set_footer(
         text=f"Does not count toward total: {data.get('dontcounttowardstotal', False)}"
     )
     return embed
 
 def build_mantra_embed(mantra: dict) -> discord.Embed:
-    # Basic setup
     name = mantra.get('name', 'Unknown')
     description = mantra.get('description', 'No description available.')
     stars = mantra.get('stars', 'N/A')
@@ -47,12 +51,10 @@ def build_mantra_embed(mantra: dict) -> discord.Embed:
     attributes = ', '.join(mantra.get('attribute', [])) if mantra.get('attribute') else 'None'
     gif_url = mantra.get('gif', '')
 
-    # Requirements formatting
     reqs = mantra.get('reqs', {})
     attunement_reqs = ', '.join(f"{k}: {v}" for k, v in reqs.get('attunement', {}).items()) if reqs.get('attunement') else 'None'
     base_reqs = ', '.join(f"{k}: {v}" for k, v in reqs.get('base', {}).items()) if reqs.get('base') else 'None'
     weapon_reqs = ', '.join(f"{k}: {v}" for k, v in reqs.get('weapon', {}).items()) if reqs.get('weapon') else 'None'
-    weapon_type = reqs.get('weaponType', 'None')
 
     embed = discord.Embed(
         title=f"{name} {'★' * int(stars) if str(stars).isdigit() else ''}",
@@ -66,17 +68,58 @@ def build_mantra_embed(mantra: dict) -> discord.Embed:
     embed.add_field(name="Base Requirement", value=base_reqs, inline=False) if base_reqs != 'None' else None
     embed.add_field(name="Weapon Requirement", value=weapon_reqs, inline=False) if weapon_reqs != 'None' else None
 
-    # If there's a gif, add as image
     if gif_url:
         embed.set_image(url=gif_url)
-
     return embed
 
 
 def build_equipment_embed(equipment: dict) -> discord.Embed:
-    pass
+    name = equipment.get('data', {}).get('name', 'Unknown')
+    equipmenttype = equipment.get('data', {}).get('type', 'Unknown')
+    equipmentstats = equipment.get('data', {}).get('stats', {})
+    equipmenttalents = equipment.get('data', {}).get('talents', [])
+    pips = equipment.get('data', {}).get('rarities', {})
+
+    embed = discord.Embed(
+        title = f"{name} ({equipmenttype})",
+        color = 0xffffff
+    )
+
+    embed.add_field(name="Stats", value='\n'.join([f"{k}: {v}" for k, v in equipmentstats.items()]) if equipmentstats else "None", inline=False)
+    embed.add_field(name="Talents", value='\n'.join([f"{k}" if type(k) != int else f"f{lookup.fetch_talent_by_id(k)}" for k in equipmenttalents]), inline = False) if equipmenttalents else None
+    embed.add_field(name="Pips", value=', '.join([f"{k}: {v} pips" for k, v in pips.items()]) if pips else "None", inline=False)
+
+    return embed
 
 def build_outfit_embed(outfit: dict) -> discord.Embed:
+    name = outfit.get('data', {}).get('name', 'Unknown')
+    materials = outfit.get('data', {}).get('mats', 'Unknown')
+    rarity = outfit.get('data', {}).get('category', 'Unknown')
+    requirements = outfit.get('data', {}).get('requirements', {})
+
+    #functional stats
+    durability = outfit.get('data', {}).get('durability', 'Unknown')
+    resis = outfit.get('data', {}).get('resistances', {})
+    etherRegen = outfit.get('data', {}).get('ether regen', 'Unknown')
+    talents = outfit.get('data', {}).get('talents', 'None')
+
+    embed = discord.Embed(
+        title = f"{name} - {rarity}",
+        color = 0xffffff
+    )
+
+    embed.add_field(name="Materials", value='\n'.join([f"{k}" for k in materials]) if materials else "None", inline=False)
+    embed.add_field(name="Requirements", value='\n'.join([f"{k}" for k in requirements]) if requirements else "None", inline=False)
+
+    #functional display
+    embed.add_field(name="Durability", value=str(durability), inline=True)
+    embed.add_field(name="Ether Regen", value=str(etherRegen), inline=True)
+    embed.add_field(name="Resistances", value='\n'.join(f"{k}: {v}" for k, v in resis.items()) if resis else "None", inline=False)
+    embed.add_field(name="Talents", value='\n'.join([f"{k}" if type(k) != int else f"f{lookup.fetch_talent_by_id(k)}" for k in talents]), inline = False) if talents else None
+
+    return embed
+
+def build_weapon_embed(weapon: dict) -> discord.Embed:
     pass
 
 
