@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 import methods.initmethods as init
 import methods.dwbapi as dwb
-import methods.embeds as emb
+import src.embedBuilder.embeds as emb
 from methods.lookup import find
 from methods.lookup import fetch_mantra, fetch_outfit, fetch_equipment, fetch_talent, fetch_weapon
 from methods.shrineoforder import order
