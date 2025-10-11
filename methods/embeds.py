@@ -109,7 +109,7 @@ def build_outfit_embed(outfit: dict) -> discord.Embed:
     )
 
     embed.add_field(name="Materials", value='\n'.join([f"{k}" for k in materials]) if materials else "None", inline=False)
-    embed.add_field(name="Requirements", value='\n'.join([f"{k}" for k in requirements]) if requirements else "None", inline=False)
+    embed.add_field(name="Requirements", value='\n'.join([f"{k}: {v}" for k, v in requirements.items()]) if requirements else "None", inline=False)
 
     #functional display
     embed.add_field(name="Durability", value=str(durability), inline=True)
@@ -120,7 +120,35 @@ def build_outfit_embed(outfit: dict) -> discord.Embed:
     return embed
 
 def build_weapon_embed(weapon: dict) -> discord.Embed:
-    pass
+    name = weapon.get('name', 'Unknown')
+    weptype = weapon.get('type', 'Unknown')
+
+    pen = weapon.get('details', {}).get('pen', 0)
+    damage = weapon.get('details', {}).get('damage', 0)
+    weight = weapon.get('details', {}).get('weight', 0)
+    speed = weapon.get('details', {}).get('speed', 0)
+    endlag = weapon.get('details', {}).get('endlag', 0)
+    scaling = weapon.get('details', {}).get('scaling', {})
+    reqs = weapon.get('details', {}).get('reqs', {})
+
+    embed = discord.Embed(
+        title = f"{name} - {weptype}",
+        color = 0xffffff
+    )
+
+    embed.add_field(name="Requirements", value='\n'.join([f"{k}: {v}" for k, v in reqs.items()]) if reqs else "None", inline=True)
+    embed.add_field(name="Base Damage", value=str(damage), inline=True)
+    embed.add_field(name="Penetration", value=str(pen), inline=True)
+    embed.add_field(name="Weight", value=str(weight), inline=True)
+    embed.add_field(name="Speed", value=str(speed), inline=True)
+    embed.add_field(name="Endlag", value=str(endlag), inline=True)
+    embed.add_field(
+        name="Scaling",
+        value='\n'.join([f"{k}: {v}" for k, v in scaling.items()]) if scaling else "None",
+        inline=False
+    )
+
+    return embed
 
 
 def get_deepwoken_build_embed(build_id: str):
