@@ -1,7 +1,8 @@
 import requests
 import json
-from methods.initmethods import talentBase
+from handlers.backbone import fetch_table
 
+talentBase = fetch_table('talents')
 
 class dwbBuild:
     def __str__(self):
