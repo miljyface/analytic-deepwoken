@@ -100,8 +100,8 @@ def plot_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp':0, 'k
     max_value = max(max(mag_values), max(values)) if mag_values and values else 0
     
     if ehp_val:
-        line_pos = max(ehp_val, max_value * 1.05)
-        plt.axvline(line_pos, color="#730BEA", linestyle='--', label=f'Final EHP = {ehp_val:.0f}', linewidth=1.2)
+        line_pos = max(ehp_val, max_value)
+        plt.axvline(line_pos, color="#837C8A", linestyle='--', label=f'Final EHP = {ehp_val:.0f}', linewidth=1.2)
 
     for bar, value, magv in zip(bars1, values, mag_values):
         plt.text(value/2, bar.get_y() + bar.get_height() / 2,

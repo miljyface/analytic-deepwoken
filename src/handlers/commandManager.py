@@ -27,6 +27,8 @@ class commandManager:
         command_parts = command_body.split()
         command_name = command_parts[0]
         command_args = command_parts[1:]
+        command_body = command_body[len(command_name):].strip()
+        print(command_body)
 
         command_file = os.path.join(self.COMMANDPATH, f"{command_name}.py")
         if os.path.isfile(command_file):

@@ -45,7 +45,7 @@ async def on_message(message):
                         file = discord.File(buf, filename="ehp_plot.png")
                         embed = discord.Embed(color=0xffffff)
                         embed.set_image(url="attachment://ehp_plot.png")
-                        await message.channel.send(embed=embed, file=file)
+                        await message.channel.send(embed=embed, file=file, reference = message)
 
                     elif message.content.strip().lower() == 'display':
                         embeds = emb.get_deepwoken_build_embed(build_id)
@@ -53,6 +53,5 @@ async def on_message(message):
                             await message.channel.send(embed=embed, reference = message)
                 except Exception as e:
                     await message.channel.send(f'Error fetching build: {str(e)}')
-
 
 client.run(BOT_TOKEN)

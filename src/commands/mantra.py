@@ -4,11 +4,11 @@ from handlers.backbone import searchTableByName
 import embedBuilder.mantraEmbed as emb
 
 def execute(name):
-    item_substring = name.lower()
-    match = next((name for name in name_list if item_substring in name.lower()), None)
+    substring = name.lower()
+    match = next((name for name in name_list if substring.lower() in name.lower()), None)
 
     if match:
-        mantra_data = searchTableByName('mantras', name)
+        mantra_data = searchTableByName('mantras', match)
         return emb.build_mantra_embed(mantra_data)
     else:
         most_similar_name = find(name, 'mantra')
