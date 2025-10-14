@@ -20,10 +20,12 @@ def fetch_table(table_name):
 #fetching functions
 def searchTableByName(table_name, item_name):
     table_data = fetch_table(table_name)
+
     if table_name == 'outfits' or table_name == 'equipment':
-        table_data = [item for item in table_data if 'data' in item]
+        table_data = [item['data'] for item in table_data if 'data' in item]
+
     for item in table_data:
-        if item['name'].lower() == item_name.lower():
+        if item.get("name", 'UNKNOWN').lower() == item_name.lower():
             return item
     return None
 

@@ -9,8 +9,10 @@ def execute(name):
 
     if match:
         outfit_data = searchTableByName('outfits', name)
+        print(outfit_data)
         return emb.build_outfit_embed(outfit_data)
     else:
         most_similar_name = find(name, 'outfit')
         outfit_data = searchTableByName('outfits', most_similar_name)
+        print(outfit_data)
         return emb.build_outfit_embed(outfit_data)

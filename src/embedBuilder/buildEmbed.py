@@ -1,5 +1,5 @@
 import discord
-import methods.dwbapi as dwb
+import plugins.dwbapi as dwb
 import handlers.backbone as daten
 
 def get_deepwoken_build_embed(build_id: str):

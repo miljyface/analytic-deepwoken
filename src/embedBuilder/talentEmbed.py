@@ -8,12 +8,11 @@ def build_talent_embed(talent: dict) -> discord.Embed:
     attunements = data.get("attunements", {})
     exclusive_with = data.get("exclusive with", [])
 
-
-    category_name = daten.searchTableById("categories", data.get("category", "Unknown Category"))
-
+    cat = daten.searchTableById("categories", data.get("category", "Unknown Category"))
+    category_name = cat.get("name", "Unknown Category")
 
     embed = discord.Embed(
-        title=f'{talent.get("name", "Unknown Talent")} - {category_name}',
+        title=f'{talent.get("name", "Unknown Talent")} - {cat}',
         description=data.get("desc", "No description available."),
         color=0xffffff
     )

@@ -2,7 +2,7 @@ import discord
 import handlers.backbone as daten
 
 def build_outfit_embed(outfit: dict) -> discord.Embed:
-    name = outfit.get('data', {}).get('name', 'Unknown')
+    name = outfit.get('name', 'Unknown')
     materials = outfit.get('data', {}).get('mats', 'Unknown')
     rarity = outfit.get('data', {}).get('category', 'Unknown')
     requirements = outfit.get('data', {}).get('requirements', {})

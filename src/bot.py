@@ -2,10 +2,10 @@ import discord
 import os
 from dotenv import load_dotenv
 
-import methods.dwbapi as dwb
+import plugins.dwbapi as dwb
 import embedBuilder as emb
 from handlers.commandManager import commandManager
-from methods.shrineoforder import order
+from plugins.shrineoforder import order
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -15,6 +15,7 @@ load_dotenv()
 BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
 client = discord.Client(intents=intents)
 commands = commandManager(client)
+commands.loadCommands()
 
 @client.event
 async def on_ready():
@@ -25,7 +26,8 @@ async def on_message(message):
     if message.author == client.user:
         return
     
-    await message.channel.send(embed = commands.processCommand(message), reference = message)
+    if message.content.startswith(commands.PREFIX):
+        await message.channel.send(embed = commands.processCommand(message), reference = message)
     
     if message.type == discord.MessageType.reply:
         referenced = message.reference
