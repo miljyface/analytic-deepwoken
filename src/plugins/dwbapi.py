@@ -1,5 +1,4 @@
 import requests
-import json
 from handlers.backbone import fetch_table
 
 talentBase = fetch_table('talents')
@@ -61,7 +60,7 @@ class dwbBuild:
                     break
         return hp
 
-    def ehp(self, params = {'dps':100, 'pen':50, 'kithp': 100, 'kitresis':50}):
+    def ehp(self, params = {'dps':100, 'pen':50, 'kithp': 0, 'kitresis':50}):
         scaledDps = params['dps'] * self.resisCoefficient(params['pen'], 10, 50) if self.flags[3] else params['dps']
         EHP = (scaledDps * (self.health + params['kithp']))/((scaledDps)*self.resisCoefficient(params['pen'], params['kitresis'], self.flags[0]))
         EHP *= ((30/(100 - self.flags[1]) + 0.7) if self.flags[1] != 0 else 1) * ((25/(100 - self.flags[2]) + 0.75 if self.flags[2] != 0 else 1))
@@ -96,7 +95,3 @@ class dwbBuild:
                         if field_key != 'health':  # base health handled above
                             summary[field_label] += stats_dict.get(field_key, 0)
         return summary
-    
-def talent(id):
-    response = requests.get(f'https://api.deepwoken.co/get?type=talent&name={id}')
-    return response.json()

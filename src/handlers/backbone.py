@@ -3,12 +3,8 @@ import dotenv
 import os
 
 dotenv.load_dotenv()
-DATABASE_KEY = str(os.getenv("DATABASE_KEY"))
-DATABASE_URL = str(os.getenv("DATABASE_URL"))
-
-# Supabase configuration
-SUPABASE_URL = DATABASE_URL
-SUPABASE_KEY = DATABASE_KEY
+SUPABASE_KEY = str(os.getenv("DATABASE_KEY"))
+SUPABASE_URL = str(os.getenv("DATABASE_URL"))
 
 # Initialize Supabase client
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)

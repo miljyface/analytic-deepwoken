@@ -3,9 +3,10 @@ import os
 from dotenv import load_dotenv
 
 import plugins.dwbapi as dwb
-import embedBuilder as emb
+from embedBuilder import buildEmbed as emb
 from handlers.commandManager import commandManager
 from plugins.shrineoforder import order
+from plugins.analytics import plot_breakdown
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -39,11 +40,13 @@ async def on_message(message):
                     build_id = link.split('&')[0]
                     build = dwb.dwbBuild(build_id)
                     if message.content.strip().lower() == 'analytics':
-                        summary = (
-                            f"**Build Summary**: {build.summary}\n"
-                            f"**EHP**: {build.ehp()}\n"
-                        )
-                        await message.channel.send(summary)
+
+                        buf = plot_breakdown(build, talentBase=dwb.talentBase)
+                        file = discord.File(buf, filename="ehp_plot.png")
+                        embed = discord.Embed(color=0xffffff)
+                        embed.set_image(url="attachment://ehp_plot.png")
+                        await message.channel.send(embed=embed, file=file)
+
                     elif message.content.strip().lower() == 'display':
                         embeds = emb.get_deepwoken_build_embed(build_id)
                         for embed in embeds:
