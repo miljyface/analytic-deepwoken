@@ -1,21 +1,25 @@
 import discord
 import handlers.backbone as daten
 
-def build_weapon_embed(weapon: dict) -> discord.Embed:
-    name = weapon.get('name', 'Unknown')
-    weptype = weapon.get('type', 'Unknown')
 
-    pen = weapon.get('details', {}).get('pen', 0)
-    damage = weapon.get('details', {}).get('damage', 0)
-    weight = weapon.get('details', {}).get('weight', 0)
-    speed = weapon.get('details', {}).get('speed', 0)
-    endlag = weapon.get('details', {}).get('endlag', 0)
-    scaling = weapon.get('details', {}).get('scaling', {})
-    reqs = weapon.get('details', {}).get('reqs', {})
+def build_weapon_embed(weapon: dict) -> discord.Embed:
+    payload = weapon.get('data') if isinstance(weapon.get('data'), dict) else weapon
+
+    name = payload.get('name', 'Unknown')
+    weptype = payload.get('type', 'Unknown')
+
+    details = payload.get('details', {})
+    pen = details.get('pen', 0)
+    damage = details.get('damage', 0)
+    weight = details.get('weight', 0)
+    speed = details.get('speed', 0)
+    endlag = details.get('endlag', 0)
+    scaling = details.get('scaling', {})
+    reqs = details.get('reqs', {})
 
     embed = discord.Embed(
-        title = f"{name} - {weptype}",
-        color = 0xffffff
+        title=f"{name} - {weptype}",
+        color=0xffffff
     )
 
     embed.add_field(name="Requirements", value='\n'.join([f"{k}: {v}" for k, v in reqs.items()]) if reqs else "None", inline=True)

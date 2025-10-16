@@ -1,18 +1,20 @@
 import discord
 import handlers.backbone as daten
 
+
 def build_talent_embed(talent: dict) -> discord.Embed:
-    data = talent.get("data", {})
+    payload = talent.get('data') if isinstance(talent.get('data'), dict) else talent
+    data = payload or {}
     stats = data.get('base', {})
-    weapons = data.get("weapons", {})
-    attunements = data.get("attunements", {})
-    exclusive_with = data.get("exclusive with", [])
+    weapons = data.get('weapons', {})
+    attunements = data.get('attunements', {})
+    exclusive_with = data.get('exclusive with', [])
 
     cat = daten.searchTableById("categories", data.get("category", "Unknown Category"))
-    category_name = cat.get("name", "Unknown Category")
+    category_name = cat.get("name", "Unknown Category") if isinstance(cat, dict) else str(cat)
 
     embed = discord.Embed(
-        title=f'{talent.get("name", "Unknown Talent")} - {cat}',
+        title=f'{talent.get("name", "Unknown Talent")} - {category_name}',
         description=data.get("desc", "No description available."),
         color=0xffffff
     )
@@ -29,10 +31,19 @@ def build_talent_embed(talent: dict) -> discord.Embed:
         wep_text = "\n".join(f"{k.capitalize()}: {v}" for k, v in weapons.items())
         embed.add_field(name="Weapon Requirements", value=wep_text, inline=False)
 
-    embed.add_field(name="Exclusive With", value="\n".join(exclusive_with), inline=False) if exclusive_with else None
+    if exclusive_with:
+        embed.add_field(name="Exclusive With", value="\n".join(exclusive_with), inline=False)
     embed.add_field(name="Vaulted", value=str(data.get("vaulted", False)), inline=True)
 
+    # Invert the 'dontcounttowardstotal' value and present it as 'Count toward total'
+    raw_flag = data.get('dontcounttowardstotal', False)
+    # Interpret non-bool values as truthy/falsey
+    try:
+        flag_bool = bool(raw_flag)
+    except Exception:
+        flag_bool = False
+    inverted = not flag_bool
     embed.set_footer(
-        text=f"Does not count toward total: {data.get('dontcounttowardstotal', False)}"
+        text=f"Count toward total: {inverted}"
     )
     return embed
