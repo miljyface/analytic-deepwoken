@@ -3,7 +3,7 @@ from plugins.dwbapi import dwbBuild
 from plugins.dwbapi import talentBase
 import io
 
-def ehp_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp': 0, 'kitresis':50}):
+def ehp_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp': 112, 'kitresis':33}):
     breakdown = {}
 
     vitality_bonus = build.traits['Vitality'] * 10
@@ -67,7 +67,7 @@ def ehp_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp': 0, 'k
     
     flags = build.flags
     scaledDps = params['dps'] * build.resisCoefficient(params['pen'], 10, 50) if flags[3] else params['dps']
-    kitresis = params['kitresis']
+    kitresis = build.scalePhys(params['kitresis'], build.talents, build.outfit)
     EHP = (scaledDps * (total_health + params['kithp']))/((scaledDps)*build.resisCoefficient(params['pen'], kitresis, flags[0]))
     EHP *= ((30/(100 - flags[1]) + 0.7) if flags[1] != 0 else 1) * ((25/(100 - flags[2]) + 0.75 if flags[2] != 0 else 1))
     breakdown['Final EHP'] = round(EHP)
@@ -75,7 +75,7 @@ def ehp_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp': 0, 'k
     return breakdown
 
 
-def plot_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp':0, 'kitresis':50}):
+def plot_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp':112, 'kitresis':33}):
     breakdown = ehp_breakdown(build, talentBase, params)
     components = list(breakdown.keys())
     values = list(breakdown.values())
@@ -87,9 +87,8 @@ def plot_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp':0, 'k
     else:
         ehp_val = None
 
-    # Scale factor
     flags = build.flags
-    kitresis = params['kitresis']
+    kitresis = build.scalePhys(params['kitresis'], build.talents, build.outfit)
     mag_factor = 1 / build.resisCoefficient(params['pen'], kitresis, flags[0])
     mag_values = [v * mag_factor for v in values]
 
@@ -112,7 +111,7 @@ def plot_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp':0, 'k
     plt.xlabel('Health Contribution', fontsize=10, weight='bold', labelpad=4)
     plt.xticks(fontsize=9)
     plt.yticks(fontsize=9)
-    plt.title(f"EHP Breakdown — {build.name}", fontsize=11, weight='bold', pad=8)
+    plt.title(f"Physical EHP Breakdown — {build.name}", fontsize=11, weight='bold', pad=8)
     plt.legend(fontsize=8, loc='lower right', frameon=False)
     plt.grid(axis='x', color='#eeeeee', linewidth=0.65, alpha=0.6)
     
