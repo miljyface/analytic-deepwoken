@@ -49,16 +49,26 @@ def build_weapon_embed(weapon: dict) -> discord.Embed:
                 inner_parts = []
                 for inner_k, inner_v in outer_v.items():
                     inner_parts.append(f"{inner_v} {inner_k}")
-                lines.append(f"{outer_k}: {' & '.join(inner_parts)}")
+                # Capitalize select headings for nicer display
+                label = outer_k
+                if isinstance(outer_k, str) and outer_k.lower() in ('base', 'weapon', 'attunement'):
+                    label = outer_k.capitalize()
+                lines.append(f"{label}: {' & '.join(inner_parts)}")
             else:
                 # show None or scalar values explicitly
                 if outer_v is None:
-                    lines.append(f"{outer_k}: None")
+                    label = outer_k
+                    if isinstance(outer_k, str) and outer_k.lower() in ('base', 'weapon', 'attunement'):
+                        label = outer_k.capitalize()
+                    lines.append(f"{label}: None")
                 elif outer_v == {} or outer_v == "":
                     # skip empty scalars/empty dicts
                     continue
                 else:
-                    lines.append(f"{outer_k}: {outer_v}")
+                    label = outer_k
+                    if isinstance(outer_k, str) and outer_k.lower() in ('base', 'weapon', 'attunement'):
+                        label = outer_k.capitalize()
+                    lines.append(f"{label}: {outer_v}")
 
         return "\n".join(lines)
 
