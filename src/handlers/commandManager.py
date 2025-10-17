@@ -1,10 +1,8 @@
 import os
 import importlib.util
-<<<<<<< Updated upstream
 import discord
 from difflib import get_close_matches
-=======
->>>>>>> Stashed changes
+
 
 class commandManager:
     def __init__(self, client):
