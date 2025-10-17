@@ -1,8 +1,7 @@
 discord.py
 python-dotenv
 supabase
-sentence-transformers
-torch
+rapidfuzz
 numpy
 matplotlib
 requests
