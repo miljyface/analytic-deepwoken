@@ -72,7 +72,6 @@ class dwbBuild:
     
     @property
     def summary(self):
-        stat_fields = ['health', 'agility', 'posture', 'ether', 'carry load']
         stat_map = {
             'Base Health': 'health',
             'Passive Agility': 'passive agility',
