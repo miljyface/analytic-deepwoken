@@ -19,7 +19,7 @@ def build_mantra_embed(mantra: dict) -> discord.Embed:
     weapon_reqs = ', '.join(f"{k}: {v}" for k, v in reqs.get('weapon', {}).items()) if reqs.get('weapon') else 'None'
 
     embed = discord.Embed(
-        title=f"{name} {'\u2605' * int(stars) if str(stars).isdigit() else ''}",
+        title=f"{name} {'★' * int(stars) if str(stars).isdigit() else ''}",
         description=description,
         color=0xffffff
     )
