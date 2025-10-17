@@ -1,7 +1,10 @@
 import os
 import importlib.util
+<<<<<<< Updated upstream
 import discord
 from difflib import get_close_matches
+=======
+>>>>>>> Stashed changes
 
 class commandManager:
     def __init__(self, client):
@@ -23,13 +26,11 @@ class commandManager:
         return commands
 
     def processCommand(self, message):
-        content_lower = message.content.lower()
         command_body = message.content[len(self.PREFIX):].strip()
         command_parts = command_body.split()
         if len(command_parts) == 0 or command_parts[0] == '':
             return None
         command_name = command_parts[0]
-        command_args = command_parts[1:]
         command_body = command_body[len(command_name):].strip()
         print(command_body)
 

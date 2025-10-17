@@ -6,7 +6,7 @@ import plugins.dwbapi as dwb
 from embedBuilder import buildEmbed as emb
 from handlers.commandManager import commandManager
 from plugins.shrineoforder import order
-from plugins.analytics import plot_breakdown
+from plugins.ehpbreakdown import plot_breakdown
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -40,18 +40,30 @@ async def on_message(message):
                     build_id = link.split('&')[0]
                     build = dwb.dwbBuild(build_id)
                     if message.content.strip().lower() == 'analytics':
-
-                        buf = plot_breakdown(build, talentBase=dwb.talentBase)
-                        file = discord.File(buf, filename="ehp_plot.png")
-                        embed = discord.Embed(color=0xffffff)
-                        embed.set_image(url="attachment://ehp_plot.png")
-                        await message.channel.send(embed=embed, file=file, reference = message)
-
-                    elif message.content.strip().lower() == 'display':
                         embeds = emb.get_deepwoken_build_embed(build_id)
                         for embed in embeds:
                             await message.channel.send(embed=embed, reference = message)
+
+                         
+                        buf = plot_breakdown(build, talentBase=dwb.talentBase, params = {'dps':100, 'pen':50, 'kithp':112, 'kitresis':33})
+                        file = discord.File(buf, filename="ehp_plot.png")
+                        embed = discord.Embed(
+                            title = "Phys Kit",
+                            color=0xffffff
+                        )
+                        embed.set_image(url="attachment://ehp_plot.png")
+                        await message.channel.send(embed=embed, file=file, reference = message)
+
+                        buf = plot_breakdown(build, talentBase=dwb.talentBase, params = {'dps':100, 'pen':50, 'kithp':149, 'kitresis':7})
+                        file = discord.File(buf, filename="ehp_plot.png")
+                        embed = discord.Embed(
+                            title = "HP Kit",
+                            color=0xffffff
+                        )
+                        embed.set_image(url="attachment://ehp_plot.png")
+                        await message.channel.send(embed=embed, file=file, reference = message)                   
                 except Exception as e:
                     await message.channel.send(f'Error fetching build: {str(e)}')
+
 
 client.run(BOT_TOKEN)
