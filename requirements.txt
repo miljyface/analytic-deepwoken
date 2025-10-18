@@ -3,6 +3,7 @@ python-dotenv
 supabase
 rapidfuzz
 numpy
-matplotlib
+matplotlib.pyplot
 requests
 pandas
+io

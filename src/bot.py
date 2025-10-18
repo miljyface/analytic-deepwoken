@@ -3,9 +3,8 @@ import os
 from dotenv import load_dotenv
 
 import plugins.dwbapi as dwb
-from embedBuilder import buildEmbed as emb
+from embedBuilder import statevoEmbed as emb
 from handlers.commandManager import commandManager
-from plugins.shrineoforder import order
 from plugins.ehpbreakdown import plot_breakdown
 
 intents = discord.Intents.default()
@@ -40,11 +39,15 @@ async def on_message(message):
                     build_id = link.split('&')[0]
                     build = dwb.dwbBuild(build_id)
                     if message.content.strip().lower() == 'analytics':
-                        embeds = emb.get_deepwoken_build_embed(build_id)
-                        for embed in embeds:
-                            await message.channel.send(embed=embed, reference = message)
+                        buf = emb.statevograph(build)
+                        file = discord.File(buf, filename="evo_plot.png")
+                        embed = discord.Embed(
+                            title = "Stat Evolution",
+                            color=0xffffff
+                        )
+                        embed.set_image(url="attachment://evo_plot.png")
+                        await message.channel.send(embed=embed, file=file, reference = message)
 
-                         
                         buf = plot_breakdown(build, talentBase=dwb.talentBase, params = {'dps':100, 'pen':50, 'kithp':112, 'kitresis':33})
                         file = discord.File(buf, filename="ehp_plot.png")
                         embed = discord.Embed(

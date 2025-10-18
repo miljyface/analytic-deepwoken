@@ -3,7 +3,6 @@ import importlib.util
 import discord
 from difflib import get_close_matches
 
-
 class commandManager:
     def __init__(self, client):
         self.Client = client
@@ -24,6 +23,7 @@ class commandManager:
         return commands
 
     def processCommand(self, message):
+        command_args = message.content[len(self.PREFIX):].strip().split()
         command_body = message.content[len(self.PREFIX):].strip()
         command_parts = command_body.split()
         if len(command_parts) == 0 or command_parts[0] == '':
