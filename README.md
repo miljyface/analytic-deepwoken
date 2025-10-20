@@ -94,7 +94,7 @@ Please refer to [Intepretations](#interpretations) for a general guide on how to
 ---
 
 ## Interpretations
-![what you'd see when you analyse stats](evo_plot.webp)
+![what you'd see when you analyse stats](assets/evo_plot.webp)
 This graph is separated into three segments, **Attunement**, **Weapon**, and **Base**. Each segment contains non-zero stat categories, with three stems to each category, the magnitude of the stems denoting the investment. 
 
 - **Red**: Pre-Shrine
