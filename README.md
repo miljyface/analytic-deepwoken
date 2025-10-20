@@ -118,20 +118,22 @@ The EHP testing scenarios are as follows:
 - **100 Enemy DPS**
 - **50% Enemy PEN**
 - Phys Kit: **112HP, 33% Phys from pips** [^1]
-- HP Kit: **147HP, 7% Phys from pips** 
+- HP Kit: **154HP, 4% Phys from pips** 
 
-If you are interested, this is the assumed kit for the ehp calculation.
+For transparency, this is the assumed kit for the ehp calculation.
 
 Phys:
 - **Parasol Planter: 9hp 12%phys (1 rare hp, 4 rare phys, 1 leg phys)**
 - **Bastions of Enmity: 17hp 18%phys (1 rare hp, 1 rare phys, 4 leg phys)**
+- **Confessor's Charm: 13hp 3%phys (1 rare eth, 2 rare hp, 1 leg hp)**
 
 HP:
 - **Parasol Planter: 26hp 2%phys (1 rare phys, 4 rare hp, 1 leg hp)**
 - **Bastions of Enmity: 37hp 2%phys (1 rare phys, 1 rare hp, 4 leg hp)**
+- **Fauld of Enmity: 18hp 0%phys (1 rare eth, 2 rare hp, 2 leg hp)**
 
+Constant:
 
-- Confessor's Charm: 13hp 3%phys
 - Star Boots: 30hp
 - Moonlit Earrings: 2hp
 - Citadel Frames: 5hp

@@ -6,7 +6,7 @@ import io
 
 def execute(build):
     buf1 = plot_breakdown(build, talentBase=dwb.talentBase, params={'dps': 100, 'pen': 50, 'kithp': 112, 'kitresis': 33})
-    buf2 = plot_breakdown(build, talentBase=dwb.talentBase, params={'dps': 100, 'pen': 50, 'kithp': 149, 'kitresis': 7})
+    buf2 = plot_breakdown(build, talentBase=dwb.talentBase, params={'dps': 100, 'pen': 50, 'kithp': 154, 'kitresis': 4})
 
     img1 = Image.open(buf1)
     img2 = Image.open(buf2)
