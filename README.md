@@ -94,14 +94,24 @@ Please refer to [Intepretations](#interpretations) for a general guide on how to
 ---
 
 ## Interpretations
-WIP
+![what you'd see when you analyse stats](evo_plot.webp)
+This graph is separated into three segments, **Attunement**, **Weapon**, and **Base**. Each segment contains non-zero stat categories, with three stems to each category, the magnitude of the stems denoting the investment. 
+
+- **Red**: Pre-Shrine
+- **Gray**: Immediately after Shrine of Order
+- **Black**: Post-Shrine
+
+For stats that are not required reinvestments (Fortitude, Weapons, Attunements), a blue bar will be drawn between the **Gray** apex and the **Black** apex, denoting the **Reinvestment Interval**. For key stats, this interval will be gray instead.
+
+The total blue on the graph is the amount of points that you have returned after using Shrine of Order. Builds with more blue usually means an unoptimal build, but this is not concrete.
 
 ---
 
 ## Examples
 
-- **Display Help**: `.help`
-- **Lookup Weapon**: `.weapon gale hb`
+- **Lookup Mantra (proper)**:  `.weapon Champion's Sword`
+- **Lookup Weapon (substring search)**:  `.weapon n's swor`
+- **Lookup Weapon (spellcheck)**: `.weapon gale hb`
 - **Analyze Build EHP**: `(replying to build link) ehp`
 ---
 
