@@ -29,7 +29,8 @@ async def on_message(message):
         return
     
     if message.content.startswith(commands.PREFIX):
-        await message.channel.send(embed = commands.processCommand(message), reference = message)
+        embed = commands.processCommand(message)
+        await message.channel.send(embed = embed, reference = message)
     
     if message.type == discord.MessageType.reply:
         referenced = message.reference
