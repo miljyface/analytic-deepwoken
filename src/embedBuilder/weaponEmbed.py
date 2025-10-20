@@ -19,7 +19,7 @@ def build_weapon_embed(weapon: dict) -> discord.Embed:
 
     embed = discord.Embed(
         title=f"{name} - {weptype}",
-        color=0xffffff
+        color=discord.Color.blurple()
     )
     def _format_reqs(reqs_dict: dict) -> str:
         """Format nested requirements dict into multiple lines.

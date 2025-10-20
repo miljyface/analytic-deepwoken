@@ -14,7 +14,7 @@ def build_equipment_embed(equipment: dict) -> discord.Embed:
 
     embed = discord.Embed(
         title=f"{name} ({equipmenttype})",
-        color=0xffffff
+        color=discord.Color.blurple()
     )
 
     embed.add_field(name="Stats", value='\n'.join([f"{k}: {v}" for k, v in equipmentstats.items()]) if equipmentstats else "None", inline=False)

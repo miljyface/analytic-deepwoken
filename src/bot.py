@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 
 import plugins.dwbapi as dwb
-from embedBuilder import statevoEmbed as emb
+from plugins import statevograph as emb
 from handlers.commandManager import commandManager
 from plugins.ehpbreakdown import plot_breakdown
 from handlers.interactionManager import interactionManager

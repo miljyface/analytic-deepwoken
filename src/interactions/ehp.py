@@ -25,7 +25,8 @@ def execute(build):
 
     embed = discord.Embed(
         title=f"Physical EHP Breakdown — {build.name}\nTop image: Phys Kit\nBottom image: HP Kit",
-        color=0xffffff
+        color=discord.Color.blurple()
+
     )
     embed.set_image(url="attachment://kit_breakdown.png")
 

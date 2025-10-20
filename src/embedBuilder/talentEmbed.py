@@ -16,7 +16,7 @@ def build_talent_embed(talent: dict) -> discord.Embed:
     embed = discord.Embed(
         title=f'{talent.get("name", "Unknown Talent")} - {category_name}',
         description=data.get("desc", "No description available."),
-        color=0xffffff
+        color=discord.Color.blurple()
     )
     embed.add_field(name="ID", value=str(talent.get("id", "N/A")), inline=True)
     embed.add_field(name="Rarity", value=data.get("rarity", "Unknown"), inline=True)

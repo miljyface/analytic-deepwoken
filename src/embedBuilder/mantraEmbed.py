@@ -21,7 +21,7 @@ def build_mantra_embed(mantra: dict) -> discord.Embed:
     embed = discord.Embed(
         title=f"{name} {'★' * int(stars) if str(stars).isdigit() else ''}",
         description=description,
-        color=0xffffff
+        color=discord.Color.blurple()
     )
     embed.add_field(name="Category", value=category, inline=True)
     embed.add_field(name="Type", value=mantra_type, inline=True)

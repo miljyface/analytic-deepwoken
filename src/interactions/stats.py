@@ -1,4 +1,4 @@
-from embedBuilder.statevoEmbed import statevograph
+from plugins.statevograph import statevograph
 import discord
 
 def execute(build):
@@ -6,7 +6,7 @@ def execute(build):
     file = discord.File(buf, filename="evo_plot.png")
     embed = discord.Embed(
         title = "Stat Evolution",
-        color=0xffffff
+        color=discord.Color.blurple()
     )
     embed.set_image(url="attachment://evo_plot.png")
     return embed, file

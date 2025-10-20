@@ -18,7 +18,7 @@ def build_outfit_embed(outfit: dict) -> discord.Embed:
 
     embed = discord.Embed(
         title=f"{name} - {rarity}",
-        color=0xffffff
+        color=discord.Color.blurple()
     )
 
     embed.add_field(name="Materials", value='\n'.join([f"{k}" for k in materials]) if materials else "None", inline=False)
