@@ -70,7 +70,7 @@
 
 | Command        | Description                                  |
 | -------------- | -------------------------------------------- |
-| DNE            | DNE                                          |
+| `.help`        |     Displays a help menu                     |
 
 ### Lookup Commands
 
@@ -95,6 +95,7 @@ Please refer to [Intepretations](#interpretations) for a general guide on how to
 
 ## Interpretations
 ![what you'd see when you analyse stats](assets/evo_plot.webp)
+
 This graph is separated into three segments, **Attunement**, **Weapon**, and **Base**. Each segment contains non-zero stat categories, with three stems to each category, the magnitude of the stems denoting the investment. 
 
 - **Red**: Pre-Shrine
@@ -106,6 +107,7 @@ For stats that are not required reinvestments (Fortitude, Weapons, Attunements),
 The total blue on the graph is the amount of points that you have returned after using Shrine of Order. Builds with more blue usually means an unoptimal build, but this is not concrete.
 
 ![what you'd see when you do ehp](assets/kit_breakdown.webp)
+
 This graph breaks down your build health to its components and scales them with the following flags:
 
 - **RA Effectiveness (0-30)**
@@ -117,7 +119,7 @@ The EHP testing scenarios are as follows:
 
 - **100 Enemy DPS**
 - **50% Enemy PEN**
-- Phys Kit: **112HP, 33% Phys from pips** [^1]
+- Phys Kit: **112HP, 33% Phys from pips**
 - HP Kit: **154HP, 4% Phys from pips** 
 
 For transparency, this is the assumed kit for the ehp calculation.
