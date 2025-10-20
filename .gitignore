@@ -12,9 +12,6 @@ __pycache__/
 dist/
 build/
 
-# Numpy binary weight files (no longer needed with RapidFuzz)
-data/weights/*.npy
-
 # Temporary cleanup scripts
 clear_slash_commands.py.venv
 __pycache__/
@@ -28,6 +25,3 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-
-# Numpy binary weight files (no longer needed with RapidFuzz)
-data/weights/*.npy
