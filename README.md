@@ -118,7 +118,24 @@ The EHP testing scenarios are as follows:
 - **100 Enemy DPS**
 - **50% Enemy PEN**
 - Phys Kit: **112HP, 33% Phys from pips** [^1]
-- HP Kit: **147HP, 7% Phys from pips** [^2]
+- HP Kit: **147HP, 7% Phys from pips** 
+
+If you are interested, this is the assumed kit for the ehp calculation.
+
+Phys:
+- **Parasol Planter: 9hp 12%phys (1 rare hp, 4 rare phys, 1 leg phys)**
+- **Bastions of Enmity: 17hp 18%phys (1 rare hp, 1 rare phys, 4 leg phys)**
+
+HP:
+- **Parasol Planter: 26hp 2%phys (1 rare phys, 4 rare hp, 1 leg hp)**
+- **Bastions of Enmity: 37hp 2%phys (1 rare phys, 1 rare hp, 4 leg hp)**
+
+
+- Confessor's Charm: 13hp 3%phys
+- Star Boots: 30hp
+- Moonlit Earrings: 2hp
+- Citadel Frames: 5hp
+- 4x Moon/Waning: 36hp
 
 ---
 
@@ -140,20 +157,5 @@ Contributions are welcome! Please open an issue or submit a pull request for enh
 
 This project is licensed under the MIT License. Feel free to use, modify, and distribute.
 
-[^1]
-**Parasol Planter: 9hp 12%phys (1 rare hp, 4 rare phys, 1 leg phys)**
-**Bastions of Enmity: 17hp 18%phys (1 rare hp, 1 rare phys, 4 leg phys)**
-Confessor's Charm: 13hp 3%phys
-Star Boots: 30hp
-Moonlit Earrings: 2hp
-Citadel Frames: 5hp
-4x Moon/Waning: 36hp
 
-[^2]
-**Parasol Planter: 26hp 2%phys (1 rare phys, 4 rare hp, 1 leg hp)**
-**Bastions of Enmity: 37hp 2%phys (1 rare phys, 1 rare hp, 4 leg hp)**
-Confessor's Charm: 13hp 3%phys
-Star Boots: 30hp
-Moonlit Earrings: 2hp
-Citadel Frames: 5hp
-4x Moon/Waning: 36hp
+
