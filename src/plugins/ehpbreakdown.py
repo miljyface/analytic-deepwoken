@@ -12,7 +12,7 @@ def ehp_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp': 112, 
     power_bonus = build.rawdata['stats']['power'] * 4
     breakdown['Power'] = power_bonus
 
-    breakdown['Base HP'] = 196
+    breakdown['Base HP'] = 200
 
     for stat in build.post['base']:
         
@@ -93,6 +93,8 @@ def plot_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp':112, 
     mag_values = [v * mag_factor for v in values]
 
     plt.figure(figsize=(8, 3.8))
+    plt.style.use('seaborn-v0_8-whitegrid')
+    plt.rcParams.update({'font.family': 'Helvetica Neue','axes.edgecolor':'gray','axes.linewidth':0.7})
     bars1 = plt.barh(components, values, height=0.32, color="#f42307", label="Raw", edgecolor="#333333", linewidth=0.8)
     bars2 = plt.barh(components, mag_values, height=0.32, color='#3c5fa5', alpha=0.24, label="EHP w/ PEN/Resist", edgecolor="#333333", linewidth=0.6)
 
@@ -111,7 +113,6 @@ def plot_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp':112, 
     plt.xlabel('Health Contribution', fontsize=10, weight='bold', labelpad=4)
     plt.xticks(fontsize=9)
     plt.yticks(fontsize=9)
-    plt.title(f"Physical EHP Breakdown — {build.name}", fontsize=11, weight='bold', pad=8)
     plt.legend(fontsize=8, loc='lower right', frameon=False)
     plt.grid(axis='x', color='#eeeeee', linewidth=0.65, alpha=0.6)
     

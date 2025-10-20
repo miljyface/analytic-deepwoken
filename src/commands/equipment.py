@@ -9,7 +9,6 @@ def execute(name):
 
     if match:
         equipment_data = searchTableByName('equipment', match)
-        print(equipment_data)
         return emb.build_equipment_embed(equipment_data)
     else:
         most_similar_name = find(name, 'equipment')
