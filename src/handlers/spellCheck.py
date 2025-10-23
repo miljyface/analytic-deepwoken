@@ -1,31 +1,64 @@
 """
 Fuzzy string matching for spell-checking using RapidFuzz.
 Replaces the previous PyTorch/sentence-transformers implementation.
+
+OPTIMIZATION: Lazy loading - tables are fetched only when needed,
+reducing startup time and memory usage.
 """
 from rapidfuzz import process, fuzz
 from handlers.backbone import fetch_table
 
 
-# Load name lists from the backend on module import (lightweight operation)
-def _load_names():
-    """Load all item names from the database."""
-    weapon_names = [wb['name'] for wb in fetch_table('weapons')]
-    mantra_names = [mb.get('name', '') for mb in fetch_table('mantras')]
-    equipment_names = [eb.get('data', {}).get('name') or eb.get('name', '') for eb in fetch_table('equipment')]
-    outfit_names = [ob.get('data', {}).get('name') or ob.get('name', '') for ob in fetch_table('outfits')]
-    talent_names = [tb.get('name', '') for tb in fetch_table('talents')]
-    return weapon_names, mantra_names, equipment_names, outfit_names, talent_names
-
-
-weapon_names, mantra_names, equipment_names, outfit_names, talent_names = _load_names()
-
-names_dict = {
-    "talent": talent_names,
-    "mantra": mantra_names,
-    "outfit": outfit_names,
-    "equipment": equipment_names,
-    "weapon": weapon_names
+# Global cache for loaded names (lazy initialization)
+_names_cache = {
+    "talent": None,
+    "mantra": None,
+    "outfit": None,
+    "equipment": None,
+    "weapon": None
 }
+
+
+def _load_names_for_type(item_type):
+    """Load item names for a specific type from the database (lazy loading)."""
+    if _names_cache[item_type] is not None:
+        return _names_cache[item_type]
+    
+    # Fetch and cache based on type
+    if item_type == "weapon":
+        names = [wb['name'] for wb in fetch_table('weapons')]
+    elif item_type == "mantra":
+        names = [mb.get('name', '') for mb in fetch_table('mantras')]
+    elif item_type == "equipment":
+        names = [eb.get('data', {}).get('name') or eb.get('name', '') for eb in fetch_table('equipment')]
+    elif item_type == "outfit":
+        names = [ob.get('data', {}).get('name') or ob.get('name', '') for ob in fetch_table('outfits')]
+    elif item_type == "talent":
+        names = [tb.get('name', '') for tb in fetch_table('talents')]
+    else:
+        names = []
+    
+    _names_cache[item_type] = names
+    return names
+
+
+# Module-level variables for backward compatibility
+# Loaded lazily when accessed
+weapon_names = None
+mantra_names = None
+equipment_names = None
+outfit_names = None
+talent_names = None
+
+def _ensure_names_loaded():
+    """Ensure all name lists are loaded (called on first access)"""
+    global weapon_names, mantra_names, equipment_names, outfit_names, talent_names
+    if weapon_names is None:
+        weapon_names = _load_names_for_type("weapon")
+        mantra_names = _load_names_for_type("mantra")
+        equipment_names = _load_names_for_type("equipment")
+        outfit_names = _load_names_for_type("outfit")
+        talent_names = _load_names_for_type("talent")
 
 
 
@@ -101,7 +134,10 @@ def find(argument, type):
         str: The best matching name from the database.
     """
     argument = (argument or "").strip()
-    names = names_dict.get(type, [])
+    
+    # Get names for this type (uses cache if already loaded)
+    names = _get_names_for_type(type)
+    
     if not names:
         return ""
 

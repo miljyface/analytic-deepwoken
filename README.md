@@ -59,7 +59,7 @@
    ```
 2. Start the bot:
    ```bash
-   python bot.py
+   python src/bot.py
    ```
 
 ---
@@ -89,7 +89,7 @@
 | `ehp`.                      | Calculates Effective Health Points of a full Phys and HP kit |
 | `stats`.                    | Displays the Stat Evolution diagram for visualisation of optimisation |
 
-Please refer to [Intepretations](#interpretations) for a general guide on how to read the analytics.
+Please refer to [Interpretations](#interpretations) for a general guide on how to read the analytics.
 
 ---
 

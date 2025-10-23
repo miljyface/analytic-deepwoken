@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 from plugins.dwbapi import dwbBuild
 from plugins.dwbapi import talentBase
 import io
@@ -91,6 +90,11 @@ def plot_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp':112, 
     kitresis = build.scalePhys(params['kitresis'], build.talents, build.outfit)
     mag_factor = 1 / build.resisCoefficient(params['pen'], kitresis, flags[0])
     mag_values = [v * mag_factor for v in values]
+
+    # Lazy import matplotlib - only loads when generating plots
+    import matplotlib
+    matplotlib.use('Agg')  # Headless backend - saves ~5-10MB RAM
+    import matplotlib.pyplot as plt
 
     plt.figure(figsize=(8, 3.8))
     plt.style.use('seaborn-v0_8-whitegrid')

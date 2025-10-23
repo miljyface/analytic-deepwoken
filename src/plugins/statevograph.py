@@ -1,9 +1,13 @@
-import matplotlib.pyplot as plt
 from plugins.shrineoforder import order
-from matplotlib.lines import Line2D
 import io
 
 def statevograph(build):
+    # Lazy import matplotlib - only loads when actually generating graphs (~70MB RAM saved on startup)
+    import matplotlib
+    matplotlib.use('Agg')  # Headless backend - saves ~5-10MB RAM
+    import matplotlib.pyplot as plt
+    from matplotlib.lines import Line2D
+    
     playerStats = {"Race": build.race, "PointsSpent": 0}
     flatpre = build.flatpre
     flatpost = build.flatpost

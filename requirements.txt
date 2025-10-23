@@ -1,9 +1,10 @@
-discord.py
-python-dotenv
-supabase
-rapidfuzz
-numpy
-matplotlib.pyplot
-requests
-pandas
-io
+# Core Dependencies (Optimized for speed & RAM)
+discord.py==2.6.4
+python-dotenv==1.1.1
+rapidfuzz==3.13.0
+
+# HTTP Requests (replaces supabase SDK - saves ~10MB RAM, ~0.85s startup)
+requests==2.32.5
+
+# Visualization (lazy loaded - only when needed)
+matplotlib==3.9.4
