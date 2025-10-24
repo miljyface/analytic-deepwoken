@@ -13,7 +13,6 @@
   - [General Commands](#general-commands)
   - [Lookup Commands](#lookup-commands)
   - [Analytics](#analytics-commands)
-  - [Help Command](#help-command)
 - [Examples](#examples)
 - [Contributing](#contributing)
 - [License](#license)
@@ -54,7 +53,6 @@
    ```dotenv
     BOT_TOKEN = TOKEN HERE
     DATABASE_KEY= ACCESS KEY HERE
-    TOKENIZERS_PARALLELISM = false
     DATABASE_URL = https://idyjvmmldtdvpklkzrgr.supabase.co
    ```
 2. Start the bot:
@@ -94,6 +92,7 @@ Please refer to [Interpretations](#interpretations) for a general guide on how t
 ---
 
 ## Interpretations
+
 ![what you'd see when you analyse stats](assets/evo_plot.webp)
 
 This graph is separated into three segments, **Attunement**, **Weapon**, and **Base**. Each segment contains non-zero stat categories, with three stems to each category, the magnitude of the stems denoting the investment. 
@@ -125,11 +124,13 @@ The EHP testing scenarios are as follows:
 For transparency, this is the assumed kit for the ehp calculation.
 
 Phys:
+
 - **Parasol Planter: 9hp 12%phys (1 rare hp, 4 rare phys, 1 leg phys)**
 - **Bastions of Enmity: 17hp 18%phys (1 rare hp, 1 rare phys, 4 leg phys)**
 - **Confessor's Charm: 13hp 3%phys (1 rare eth, 2 rare hp, 1 leg hp)**
 
 HP:
+
 - **Parasol Planter: 26hp 2%phys (1 rare phys, 4 rare hp, 1 leg hp)**
 - **Bastions of Enmity: 37hp 2%phys (1 rare phys, 1 rare hp, 4 leg hp)**
 - **Fauld of Enmity: 18hp 0%phys (1 rare eth, 2 rare hp, 2 leg hp)**
@@ -154,12 +155,3 @@ Constant:
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for enhancements, bug fixes, or new features.
-
----
-
-## License
-
-This project is licensed under the MIT License. Feel free to use, modify, and distribute.
-
-
-
