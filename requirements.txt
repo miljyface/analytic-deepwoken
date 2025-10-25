@@ -1,10 +1,10 @@
-# Core Dependencies (Optimized for speed & RAM)
+# Dependencies
 discord.py==2.6.4
 python-dotenv==1.1.1
 rapidfuzz==3.13.0
 
-# HTTP Requests (replaces supabase SDK - saves ~10MB RAM, ~0.85s startup)
+# HTTP Requests
 requests==2.32.5
 
-# Visualization (lazy loaded - only when needed)
+# Visualization
 matplotlib==3.9.4
