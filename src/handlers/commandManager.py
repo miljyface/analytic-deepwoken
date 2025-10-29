@@ -2,6 +2,7 @@ import os
 import importlib.util
 import discord
 from difflib import get_close_matches
+from utils.language_manager import language_manager
 
 class commandManager:
     def __init__(self, client):
@@ -23,8 +24,14 @@ class commandManager:
         return commands
 
     def processCommand(self, message):
-        command_args = message.content[len(self.PREFIX):].strip().split()
-        command_body = message.content[len(self.PREFIX):].strip()
+        # Check if there's a space immediately after the prefix (e.g., ". e" or ". weapon")
+        after_prefix = message.content[len(self.PREFIX):]
+        if after_prefix.startswith(' '):
+            # Ignore commands with space after prefix to avoid false "Command not found"
+            return None
+        
+        command_args = after_prefix.strip().split()
+        command_body = after_prefix.strip()
         command_parts = command_body.split()
         if len(command_parts) == 0 or command_parts[0] == '':
             return None
@@ -33,6 +40,10 @@ class commandManager:
         print(command_body)
 
         command_file = os.path.join(self.COMMANDPATH, f"{command_name}.py")
+        
+        # Get guild (server) ID for language support
+        guild_id = message.guild.id if message.guild else None
+        
         # If no args provided for item lookup commands, show usage example instead of returning first item
         if command_name in ('talent', 'mantra', 'outfit', 'weapon', 'equipment') and len(command_args) == 0:
             usage_map = {
@@ -43,7 +54,9 @@ class commandManager:
                 'equipment': '.equipment {equipment name}'
             }
             example = usage_map.get(command_name, f'.{command_name} {{name}}')
-            embed = discord.Embed(title='Usage', description=f'Please provide an argument. Example: `{example}`', color=0xffcc00)
+            title = language_manager.get_text(guild_id, 'usage')
+            description = language_manager.get_text(guild_id, 'usage_description').format(example=example)
+            embed = discord.Embed(title=title, description=description, color=0xffcc00)
             return embed
         if os.path.isfile(command_file):
             spec = importlib.util.spec_from_file_location(command_name, command_file)
@@ -51,7 +64,16 @@ class commandManager:
             spec.loader.exec_module(command_module)
 
             if hasattr(command_module, 'execute'):
-                return command_module.execute(command_body)
+                # Pass message object for commands that need guild_id (like help)
+                # Pass command_body for commands that need arguments (like weapon, talent, etc.)
+                if command_name == 'help':
+                    return command_module.execute(message)
+                else:
+                    # For lookup commands, pass both command_body and guild_id
+                    if command_name in ('talent', 'mantra', 'outfit', 'weapon', 'equipment'):
+                        return command_module.execute(command_body, guild_id)
+                    else:
+                        return command_module.execute(command_body)
             else:
                 print(f"Command {command_name} does not have an execute function.")
         else:
@@ -64,11 +86,13 @@ class commandManager:
                 candidates.add(command_name[:-1])
             # fuzzy match
             close = get_close_matches(command_name, list(candidates), n=3, cutoff=0.6)
-            suggestion_text = ''
+            
+            title = language_manager.get_text(guild_id, 'command_not_found')
             if close:
-                suggestion_text = 'Perhaps you meant: ' + ', '.join(close)
+                suggestions = ', '.join(close)
+                description = language_manager.get_text(guild_id, 'perhaps_you_meant').format(suggestions=suggestions)
             else:
-                suggestion_text = f'Unknown command: {command_name}'
+                description = language_manager.get_text(guild_id, 'unknown_command').format(command=command_name)
 
-            embed = discord.Embed(title='Command not found', description=suggestion_text, color=0xffcc00)
+            embed = discord.Embed(title=title, description=description, color=0xffcc00)
             return embed

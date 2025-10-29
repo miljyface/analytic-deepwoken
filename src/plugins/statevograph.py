@@ -1,12 +1,19 @@
 from plugins.shrineoforder import order
 import io
 
-def statevograph(build):
+def statevograph(build, guild_id=None):
     # Lazy import matplotlib - only loads when actually generating graphs (~70MB RAM saved on startup)
     import matplotlib
     matplotlib.use('Agg')  # Headless backend - saves ~5-10MB RAM
     import matplotlib.pyplot as plt
     from matplotlib.lines import Line2D
+    from utils.language_manager import language_manager
+    
+    # Register custom fonts (optional). If unavailable, we'll use a safe default font.
+    try:
+        from utils.font_manager import _fonts_registered  # side-effect: registers fonts if present
+    except Exception:
+        pass  # Continue with matplotlib's bundled fonts
     
     playerStats = {"Race": build.race, "PointsSpent": 0}
     flatpre = build.flatpre
@@ -63,7 +70,13 @@ def statevograph(build):
     post_values = [flatpost[key] for key in categories]
 
     plt.style.use('seaborn-v0_8-whitegrid')
-    plt.rcParams.update({'font.family': 'Helvetica Neue','axes.edgecolor':'gray','axes.linewidth':0.7})
+    # Use a robust default font to ensure consistent sizing/layout across systems.
+    # Keep translations intact; only font family is adjusted for readability.
+    plt.rcParams.update({
+        'font.family': 'DejaVu Sans',
+        'axes.edgecolor': 'gray',
+        'axes.linewidth': 0.7
+    })
 
     plt.figure(figsize=(13, current_y*0.1 + 5))
     color_pre = "#DC143C"
@@ -112,15 +125,15 @@ def statevograph(build):
 
     plt.yticks(y, new_categories, fontsize=15, fontweight='medium')
     plt.ylim(min(ys_pre)-gap*1.0, max(ys_post)+gap*1.5)
-    plt.xlabel('Stat Value', fontsize=16, fontweight='semibold', labelpad=8)
+    plt.xlabel(language_manager.get_text(guild_id, 'stat_value'), fontsize=16, fontweight='semibold', labelpad=8)
     plt.xlim(-8, max(pre_values+ord_values+post_values) + 18)
 
     handles = [
-        Line2D([0], [0], color=color_pre, marker='o', linestyle='-', linewidth=lw, markersize=9, label='Pre-Shrine'),
-        Line2D([0], [0], color=color_ord, marker='^', linestyle='-', linewidth=lw, markersize=9, label='Order'),
-        Line2D([0], [0], color=color_post, marker='s', linestyle='-', linewidth=lw, markersize=9, label='Post-Shrine'),
-        Line2D([0], [0], color=color_reinvest,  linestyle='-', linewidth=8, alpha=0.92, label='Reinvest interval'),
-        Line2D([0], [0], color=color_reinvest_gray, linestyle='-', linewidth=8, alpha=0.92, label='Reinvest (Key Stat)'),
+        Line2D([0], [0], color=color_pre, marker='o', linestyle='-', linewidth=lw, markersize=9, label=language_manager.get_text(guild_id, 'pre_shrine')),
+        Line2D([0], [0], color=color_ord, marker='^', linestyle='-', linewidth=lw, markersize=9, label=language_manager.get_text(guild_id, 'order')),
+        Line2D([0], [0], color=color_post, marker='s', linestyle='-', linewidth=lw, markersize=9, label=language_manager.get_text(guild_id, 'post_shrine')),
+        Line2D([0], [0], color=color_reinvest,  linestyle='-', linewidth=8, alpha=0.92, label=language_manager.get_text(guild_id, 'reinvest_interval')),
+        Line2D([0], [0], color=color_reinvest_gray, linestyle='-', linewidth=8, alpha=0.92, label=language_manager.get_text(guild_id, 'reinvest_key_stat')),
     ]
     plt.legend(handles=handles, loc='lower right', frameon=False, fontsize=13, ncol=1)
     plt.tight_layout(pad=2)

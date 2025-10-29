@@ -1,12 +1,13 @@
 import discord
 import handlers.backbone as daten
+from utils.language_manager import language_manager
 
 
-def build_weapon_embed(weapon: dict) -> discord.Embed:
+def build_weapon_embed(weapon: dict, guild_id=None) -> discord.Embed:
     payload = weapon.get('data') if isinstance(weapon.get('data'), dict) else weapon
 
-    name = payload.get('name', 'Unknown')
-    weptype = payload.get('type', 'Unknown')
+    name = payload.get('name', language_manager.get_text(guild_id, 'unknown'))
+    weptype = payload.get('type', language_manager.get_text(guild_id, 'unknown'))
 
     details = payload.get('details', {})
     pen = details.get('pen', 0)
@@ -75,11 +76,11 @@ def build_weapon_embed(weapon: dict) -> discord.Embed:
     # Requirements field (hide if all empty)
     reqs_text = _format_reqs(reqs)
     if reqs_text:
-        embed.add_field(name="Requirements", value=reqs_text, inline=True)
+        embed.add_field(name=language_manager.get_text(guild_id, 'requirements'), value=reqs_text, inline=True)
 
     # Base Damage (show if present/non-zero)
     if damage is not None:
-        embed.add_field(name="Base Damage", value=str(damage), inline=True)
+        embed.add_field(name=language_manager.get_text(guild_id, 'base_damage'), value=str(damage), inline=True)
 
     # Penetration as percentage
     try:
@@ -88,18 +89,18 @@ def build_weapon_embed(weapon: dict) -> discord.Embed:
         pen_text = f"{int(pen_val)}%" if pen_val.is_integer() else f"{pen_val:.1f}%"
     except Exception:
         pen_text = str(pen)
-    embed.add_field(name="Penetration", value=pen_text, inline=True)
+    embed.add_field(name=language_manager.get_text(guild_id, 'penetration'), value=pen_text, inline=True)
 
     if weight is not None:
-        embed.add_field(name="Weight", value=str(weight), inline=True)
+        embed.add_field(name=language_manager.get_text(guild_id, 'weight'), value=str(weight), inline=True)
     if speed is not None:
-        embed.add_field(name="Speed", value=str(speed), inline=True)
+        embed.add_field(name=language_manager.get_text(guild_id, 'speed'), value=str(speed), inline=True)
     if endlag is not None:
-        embed.add_field(name="Endlag", value=str(endlag), inline=True)
+        embed.add_field(name=language_manager.get_text(guild_id, 'endlag'), value=str(endlag), inline=True)
 
     # Scaling (hide if empty)
     if scaling:
         scaling_text = '\n'.join([f"{k}: {v}" for k, v in scaling.items()])
-        embed.add_field(name="Scaling", value=scaling_text, inline=False)
+        embed.add_field(name=language_manager.get_text(guild_id, 'scaling'), value=scaling_text, inline=False)
 
     return embed

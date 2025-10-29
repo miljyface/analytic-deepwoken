@@ -1,27 +1,29 @@
 import discord
 import handlers.backbone as daten
+from utils.language_manager import language_manager
 
 
-def build_outfit_embed(outfit: dict) -> discord.Embed:
+def build_outfit_embed(outfit: dict, guild_id=None) -> discord.Embed:
     payload = outfit.get('data') if isinstance(outfit.get('data'), dict) else outfit
 
-    name = payload.get('name', 'Unknown')
-    materials = payload.get('mats', 'Unknown')
-    rarity = payload.get('category', 'Unknown')
+    name = payload.get('name', language_manager.get_text(guild_id, 'unknown'))
+    materials = payload.get('mats', language_manager.get_text(guild_id, 'unknown'))
+    rarity = payload.get('category', language_manager.get_text(guild_id, 'unknown'))
     requirements = payload.get('requirements', {})
 
     #functional stats
-    durability = payload.get('durability', 'Unknown')
+    durability = payload.get('durability', language_manager.get_text(guild_id, 'unknown'))
     resis = payload.get('resistances', {})
-    etherRegen = payload.get('ether regen', 'Unknown')
-    talents = payload.get('talents', 'None')
+    etherRegen = payload.get('ether regen', language_manager.get_text(guild_id, 'unknown'))
+    talents = payload.get('talents', language_manager.get_text(guild_id, 'none'))
 
     embed = discord.Embed(
         title=f"{name} - {rarity}",
         color=discord.Color.blurple()
     )
 
-    embed.add_field(name="Materials", value='\n'.join([f"{k}" for k in materials]) if materials else "None", inline=False)
+    none_text = language_manager.get_text(guild_id, 'none')
+    embed.add_field(name=language_manager.get_text(guild_id, 'materials'), value='\n'.join([f"{k}" for k in materials]) if materials else none_text, inline=False)
 
     # Requirements: omit entries that are zero (0 or '0')
     req_lines = []
@@ -42,24 +44,25 @@ def build_outfit_embed(outfit: dict) -> discord.Embed:
                 if v not in (None, '', '0'):
                     req_lines.append(f"{k}: {v}")
 
-    embed.add_field(name="Requirements", value='\n'.join(req_lines) if req_lines else "None", inline=False)
+    embed.add_field(name=language_manager.get_text(guild_id, 'requirements'), value='\n'.join(req_lines) if req_lines else none_text, inline=False)
 
     #functional display
+    unknown_text = language_manager.get_text(guild_id, 'unknown')
     # Durability: only show if meaningful and non-zero
     if isinstance(durability, (int, float)):
         if durability != 0:
-            embed.add_field(name="Durability", value=str(durability), inline=True)
+            embed.add_field(name=language_manager.get_text(guild_id, 'durability'), value=str(durability), inline=True)
     else:
         # show when it's a non-numeric meaningful value
-        if durability not in (None, 'Unknown'):
-            embed.add_field(name="Durability", value=str(durability), inline=True)
+        if durability not in (None, unknown_text):
+            embed.add_field(name=language_manager.get_text(guild_id, 'durability'), value=str(durability), inline=True)
 
     # Ether regen: always show if numeric (with %), otherwise show textual value
     if isinstance(etherRegen, (int, float)):
-        embed.add_field(name="Ether Regen", value=f"{etherRegen}%", inline=True)
+        embed.add_field(name=language_manager.get_text(guild_id, 'ether_regen'), value=f"{etherRegen}%", inline=True)
     else:
         if etherRegen not in (None,):
-            embed.add_field(name="Ether Regen", value=str(etherRegen), inline=True)
+            embed.add_field(name=language_manager.get_text(guild_id, 'ether_regen'), value=str(etherRegen), inline=True)
 
     # Resistances: omit entries with 0, format included values with %
     if isinstance(resis, dict):
@@ -106,7 +109,7 @@ def build_outfit_embed(outfit: dict) -> discord.Embed:
                 res_lines.append(formatted)
 
         if res_lines:
-            embed.add_field(name="Resistances", value='\n'.join(res_lines), inline=False)
+            embed.add_field(name=language_manager.get_text(guild_id, 'resistances'), value='\n'.join(res_lines), inline=False)
 
     # Talents: resolve integer ids safely using searchTableById
     if talents:
@@ -125,6 +128,6 @@ def build_outfit_embed(outfit: dict) -> discord.Embed:
             else:
                 talent_lines.append(str(k))
         if talent_lines:
-            embed.add_field(name="Talents", value='\n'.join(talent_lines), inline=False)
+            embed.add_field(name=language_manager.get_text(guild_id, 'talents'), value='\n'.join(talent_lines), inline=False)
 
     return embed
