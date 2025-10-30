@@ -95,10 +95,21 @@ def plot_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp':112, 
     import matplotlib
     matplotlib.use('Agg')  # Headless backend - saves ~5-10MB RAM
     import matplotlib.pyplot as plt
+    
+    # Register custom fonts
+    try:
+        from utils.font_manager import _fonts_registered
+    except Exception:
+        pass  # Fallback to default fonts if registration fails
 
     plt.figure(figsize=(8, 3.8))
     plt.style.use('seaborn-v0_8-whitegrid')
-    plt.rcParams.update({'font.family': 'Helvetica Neue','axes.edgecolor':'gray','axes.linewidth':0.7})
+    # Use Helvetica Neue if available, fallback to DejaVu Sans
+    plt.rcParams.update({
+        'font.family': 'Helvetica Neue',
+        'axes.edgecolor': 'gray',
+        'axes.linewidth': 0.7
+    })
     bars1 = plt.barh(components, values, height=0.32, color="#f42307", label="Raw", edgecolor="#333333", linewidth=0.8)
     bars2 = plt.barh(components, mag_values, height=0.32, color='#3c5fa5', alpha=0.24, label="EHP w/ PEN/Resist", edgecolor="#333333", linewidth=0.6)
 

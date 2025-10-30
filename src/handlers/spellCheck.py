@@ -136,7 +136,7 @@ def find(argument, type):
     argument = (argument or "").strip()
     
     # Get names for this type (uses cache if already loaded)
-    names = _get_names_for_type(type)
+    names = _load_names_for_type(type)
     
     if not names:
         return ""

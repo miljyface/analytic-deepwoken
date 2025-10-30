@@ -3,8 +3,9 @@ from plugins.ehpbreakdown import plot_breakdown
 import plugins.dwbapi as dwb
 from PIL import Image
 import io
+from utils.language_manager import language_manager
 
-def execute(build):
+def execute(build, guild_id=None):
     buf1 = plot_breakdown(build, talentBase=dwb.talentBase, params={'dps': 100, 'pen': 50, 'kithp': 112, 'kitresis': 33})
     buf2 = plot_breakdown(build, talentBase=dwb.talentBase, params={'dps': 100, 'pen': 50, 'kithp': 154, 'kitresis': 4})
 
@@ -23,8 +24,9 @@ def execute(build):
 
     file = discord.File(fp=output_buf, filename="kit_breakdown.png")
 
+    title = language_manager.get_text(guild_id, 'ehp_breakdown_title').format(name=build.name)
     embed = discord.Embed(
-        title=f"Physical EHP Breakdown — {build.name}\nTop image: Phys Kit\nBottom image: HP Kit",
+        title=title,
         color=discord.Color.blurple()
 
     )

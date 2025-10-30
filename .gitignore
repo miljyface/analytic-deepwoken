@@ -12,6 +12,9 @@ __pycache__/
 dist/
 build/
 
+# Bot configuration
+data/server_languages.json
+
 # Temporary cleanup scripts
 clear_slash_commands.py.venv
 __pycache__/
