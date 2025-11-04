@@ -86,6 +86,7 @@
 | --------------------------- | ---------------------------------------------------- |
 | `ehp`.                      | Calculates Effective Health Points of a full Phys and HP kit |
 | `stats`.                    | Displays the Stat Evolution diagram for visualisation of optimisation |
+| `validate`.                 | Validates the build against the Deepleague Rulebook |
 
 Please refer to [Interpretations](#interpretations) for a general guide on how to read the analytics.
 
