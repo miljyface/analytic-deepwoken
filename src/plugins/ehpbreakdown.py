@@ -1,5 +1,3 @@
-from plugins.dwbapi import dwbBuild
-from plugins.dwbapi import talentBase
 import io
 
 def ehp_breakdown(build, talentBase, params={'dps':100, 'pen':50, 'kithp': 112, 'kitresis':33}):

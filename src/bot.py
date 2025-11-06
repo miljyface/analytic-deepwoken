@@ -3,8 +3,8 @@ import os
 import asyncio
 from dotenv import load_dotenv
 
-import plugins.dwbapi as dwb
-from plugins import statevograph as emb
+import plugins._DWBAPIWRAPPER as dwb
+from plugins import statEvo as emb
 from handlers.commandManager import commandManager
 from plugins.ehpbreakdown import plot_breakdown
 from handlers.interactionManager import interactionManager

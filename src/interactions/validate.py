@@ -1,5 +1,5 @@
 import discord
-from plugins.legality import BuildLegalityChecker
+from plugins.legalityChecker import BuildLegalityChecker
 
 def execute(build, guild_id=None):
     checker = BuildLegalityChecker()

@@ -145,6 +145,6 @@ class BuildLegalityChecker:
                 inline=False
             )
         
-        embed.set_footer(text="Updated Nov 4, 2024")
+        embed.set_footer(text="Updated Nov 4, 2025")
         
         return embed
