@@ -1,9 +1,4 @@
-"""
-Language configuration manager for multi-language support per Discord server.
-Stores language preference in a simple JSON file.
-"""
 import json
-import os
 from pathlib import Path
 
 
