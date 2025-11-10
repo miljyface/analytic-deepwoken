@@ -3,10 +3,7 @@ import os
 import asyncio
 from dotenv import load_dotenv
 
-import plugins._DWBAPIWRAPPER as dwb
-from plugins import statEvo as emb
 from handlers.commandManager import commandManager
-from plugins.ehpbreakdown import plot_breakdown
 from handlers.interactionManager import interactionManager
 from utils.language_manager import language_manager
 
@@ -47,7 +44,7 @@ async def on_message(message):
                     # User doesn't have permission
                     guild_id = message.guild.id if message.guild else None
                     lang = language_manager.get_language(guild_id)
-                    title = "🔒 Permission Denied" if lang == 'en' else "🔒 Permiso Denegado"
+                    title = "Permission Denied" if lang == 'en' else "Permiso Denegado"
                     desc = "Only administrators can change the bot language." if lang == 'en' else "Solo los administradores pueden cambiar el idioma del bot."
                     embed = discord.Embed(title=title, description=desc, color=0xED4245)
                     await message.channel.send(embed=embed, reference=message)
