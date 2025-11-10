@@ -10,7 +10,6 @@ class LanguageManager:
         self.default_language = 'en'
     
     def _load_config(self):
-        """Load server language configurations from JSON file."""
         if self.config_file.exists():
             try:
                 with open(self.config_file, 'r', encoding='utf-8') as f:
@@ -21,7 +20,6 @@ class LanguageManager:
         return {}
     
     def _save_config(self):
-        """Save server language configurations to JSON file."""
         try:
             with open(self.config_file, 'w', encoding='utf-8') as f:
                 json.dump(self.languages, f, indent=2, ensure_ascii=False)
@@ -29,22 +27,18 @@ class LanguageManager:
             print(f"Error saving language config: {e}")
     
     def get_language(self, guild_id):
-        """Get language for a specific guild (server). Returns 'en' or 'es'."""
         if guild_id is None:
             return self.default_language
         return self.languages.get(str(guild_id), self.default_language)
     
     def set_language(self, guild_id, language):
-        """Set language for a specific guild. Language must be 'en' or 'es'."""
         if language not in ['en', 'es']:
-            raise ValueError("Language must be 'en' or 'es'")
-        
+            raise ValueError("Language must be 'en' or 'es'")   
         self.languages[str(guild_id)] = language
         self._save_config()
         return True
     
     def get_text(self, guild_id, key):
-        """Get translated text for a guild based on its language setting."""
         lang = self.get_language(guild_id)
         return TRANSLATIONS.get(key, {}).get(lang, TRANSLATIONS.get(key, {}).get('en', key))
 
