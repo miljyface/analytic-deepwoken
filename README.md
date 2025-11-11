@@ -159,7 +159,7 @@ Constant:
 - **Lookup Mantra (proper)**:  `.weapon Champion's Sword`
 - **Lookup Weapon (substring search)**:  `.weapon n's swor`
 - **Lookup Weapon (spellcheck)**: `.weapon gale hb`
-- **Analyze Build EHP**: `(replying to build link) ehp`
+- **Analyze Build EHP (replying to build link)**: `ehp`
 
 ---
 
