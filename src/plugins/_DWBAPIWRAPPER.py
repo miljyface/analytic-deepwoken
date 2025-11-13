@@ -1,5 +1,5 @@
 import requests
-import handlers as process
+import _HANDLERS as process
 
 talentBase = process.fetch_table('talents')
 
