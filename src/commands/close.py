@@ -2,20 +2,20 @@ import discord
 
 def execute(command_body, message):
     clopen_manager = message.guild._state._get_client().clopen_manager
+    meta = { 'auto_delete': True, 'delete_user_message': True, 'timeout': 10 }
 
     if not message.guild:
         return (discord.Embed(
             description="This command can only be used in servers.",
             color=0xED4245
-        ), None)
+        ), meta)
 
-    
     # Check if this channel is in the system
     if message.channel.id not in clopen_manager.channels:
         return (discord.Embed(
             description="This is not a clopen-managed channel.",
             color=0xED4245
-        ), None)
+        ), meta)
     
     chan_data = clopen_manager.channels[message.channel.id]
     
@@ -24,7 +24,7 @@ def execute(command_body, message):
         return (discord.Embed(
             description="This channel is not currently in use.",
             color=0xED4245
-        ), None)
+        ), meta)
     
     # Check if user owns the channel or is admin
     is_owner = chan_data.owner_id == message.author.id
@@ -34,7 +34,7 @@ def execute(command_body, message):
         return (discord.Embed(
             description=f"Only <@{chan_data.owner_id}> or administrators can close this channel.",
             color=0xED4245
-        ), None)
+        ), meta)
     
     # Parse reason
     reason = command_body.strip() if command_body else "Channel closed"

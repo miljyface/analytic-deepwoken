@@ -4,11 +4,12 @@ import discord
 from difflib import get_close_matches
 from utils.language_manager import language_manager
 
+PREFIX = '.'
 
 class commandManager:
     def __init__(self, client):
         self.Client = client
-        self.PREFIX = '.'
+        self.PREFIX = PREFIX
         self.clopen_manager = None  # Will be set by bot.py
         
         current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -30,15 +31,6 @@ class commandManager:
         return commands
 
     async def processCommand(self, message):
-        """
-        Process a command message
-        
-        Returns:
-            - None if async command (already handled)
-            - (embed, meta) tuple if sync command
-            - (embed, meta) with auto_delete for errors
-        """
-        # Check if there's a space immediately after the prefix
         after_prefix = message.content[len(self.PREFIX):]
         if after_prefix and after_prefix[0] == ' ':
             guild_id = message.guild.id if message.guild else None

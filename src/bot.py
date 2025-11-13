@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 
 from _HANDLERS.commandManager import commandManager
 from _HANDLERS.interactionManager import interactionManager
-from _HANDLERS.clopenManager import ClopenManager
+from _HANDLERS.clopenManager import channelManager
 from utils.language_manager import language_manager
 
 load_dotenv()
@@ -51,7 +51,7 @@ client = discord.Client(intents=intents)
 # Initialize managers
 cmd_manager = commandManager(client)
 interaction_manager = interactionManager(client)
-clopen_manager = ClopenManager(client)
+clopen_manager = channelManager(client)
 
 # Link managers together
 client.clopen_manager = clopen_manager
@@ -96,11 +96,9 @@ async def on_message(message):
 
 @client.event
 async def on_reaction_add(reaction, user):
-    """Handle clopen close prompts"""
     await clopen_manager.on_reaction_add(reaction, user)
 
 async def handle_command(message):
-    """Handle command execution with proper async support"""
     # Language command special handling
     if message.content.startswith('.language'):
         if not await handle_language_command(message):
@@ -134,7 +132,6 @@ async def handle_command(message):
                 pass
 
 async def handle_language_command(message):
-    """Handle language configuration"""
     guild_id = message.guild.id if message.guild else None
     lang = language_manager.get_language(guild_id)
     
