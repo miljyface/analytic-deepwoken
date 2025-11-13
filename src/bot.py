@@ -1,3 +1,8 @@
+"""
+FIXED bot.py - Handle None returns from async commands
+Replace: bot.py
+"""
+
 import discord
 import os
 import asyncio
@@ -7,6 +12,7 @@ from dotenv import load_dotenv
 
 from _HANDLERS.commandManager import commandManager
 from _HANDLERS.interactionManager import interactionManager
+from _HANDLERS.clopenManager import ClopenManager
 from utils.language_manager import language_manager
 
 load_dotenv()
@@ -37,20 +43,42 @@ threading.Thread(target=start_health_server, daemon=True).start()
 # Bot setup
 intents = discord.Intents.default()
 intents.message_content = True
+intents.guilds = True
+intents.reactions = True
+
 client = discord.Client(intents=intents)
 
+# Initialize managers
 cmd_manager = commandManager(client)
 interaction_manager = interactionManager(client)
+clopen_manager = ClopenManager(client)
+
+# Link managers together
+client.clopen_manager = clopen_manager
+cmd_manager.clopen_manager = clopen_manager
+
 cmd_manager.loadCommands()
 
 @client.event
 async def on_ready():
     print(f'Bot ready as {client.user}')
+    
+    # Load clopen configuration
+    await clopen_manager.load_config()
+    print(f"Clopen system loaded: {len(clopen_manager.guild_configs)} guilds, {len(clopen_manager.channels)} channels")
+    
+    # Start clopen scheduler
+    clopen_manager.scheduler_task = asyncio.create_task(
+        clopen_manager.start_scheduler()
+    )
 
 @client.event
 async def on_message(message):
     if message.author.bot:
         return
+    
+    # Handle clopen system (must be first)
+    await clopen_manager.on_message(message)
     
     # Handle prefix commands
     if message.content.startswith(cmd_manager.PREFIX):
@@ -66,34 +94,47 @@ async def on_message(message):
                 if embed or file:
                     await message.channel.send(embed=embed, file=file, reference=message)
 
+@client.event
+async def on_reaction_add(reaction, user):
+    """Handle clopen close prompts"""
+    await clopen_manager.on_reaction_add(reaction, user)
+
 async def handle_command(message):
+    """Handle command execution with proper async support"""
     # Language command special handling
     if message.content.startswith('.language'):
         if not await handle_language_command(message):
             return
     
-    # Process command
-    result = await asyncio.to_thread(cmd_manager.processCommand, message)
+    # Process command (now async)
+    result = await cmd_manager.processCommand(message)
+    
+    # If result is None, it means async command already sent its own message
     if not result:
         return
     
-    # Parse result
-    embed, meta = result if isinstance(result, tuple) else (result, None)
+    # Parse result - handle both (embed, meta) and plain embed
+    if isinstance(result, tuple) and len(result) == 2:
+        embed, meta = result
+    else:
+        embed, meta = result, None
     
     # Send response
-    sent = await message.channel.send(embed=embed, reference=message)
-    
-    # Auto-delete if requested
-    if meta and meta.get('auto_delete'):
-        await asyncio.sleep(meta.get('timeout', 10))
-        try:
-            await sent.delete()
-            if meta.get('delete_user_message'):
-                await message.delete()
-        except discord.errors.NotFound:
-            pass
+    if embed:
+        sent = await message.channel.send(embed=embed, reference=message)
+        
+        # Auto-delete if requested
+        if meta and meta.get('auto_delete'):
+            await asyncio.sleep(meta.get('timeout', 10))
+            try:
+                await sent.delete()
+                if meta.get('delete_user_message'):
+                    await message.delete()
+            except discord.errors.NotFound:
+                pass
 
 async def handle_language_command(message):
+    """Handle language configuration"""
     guild_id = message.guild.id if message.guild else None
     lang = language_manager.get_language(guild_id)
     
