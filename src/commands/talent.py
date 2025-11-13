@@ -1,7 +1,7 @@
 from handlers.spellCheckManager import find
 from handlers import spellCheckManager
 from handlers.dataManager import searchTableByName
-import embedBuilder.talentEmbed as emb
+import plugins.embedBuilder.talentEmbed as emb
 
 def execute(name, guild_id=None):
     # Ensure names are loaded

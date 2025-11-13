@@ -1,5 +1,5 @@
 from rapidfuzz import process, fuzz
-from handlers.dataManager import fetch_table
+from _HANDLERS.dataManager import fetch_table
 
 
 # Global cache for loaded names (lazy initialization)

@@ -88,6 +88,7 @@
 | `.weapon <name>`      | Lookup Weapon details                        |
 | `.outfit <name>`      | Lookup Outfit details                        |
 | `.mantra <name>`      | Lookup Mantra details                        |
+| `.kit <kit_share_id>`      | Loads a kit based on ID                        |
 
 ### Analytics Commands
 

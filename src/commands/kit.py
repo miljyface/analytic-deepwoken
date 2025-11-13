@@ -1,5 +1,5 @@
 from handlers.dataManager import searchTableByName
-import embedBuilder.kitEmbed as emb
+import plugins.embedBuilder.kitEmbed as emb
 import discord
 from utils.language_manager import language_manager
 
