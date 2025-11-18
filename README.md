@@ -2,7 +2,9 @@
 
 **Analytic Deepwoken** is a Python-based Discord bot for the Deepwoken Institute of Building (DWIB). It provides comprehensive build analytics, lookups for equipment, talents, weapons, outfits, mantras, and automatic help channel management.
 
-[Invite](https://discord.com/api/oauth2/authorize?client_id=1425293276667449356&permissions=2251799813811296&scope=bot)
+[Invite (Server Install)](https://discord.com/api/oauth2/authorize?client_id=1425293276667449356&permissions=380104722496&scope=bot%20applications.commands)
+
+[Invite (User Install for DMs/GDMs)](https://discord.com/api/oauth2/authorize?client_id=1425293276667449356&scope=applications.commands)
 
 ---
 
@@ -76,6 +78,32 @@
 ---
 
 ## Commands
+
+### Slash Commands (Global, English only)
+
+All lookup and utility commands (except channel management) are now available as global slash commands, so you can use them anywhere the application is authorized:
+
+| Command | Description |
+| --- | --- |
+| `/help` | Shows the Analytic Deepwoken help menu. |
+| `/equipment <name>` | Look up equipment stats by name. |
+| `/weapon <name>` | Look up weapon stats by name. |
+| `/talent <name>` | Look up talent information by name. |
+| `/mantra <name>` | Look up mantra details by name. |
+| `/outfit <name>` | Look up outfit data by name. |
+| `/kit <kit_id>` | Fetch kit details by share ID. |
+| `/language <en\|es>` | (Server admins) set the bot language for the current server. |
+| `/ehp <build_link> [kit_id]` | Calculate Effective Health Points for a build. Optional kit_id adds equipment HP to the calculation. |
+| `/stats <build_link>` | Display stat evolution diagram for build optimization. |
+| `/validate <build_link>` | Validate a build against the Deepleague rulebook. |
+
+**Note on build analysis commands (`/ehp`, `/stats`, `/validate`):**
+- The `build_link` parameter is **optional**
+- If you don't provide a link, the bot will search for a recent Deepwoken builder link in the last 10 messages of the channel
+- This allows you to use the command right after someone posts a build link
+- If no link is found in recent messages and you didn't provide one, you'll get an error asking you to provide it
+
+> `clopen` and `close` remain prefix-only because they depend on guild-specific channel management.
 
 ### General Commands
 
